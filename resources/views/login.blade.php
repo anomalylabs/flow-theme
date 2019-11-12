@@ -52,8 +52,8 @@
             </div> --}}
 
         </div>
-        <div class="w-1/2 flex justify-center align-center items-center bg-green-500">
-            <div class="svg-fill-white login-icon fadeIn fast animated">
+        <div class="login__right">
+            <div class="fadeIn fast animated">
                 {!! img('anomaly.theme.flow::img/logo.svg')->data() !!}
             </div>
         </div>

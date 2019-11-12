@@ -1,8 +1,7 @@
 @import "theme.scss";
 
 .login__wrapper {
-    @apply .flex;
-    @apply .h-screen;
+    @apply .flex .h-screen;
 
     .login__left {
         @apply .w-1/2 .flex .justify-center .items-center .overflow-hidden .p-4 .px-3 .py-10 .bg-gray-200 .border-gray-400 .border-0 .border-r-2;
@@ -21,8 +20,19 @@
             .form__actions {
                 @apply .flex .items-center .justify-between;
             }
+        }
+    }
 
-            //w-full bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline
+    .login__right {
+        @apply .w-1/2 .flex .justify-center .items-center .bg-green-500;
+
+        svg {
+            width: 100px;
+            filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.1));
+
+            path {
+                fill: #ffffff;
+            }
         }
     }
 }

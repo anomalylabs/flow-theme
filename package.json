@@ -12,8 +12,8 @@
     "devDependencies": {
         "animate.css": "^3.7.2",
         "axios": "^0.19",
-        "bootstrap": "^4.3.1",
-        "bootstrap.native": "^2.0.27",
+        "bootstrap": "^4.3",
+        "bootstrap.native": "^2.0",
         "cross-env": "^5.1",
         "laravel-mix": "^4.0",
         "lodash": "^4.17.15",
