@@ -1,0 +1,19 @@
+.tabs {
+    ul {
+
+        li {
+
+            a {
+
+                &:hover {}
+
+                &.active {}
+            }
+        }
+    }
+
+    .tabs__pane {
+
+        &.active {}
+    }
+}

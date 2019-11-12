@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu:500&display=swap");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "tailwindcss/screens";
+
+@import "bootstrap";
+
+@import "../../../node_modules/animate.css/animate.css";
+
+@import "layout/top";
+@import "layout/main";
+@import "layout/menu";
+@import "layout/sidebar";
+
+@import "components/tabs";
+@import "components/forms";
+@import "components/dropdowns";
+
+.svg-fill-white {
+    path {
+        fill: white;
+    }
+}
+
+button {
+    line-height: 1.15;
+}

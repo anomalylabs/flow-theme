@@ -1,0 +1,48 @@
+{
+    "name": "anomaly/flow-theme",
+    "type": "streams-addon",
+    "description": "Manage users, roles, and permissions.",
+    "keywords": [
+        "streams",
+        "flow theme",
+        "admin theme"
+    ],
+    "homepage": "http://pyrocms.com/addons/anomaly/flow-theme",
+    "license": "MIT",
+    "authors": [{
+            "name": "PyroCMS, Inc.",
+            "homepage": "http://pyrocms.com/",
+            "role": "Owner"
+        },
+        {
+            "name": "Ryan Thompson",
+            "homepage": "http://ryanthepyro.com/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "docs": "https://pyrocms.com/documentation/flow-theme",
+        "forum": "https://pyrocms.com/forum/channels/flow-theme",
+        "slack": "https://pyrocms.com/slack",
+        "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [flow-theme]",
+        "source": "https://github.com/anomalylabs/flow-theme"
+    },
+    "require": {
+        "anomaly/streams-platform": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Anomaly\\FlowTheme\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "1.0.0": "1.0.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Anomaly\\FlowTheme\\FlowThemeServiceProvider"
+            ]
+        }
+    }
+}
