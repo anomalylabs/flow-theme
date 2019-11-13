@@ -7,10 +7,7 @@ var bootstrap = require('bootstrap.native/dist/bootstrap-native-v4');
     );
 
     messages.forEach(function (message) {
-        new bootstrap.Toast(message, {
-            delay: message.dataset.delay == undefined ? 3000 : message.dataset.delay,
-            autohide: message.dataset.autohide == undefined ? true : Boolean(message.dataset.autohide)
-        }).show();
+        new bootstrap.Toast(message).show();
     });
 
 })(window, document);
