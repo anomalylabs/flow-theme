@@ -154,13 +154,13 @@ eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourc
 
 /***/ 0:
 /*!*******************************************************************************************************************************************!*\
-  !*** multi ./resources/js/src/app.js ./resources/js/src/polyfills.js ./resources/scss/theme/theme.scss ./resources/scss/theme/login.scss ***!
+  !*** multi ./resources/js/src/polyfills.js ./resources/js/src/app.js ./resources/scss/theme/theme.scss ./resources/scss/theme/login.scss ***!
   \*******************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/ryanthompson/Sites/streams.local/vendor/anomaly/flow-theme/resources/js/src/app.js */"./resources/js/src/app.js");
 __webpack_require__(/*! /Users/ryanthompson/Sites/streams.local/vendor/anomaly/flow-theme/resources/js/src/polyfills.js */"./resources/js/src/polyfills.js");
+__webpack_require__(/*! /Users/ryanthompson/Sites/streams.local/vendor/anomaly/flow-theme/resources/js/src/app.js */"./resources/js/src/app.js");
 __webpack_require__(/*! /Users/ryanthompson/Sites/streams.local/vendor/anomaly/flow-theme/resources/scss/theme/theme.scss */"./resources/scss/theme/theme.scss");
 module.exports = __webpack_require__(/*! /Users/ryanthompson/Sites/streams.local/vendor/anomaly/flow-theme/resources/scss/theme/login.scss */"./resources/scss/theme/login.scss");
 

@@ -16,8 +16,8 @@ mix
     .sass('resources/scss/theme/theme.scss', 'resources/css')
     .sass('resources/scss/theme/login.scss', 'resources/css')
     .js([
-        'resources/js/src/app.js',
         'resources/js/src/polyfills.js',
+        'resources/js/src/app.js',
     ], 'resources/js/theme.js')
     .options({
         processCssUrls: false,
