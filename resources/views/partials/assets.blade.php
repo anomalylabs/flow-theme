@@ -1,4 +1,4 @@
-{!! assets()->script("anomaly.theme.flow::js/theme.js", ["min", "watch@anomaly.theme.flow::js/"]) !!}
+{!! assets()->script("anomaly.theme.flow::js/theme.js", ["min"]) !!}
 
 @foreach (assets()->scripts("scripts.js", ["min"]) as $script)
     {!! $script !!}

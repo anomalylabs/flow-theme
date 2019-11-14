@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="{{ config('app.locale') }}">
 
 <head>
@@ -6,13 +7,13 @@
 
 <body>
 
-<main id="app">
+<div id="app">
 
     @include('anomaly.theme.flow::partials/messages')
 
     @yield('content')
 
-</main>
+</div>
 
 @include('anomaly.theme.flow::partials/assets')
 
