@@ -1,13 +1,8 @@
-var bootstrap = require('bootstrap.native/dist/bootstrap-native-v4');
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
 
-let messages = Array.prototype.slice.call(
-    document.querySelectorAll('[data-dismiss="toast"]')
-);
+Vue.use(BootstrapVue)
 
-messages.forEach(function (message) {
-
-    message['Toast'].delay = 3000;
-    message['Toast'].autohide = true;
-
-    message['Toast'].show();
+var app = new Vue({
+    el: '#app'
 });

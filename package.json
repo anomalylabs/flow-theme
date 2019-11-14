@@ -15,7 +15,7 @@
         "cross-env": "^5.1",
         "laravel-mix": "^4.0",
         "bootstrap": "^4.3",
-        "bootstrap.native": "^2.0",
+        "bootstrap-vue": "^2.1.0",
         "animate.css": "^3.7.2",
         "mousetrap": "^1.6.3",
         "popper.js": "^1.12",
