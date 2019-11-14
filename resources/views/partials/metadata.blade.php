@@ -14,8 +14,10 @@
 
 <title>
     {{ config('app.name') }}
-    &#8250;
-    {{ trans($template->meta_title ?: config('app.name')) }}
+    @if ($template->meta_title)
+        &#8250;
+        {{ $template->meta_title }}
+    @endif
 </title>
 
 {{ favicons("anomaly.theme.flow::img/favicon.png") }}
