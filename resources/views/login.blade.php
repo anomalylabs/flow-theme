@@ -4,6 +4,8 @@
     
     @php
         assets('styles.css', 'anomaly.theme.flow::css/login.css');
+        
+        assets('scripts.js', 'streams::js/form/form.js');
 
         $form = form('login')->redirect('admin')->get();
     @endphp
