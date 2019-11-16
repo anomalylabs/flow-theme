@@ -1,0 +1,21 @@
+.table__wrapper {
+    @extend .table-responsive;
+
+    table {
+        @extend .table;
+    }
+}
+
+.table__filters {
+    @extend .card;
+    @extend .card-body;
+
+    form {
+        @extend .form-inline;
+    }
+}
+
+.table__views {
+    @extend .card;
+    @extend .card-body;
+}

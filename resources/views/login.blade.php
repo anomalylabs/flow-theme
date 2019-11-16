@@ -43,6 +43,8 @@
                 <span>{{ config('streams::distribution.version') }}</span>
             </div>
 
+            @include('anomaly.theme.flow::partials/messages')
+
         </div>
         <div class="login__right">
             <div class="fadeIn fast animated">

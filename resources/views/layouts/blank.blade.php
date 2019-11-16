@@ -8,11 +8,7 @@
 <body>
 
 <div id="app">
-
-    @include('anomaly.theme.flow::partials/messages')
-
     @yield('content')
-
 </div>
 
 @include('anomaly.theme.flow::partials/assets')

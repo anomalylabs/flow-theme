@@ -11,12 +11,13 @@
 @import "../../../node_modules/animate.css/animate.css";
 
 @import "layout/top";
-@import "layout/main";
 @import "layout/menu";
+@import "layout/content";
 @import "layout/sidebar";
 
 @import "components/tabs";
 @import "components/forms";
+@import "components/tables";
 @import "components/messages";
 @import "components/dropdowns";
 

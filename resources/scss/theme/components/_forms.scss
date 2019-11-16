@@ -1,0 +1,15 @@
+.form__wrapper {}
+
+.form__controls {
+    @extend .card;
+    @extend .card-body;
+}
+
+.form__field {
+    @extend .form-group;
+}
+
+.form__input {
+    @extend .form-control;
+    @apply .shadow .appearance-none .border .rounded .w-full .py-2 .px-3 .text-gray-700;
+}
