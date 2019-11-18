@@ -3,6 +3,7 @@
     <ul>
         @foreach ($template->get('cp')->getNavigation() as $key => $navigation)
             <li data-slug="{{ $navigation->getSlug() }}">
+                <h5 class="mb-0">
                 <a
                         class="text-gray-600 py-2 block hover:text-gray-800 transition-color {{ $navigation->isActive() ? 'text-gray-800 font-bold' : '' }}"
                         title="{{ $navigation->getTitle() }}"
@@ -10,6 +11,7 @@
                     {{-- <span class="icon">{{ navigation.icon()|raw }}</span> --}}
                     <span class="title">{{ trans($navigation->getTitle()) }}</span>
                 </a>
+                </h5>
                 @if ($navigation->isActive())
                     <ul>
                         @foreach ($template->get('cp')->getSections()->root()->visible() as $section)
