@@ -14,7 +14,7 @@
     <div id="main" class="flex">
 
         @include('anomaly.theme.flow::partials/sidebar')
-        @include('anomaly.theme.flow::partials/menu')
+        {{-- @include('anomaly.theme.flow::partials/menu') --}}
 
         <div id="content" class="flex-grow bg-gray-100">
 
