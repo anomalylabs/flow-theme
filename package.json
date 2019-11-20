@@ -21,7 +21,6 @@
         "mousetrap": "^1.6.3",
         "popper.js": "^1.12",
         "postcss": "^7.0.23",
-        "postcss-apply": "^0.12.0",
         "sass": "^1.23.3",
         "sass-loader": "^7.3.1",
         "vue": "^2.6.10",

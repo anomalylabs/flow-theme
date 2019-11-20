@@ -3093,28 +3093,6 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 
 /***/ }),
 
-/***/ "./resources/css/login.css":
-/*!*********************************!*\
-  !*** ./resources/css/login.css ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvY3NzL2xvZ2luLmNzcz9lNjVlIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL2Nzcy9sb2dpbi5jc3MuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyByZW1vdmVkIGJ5IGV4dHJhY3QtdGV4dC13ZWJwYWNrLXBsdWdpbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/css/login.css\n");
-
-/***/ }),
-
-/***/ "./resources/css/theme.css":
-/*!*********************************!*\
-  !*** ./resources/css/theme.css ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvY3NzL3RoZW1lLmNzcz85N2JhIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL2Nzcy90aGVtZS5jc3MuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyByZW1vdmVkIGJ5IGV4dHJhY3QtdGV4dC13ZWJwYWNrLXBsdWdpbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/css/theme.css\n");
-
-/***/ }),
-
 /***/ "./resources/js/src/app.js":
 /*!*********************************!*\
   !*** ./resources/js/src/app.js ***!
@@ -3161,18 +3139,16 @@ eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourc
 /***/ }),
 
 /***/ 0:
-/*!***********************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/src/polyfills.js ./resources/js/src/app.js ./resources/scss/theme/theme.scss ./resources/scss/theme/login.scss ./resources/css/theme.css ./resources/css/login.css ***!
-  \***********************************************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************!*\
+  !*** multi ./resources/js/src/polyfills.js ./resources/js/src/app.js ./resources/scss/theme/theme.scss ./resources/scss/theme/login.scss ***!
+  \*******************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Users/ryanthompson/Sites/streams.local/vendor/anomaly/flow-theme/resources/js/src/polyfills.js */"./resources/js/src/polyfills.js");
 __webpack_require__(/*! /Users/ryanthompson/Sites/streams.local/vendor/anomaly/flow-theme/resources/js/src/app.js */"./resources/js/src/app.js");
 __webpack_require__(/*! /Users/ryanthompson/Sites/streams.local/vendor/anomaly/flow-theme/resources/scss/theme/theme.scss */"./resources/scss/theme/theme.scss");
-__webpack_require__(/*! /Users/ryanthompson/Sites/streams.local/vendor/anomaly/flow-theme/resources/scss/theme/login.scss */"./resources/scss/theme/login.scss");
-__webpack_require__(/*! /Users/ryanthompson/Sites/streams.local/vendor/anomaly/flow-theme/resources/css/theme.css */"./resources/css/theme.css");
-module.exports = __webpack_require__(/*! /Users/ryanthompson/Sites/streams.local/vendor/anomaly/flow-theme/resources/css/login.css */"./resources/css/login.css");
+module.exports = __webpack_require__(/*! /Users/ryanthompson/Sites/streams.local/vendor/anomaly/flow-theme/resources/scss/theme/login.scss */"./resources/scss/theme/login.scss");
 
 
 /***/ })

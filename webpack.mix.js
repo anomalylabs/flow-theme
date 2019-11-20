@@ -14,17 +14,12 @@ let mix = require('laravel-mix');
 mix
     .sass('resources/scss/theme/theme.scss', 'resources/css')
     .sass('resources/scss/theme/login.scss', 'resources/css')
-    .postCss('resources/css/theme.css', 'resources/css/theme.post.css')
-    .postCss('resources/css/login.css', 'resources/css/login.post.css')
     .js([
         'resources/js/src/polyfills.js',
         'resources/js/src/app.js',
     ], 'resources/js/theme.js')
     .options({
-        processCssUrls: false,
-        postCss: [
-            require('postcss-apply'),
-        ]
+        processCssUrls: false
     })
     .sourceMaps();
 
