@@ -7,8 +7,8 @@
 }
 
 .table__filters {
-    @extend .card;
-    @extend .card-body;
+    @extend .card,
+    .card-body;
 
     form {
         @extend .form-inline;
@@ -16,6 +16,6 @@
 }
 
 .table__views {
-    @extend .card;
-    @extend .card-body;
+    @extend .card,
+    .card-body;
 }

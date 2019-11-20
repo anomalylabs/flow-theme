@@ -1,5 +1,4 @@
 let mix = require('laravel-mix');
-const tailwindcss = require('tailwindcss');
 
 /*
  |--------------------------------------------------------------------------
@@ -15,6 +14,8 @@ const tailwindcss = require('tailwindcss');
 mix
     .sass('resources/scss/theme/theme.scss', 'resources/css')
     .sass('resources/scss/theme/login.scss', 'resources/css')
+    .postCss('resources/css/theme.css', 'resources/css/theme.post.css')
+    .postCss('resources/css/login.css', 'resources/css/login.post.css')
     .js([
         'resources/js/src/polyfills.js',
         'resources/js/src/app.js',
@@ -22,7 +23,7 @@ mix
     .options({
         processCssUrls: false,
         postCss: [
-            tailwindcss('./tailwind.config.js')
+            require('postcss-apply'),
         ]
     })
     .sourceMaps();

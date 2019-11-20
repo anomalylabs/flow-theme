@@ -11,12 +11,12 @@
 
     @include('anomaly.theme.flow::partials/top')
 
-    <div id="main" class="flex">
+    <div id="main">
 
         @include('anomaly.theme.flow::partials/sidebar')
         {{-- @include('anomaly.theme.flow::partials/menu') --}}
 
-        <div id="content" class="flex-grow bg-gray-100">
+        <div id="content">
 
             @include('anomaly.theme.flow::partials/messages')
             @include('anomaly.theme.flow::partials/buttons')

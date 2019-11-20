@@ -1,4 +1,4 @@
 #buttons {
-    @extend .card;
-    @extend .card-body;
+    @extend .card,
+    .card-body;
 }

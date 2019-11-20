@@ -1,8 +1,8 @@
-<aside id="menu" class="w-56 p-6 bg-gray-200">
+<aside id="menu">
 
     <ul>
         @foreach ($template->get('cp')->getSections()->root()->visible() as $section)
-            <li class="text-gray-500 py-2 block hover:text-gray-800 transition-color {{ $section->isHighlighted() ? 'text-gray-600 font-bold' : '' }} {{ $section->isActive() ? 'active' : '' }} {{ $section->getClass() }}">
+            <li class="{{ $section->isHighlighted() ? 'font-weight-bold' : '' }} {{ $section->isActive() ? 'active' : '' }} {{ $section->getClass() }}">
 
                 <a {!! html_attributes($section->getAttributes()) !!}>
                     {{-- {{ section.icon ? icon(section.icon)|raw }} --}}

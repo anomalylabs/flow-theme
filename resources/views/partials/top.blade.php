@@ -1,6 +1,6 @@
-<div id="top" class="flex items-center justify-between flex-wrap bg-white border-b border-gray-200 p-6">
+<div id="top">
 
-    <div class="flex items-center flex-shrink-0 text-white mr-6 cp-brand">
+    <div class="cp-brand">
         {!! img('anomaly.theme.flow::img/logo.svg')->data() !!}
     </div>
 

@@ -10,6 +10,8 @@
         $form = form('login')->redirect('admin')->get();
     @endphp
 
+    @include('anomaly.theme.flow::partials/messages')
+
     <div class="login__wrapper">
         <div class="login__left">
 
@@ -40,12 +42,10 @@
 
             </div>
 
-            <div class="absolute bottom-0 left-0 ml-2 mb-2 text-gray-500 text-xs fadeInUp animated delay-1s">
+            <div class="login__version fadeInUp animated delay-1s">
                 {{ config('streams::distribution.name') }}
                 <span>{{ config('streams::distribution.version') }}</span>
             </div>
-
-            @include('anomaly.theme.flow::partials/messages')
 
         </div>
         <div class="login__right">

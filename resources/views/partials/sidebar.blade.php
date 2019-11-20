@@ -1,4 +1,4 @@
-<aside id="sidebar" class="w-56 p-6 bg-white drop-shadow-xs rounded">
+<aside class="sidebar__wrapper">
 
     <ul>
         @foreach ($template->get('cp')->getNavigation() as $key => $navigation)

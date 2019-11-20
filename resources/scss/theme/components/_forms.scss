@@ -1,8 +1,8 @@
 .form__wrapper {}
 
 .form__controls {
-    @extend .card;
-    @extend .card-body;
+    @extend .card,
+    .card-body;
 }
 
 .form__field {
@@ -10,6 +10,13 @@
 }
 
 .form__input {
-    @extend .form-control;
-    @apply .shadow .appearance-none .border .rounded .w-full .py-2 .px-3 .text-gray-700;
+    @extend .form-control,
+    .text-muted,
+    .rounded,
+    .w-100,
+    .border,
+    .px-3,
+    .py-2;
+    //.shadow
+    //.text-gray-700
 }
