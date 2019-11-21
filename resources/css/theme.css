@@ -58266,8 +58266,6 @@ video {
 .topbar__navigation {
   width: 100%;
   display: block;
-  -webkit-box-flex: 1;
-          flex-grow: 1;
   -webkit-box-pack: end;
           justify-content: flex-end;
 }
@@ -58280,8 +58278,6 @@ video {
   .topbar__navigation {
     display: -webkit-box;
     display: flex;
-    -webkit-box-align: center;
-            align-items: center;
     width: auto;
     display: block;
   }

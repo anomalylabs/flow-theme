@@ -68,14 +68,14 @@
 }
 
 .topbar__navigation {
-    @apply .w-full .block .flex-grow .justify-end;
+    @apply .w-full .block .justify-end;
 
     &:not(.-open) {
         @apply .hidden;
     }
 
     @screen lg {
-        @apply .flex .items-center .w-auto .block;
+        @apply .flex .w-auto .block;
 
         &:not(.-open) {
             @apply .block;
