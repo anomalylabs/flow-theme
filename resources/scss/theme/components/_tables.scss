@@ -1,21 +1,21 @@
-.table__wrapper {
-    @extend .table-responsive;
+// .table__wrapper {
+//     @extend .table-responsive;
 
-    table {
-        @extend .table;
-    }
-}
+//     table {
+//         @extend .table;
+//     }
+// }
 
-.table__filters {
-    @extend .card,
-    .card-body;
+// .table__filters {
+//     @extend .card,
+//     .card-body;
 
-    form {
-        @extend .form-inline;
-    }
-}
+//     form {
+//         @extend .form-inline;
+//     }
+// }
 
-.table__views {
-    @extend .card,
-    .card-body;
-}
+// .table__views {
+//     @extend .card,
+//     .card-body;
+// }

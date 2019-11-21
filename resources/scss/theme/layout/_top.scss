@@ -1,27 +1,27 @@
 #top {
-    @extend .d-flex,
-    .justify-content-between,
-    .align-items-center,
-    .border-bottom,
-    .flex-wrap,
-    .bg-white,
-    .p-4;
-    //.border-gray-200,
+    // @extend .flex,
+    // .justify-content-between,
+    // .align-items-center,
+    // .border-bottom,
+    // .flex-wrap,
+    // .bg-white,
+    // .p-4;
+    // //.border-gray-200,
 
-    .cp-brand {
-        @extend .d-flex,
-        .align-items-center,
-        .flex-shrink-0,
-        .mr-5;
-        //.text-white
+    // .cp-brand {
+    //     @extend .flex,
+    //     .align-items-center,
+    //     .flex-shrink-0,
+    //     .mr-5;
+    //     //.text-white
 
-        svg {
-            width: 40px;
-            height: 40px;
+    //     svg {
+    //         width: 40px;
+    //         height: 40px;
 
-            path {
-                fill: #000000;
-            }
-        }
-    }
+    //         path {
+    //             fill: #000000;
+    //         }
+    //     }
+    // }
 }

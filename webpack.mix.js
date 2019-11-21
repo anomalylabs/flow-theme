@@ -1,4 +1,6 @@
 let mix = require('laravel-mix');
+const tailwindcss = require('tailwindcss');
+let postcssImport = require('postcss-import');
 
 /*
  |--------------------------------------------------------------------------
@@ -19,7 +21,11 @@ mix
         'resources/js/src/app.js',
     ], 'resources/js/theme.js')
     .options({
-        processCssUrls: false
+        processCssUrls: false,
+        postCss: [
+            tailwindcss('./tailwind.config.js'),
+            postcssImport(),
+        ]
     })
     .sourceMaps();
 

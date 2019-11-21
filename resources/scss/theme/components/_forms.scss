@@ -1,22 +1,22 @@
-.form__wrapper {}
+// .form__wrapper {}
 
-.form__controls {
-    @extend .card,
-    .card-body;
-}
+// .form__controls {
+//     @extend .card,
+//     .card-body;
+// }
 
-.form__field {
-    @extend .form-group;
-}
+// .form__field {
+//     @extend .form-group;
+// }
 
-.form__input {
-    @extend .form-control,
-    .text-muted,
-    .rounded,
-    .w-100,
-    .border,
-    .px-3,
-    .py-2;
-    //.shadow
-    //.text-gray-700
-}
+// .form__input {
+//     @extend .form-control,
+//     .text-muted,
+//     .rounded,
+//     .w-100,
+//     .border,
+//     .px-3,
+//     .py-2;
+//     //.shadow
+//     //.text-gray-700
+// }

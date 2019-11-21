@@ -1,15 +1,15 @@
 #content {
-    @extend .p-3,
-    .flex-grow-1;
-    //.bg-gray-100
+    // @extend .p-3,
+    // .flex-grow-1;
+    // //.bg-gray-100
 
-    >ul {
-        >li {
-            @extend .text-muted,
-            .d-block,
-            .py-2;
+    // >ul {
+    //     >li {
+    //         @extend .text-muted,
+    //         .d-block,
+    //         .py-2;
 
-            transition: color 200ms;
-        }
-    }
+    //         transition: color 200ms;
+    //     }
+    // }
 }
