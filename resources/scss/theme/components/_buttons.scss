@@ -1,10 +1,26 @@
-.btn,
 .button {
     @apply .bg-blue-500 .text-white .font-bold .py-2 .px-4 .rounded;
 
-    &:hover,
-    &:focus,
-    &:active {
+    &:hover {
         @apply .bg-blue-700;
     }
+
+    @variants active,
+    focus {
+        & {
+            //@apply .bg-blue-700;
+        }
+    }
+
+    &.-outline {
+        @apply .bg-transparent .text-blue-500 .font-semibold .py-2 .px-4 .border .border-blue-500 .rounded;
+
+        &:hover {
+            @apply .bg-blue-700 .text-white .border-transparent;
+        }
+    }
 }
+
+// ghost btn class inspired by mario ghost coins (dashed outine)
+
+//-3d: bg-blue hover:bg-blue-light text-white font-bold py-2 px-4 border-b-4 border-blue-dark hover:border-blue rounded

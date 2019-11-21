@@ -10,7 +10,6 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "@tailwindcss/custom-forms": "^0.2.1",
         "animate.css": "^3.7.2",
         "axios": "^0.19",
         "cross-env": "^5.1",
