@@ -9,7 +9,7 @@
 
 <div id="app">
 
-    @include('anomaly.theme.flow::partials/top')
+    @include('anomaly.theme.flow::partials/topbar')
 
     <div id="main">
 

@@ -3,18 +3,20 @@
 @import "../../../node_modules/animate.css/animate.css";
 
 @tailwind base;
-@tailwind components;
+@tailwind screens;
 @tailwind utilities;
+@tailwind components;
 
-@import "layout/top";
 @import "layout/main";
 @import "layout/menu";
+@import "layout/topbar";
 @import "layout/content";
 @import "layout/sidebar";
 
 @import "components/tabs";
 @import "components/forms";
 @import "components/tables";
+@import "components/buttons";
 @import "components/messages";
 @import "components/dropdowns";
 
