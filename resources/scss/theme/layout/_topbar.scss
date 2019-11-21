@@ -22,13 +22,32 @@
 .topbar__toggle {
     @apply .block;
 
+    button {
+        @apply .outline-none;
+    }
+
+    button:not(.-open) {
+        @apply .hidden;
+    }
+
+    &.-open {
+
+        button.-open {
+            @apply .hidden;
+        }
+
+        button:not(.-open) {
+            @apply .inline-block;
+        }
+    }
+
     @screen lg {
         @apply .hidden;
     }
 }
 
 .topbar__indicator {
-    @apply flex px-6 items-center text-gray-500;
+    @apply flex px-6 items-center text-gray-500 .outline-none;
 
     @variants focus,
     active {
@@ -43,20 +62,24 @@
         }
     }
 
-    &:not(.-active) {
-        @apply .hidden;
-    }
-
     @screen lg {
         @apply .hidden;
     }
 }
 
 .topbar__navigation {
-    @apply .w-full .block .flex-grow;
+    @apply .w-full .block .flex-grow .justify-end;
+
+    &:not(.-open) {
+        @apply .hidden;
+    }
 
     @screen lg {
-        @apply .flex .items-center .w-auto;
+        @apply .flex .items-center .w-auto .block;
+
+        &:not(.-open) {
+            @apply .block;
+        }
     }
 }
 
