@@ -1,8 +1,8 @@
-.topbar {
+#header {
     @apply .flex .items-center .justify-between .flex-wrap .bg-white .p-6;
 }
 
-.topbar__brand {
+.header__brand {
     @apply .flex .items-center .flex-shrink-0 .text-white .mr-6;
 
     svg {
@@ -19,7 +19,7 @@
     }
 }
 
-.topbar__toggle {
+.header__toggle {
     @apply .block;
 
     button {
@@ -46,7 +46,7 @@
     }
 }
 
-.topbar__indicator {
+.header__indicator {
     @apply flex px-6 items-center text-gray-500 .outline-none;
 
     @variants focus,
@@ -67,7 +67,7 @@
     }
 }
 
-.topbar__navigation {
+.header__navigation {
     @apply .w-full .block .justify-end;
 
     &:not(.-open) {
@@ -83,7 +83,7 @@
     }
 }
 
-.topbar__menu {
+.header__menu {
     @apply .text-sm;
 
     @screen lg {

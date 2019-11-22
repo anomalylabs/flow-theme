@@ -7,10 +7,12 @@
 @tailwind utilities;
 @tailwind components;
 
+@import "fonts";
+
 @import "layout/app";
 @import "layout/main";
-@import "layout/menu";
-@import "layout/topbar";
+@import "layout/header";
+@import "layout/actions";
 @import "layout/content";
 @import "layout/sidebar";
 

@@ -1,21 +1,18 @@
-<aside class="sidebar__wrapper">
+<aside id="sidebar">
 
     <ul>
         @foreach ($template->get('cp')->getNavigation() as $key => $navigation)
             <li data-slug="{{ $navigation->getSlug() }}">
-                <h5 class="mb-0">
-                <a
-                        class="text-gray-600 py-2 block hover:text-gray-800 transition-color {{ $navigation->isActive() ? 'text-gray-800 font-bold' : '' }}"
-                        title="{{ $navigation->getTitle() }}"
-                        {!! html_attributes($navigation->getAttributes()) !!}>
-                    {{-- <span class="icon">{{ navigation.icon()|raw }}</span> --}}
-                    <span class="title">{{ trans($navigation->getTitle()) }}</span>
+                <h4>
+                <a {!! html_attributes($navigation->attributes()) !!}>
+                    {{-- <i class="icon">{{ navigation.icon()|raw }}</i> --}}
+                    <span>{{ trans($navigation->getTitle()) }}</span>
                 </a>
-                </h5>
+                </h4>
                 @if ($navigation->isActive())
                     <ul>
                         @foreach ($template->get('cp')->getSections()->root()->visible() as $section)
-                            <li class="text-gray-500 py-2 block hover:text-gray-800 transition-color {{ $section->isHighlighted() ? 'text-gray-600 font-bold' : '' }} {{ $section->isActive() ? 'active' : '' }} {{ $section->getClass() }}">
+                            <li class="{{ $section->isHighlighted() ? 'text-gray-600 font-bold' : '' }} {{ $section->isActive() ? 'active' : '' }} {{ $section->getClass() }}">
 
                                 <a {!! html_attributes($section->getAttributes()) !!}>
                                     {{-- {{ section.icon ? icon(section.icon)|raw }} --}}

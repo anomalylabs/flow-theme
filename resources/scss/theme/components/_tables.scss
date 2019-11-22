@@ -1,21 +1,19 @@
-// .table__wrapper {
-//     @extend .table-responsive;
+.table {
+    @apply .w-full .text-left;
+}
 
-//     table {
-//         @extend .table;
-//     }
-// }
+.table__wrapper {
+    //@extend .table-responsive;
+}
 
-// .table__filters {
-//     @extend .card,
-//     .card-body;
+.table__filters {
+    @apply .p-5;
 
-//     form {
-//         @extend .form-inline;
-//     }
-// }
+    form {
+        // @extend .form-inline;
+    }
+}
 
-// .table__views {
-//     @extend .card,
-//     .card-body;
-// }
+.table__views {
+    @apply .p-5;
+}
