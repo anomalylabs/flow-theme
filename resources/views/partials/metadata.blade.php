@@ -24,6 +24,6 @@
 
 {{ constants() }}
 
-{!! assets()->style("anomaly.theme.flow::css/theme.css", ["min", "watch@anomaly.theme.flow::css/"]) !!}
+{!! assets()->style("anomaly.theme.flow::css/theme.css", ["min", "parse"]) !!}
 
 {{ $template->includes->render('head') }}

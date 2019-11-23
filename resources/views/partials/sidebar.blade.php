@@ -5,7 +5,7 @@
             <li data-slug="{{ $navigation->getSlug() }}">
                 <h4>
                 <a {!! html_attributes($navigation->attributes()) !!}>
-                    {{-- <i class="icon">{{ navigation.icon()|raw }}</i> --}}
+                    {!! $navigation->icon() !!}
                     <span>{{ trans($navigation->getTitle()) }}</span>
                 </a>
                 </h4>

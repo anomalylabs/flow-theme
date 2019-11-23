@@ -13,6 +13,10 @@ const tailwindcss = require('tailwindcss');
  */
 
 mix
+    .copyDirectory(
+        'node_modules/@fortawesome/fontawesome-free/webfonts',
+        'resources/fonts/fontawesome'
+    )
     .sass('resources/scss/theme/theme.scss', 'resources/css')
     .sass('resources/scss/theme/login.scss', 'resources/css')
     .js([

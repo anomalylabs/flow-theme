@@ -42,14 +42,14 @@
 
             </div>
 
-            <div class="login__version fadeInUp animated delay-1s">
+            <div class="login__version">
                 {{ config('streams::distribution.name') }}
                 <span>{{ config('streams::distribution.version') }}</span>
             </div>
 
         </div>
         <div class="login__right">
-            <div class="fadeIn fast animated">
+            <div class="login__brand">
                 {!! img('anomaly.theme.flow::img/logo.svg')->data() !!}
             </div>
         </div>
