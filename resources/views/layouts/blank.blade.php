@@ -8,9 +8,7 @@
 <body>
 
 <div id="app">
-    <div id="content">
-        @yield('content')
-    </div>
+    @yield('content')
 </div>
 
 @include('anomaly.theme.flow::partials/assets')
