@@ -60477,13 +60477,29 @@ readers do not read off random characters that represent icons */
 
 .form__wrapper {
   width: 100%;
+}
+
+.form__layout,
+.form__controls {
   padding: 1.25rem;
   background-color: #fff;
 }
 
 .form__controls {
-  padding: 1.25rem;
-  background-color: #fff;
+  display: -webkit-box;
+  display: flex;
+}
+
+.form__input {
+  border-radius: 0.25rem;
+  width: 100%;
+  border-width: 1px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+  color: #4a5568;
 }
 
 .table__container {
@@ -60556,6 +60572,25 @@ readers do not read off random characters that represent icons */
   width: 300px;
   bottom: 1rem;
   position: absolute;
+}
+
+.breadcrumb {
+  color: #000;
+  font-weight: 700;
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: inline-flex;
+}
+
+.breadcrumb a,
+.breadcrumb span {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.breadcrumb span {
+  color: #a0aec0;
 }
 
 .svg-fill-white path {

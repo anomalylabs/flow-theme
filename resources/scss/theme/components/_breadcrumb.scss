@@ -1,0 +1,12 @@
+.breadcrumb {
+    @apply .text-black .font-bold .list-none .p-0 .inline-flex;
+
+    a,
+    span {
+        @apply .mx-3;
+    }
+
+    span {
+        @apply .text-gray-500
+    }
+}

@@ -1,23 +1,20 @@
 .form__wrapper {
-    @apply .w-full .p-5 .bg-white;
+    @apply .w-full;
 }
 
+.form__layout,
 .form__controls {
     @apply .p-5 .bg-white;
 }
 
-// .form__field {
+.form__controls {
+    @apply .flex;
+}
+
+// .form__fields {
 //     @extend .form-group;
 // }
 
-// .form__input {
-//     @extend .form-control,
-//     .text-muted,
-//     .rounded,
-//     .w-100,
-//     .border,
-//     .px-3,
-//     .py-2;
-//     //.shadow
-//     //.text-gray-700
-// }
+.form__input {
+    @apply .rounded .w-full .border .px-3 .py-2 .shadow .text-gray-700;
+}
