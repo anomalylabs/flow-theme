@@ -10,8 +10,6 @@
         $form = form('login')->redirect('admin')->get();
     @endphp
 
-    @include('anomaly.theme.flow::partials/messages')
-
     <div class="login__wrapper">
         <div class="login__left">
 
