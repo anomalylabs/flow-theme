@@ -1,19 +1,28 @@
-.table {
-    @apply .w-full .text-left;
-}
-
 .table__wrapper {
     //@extend .table-responsive;
 }
 
-.table__filters {
-    @apply .p-5;
+.table__container {
+    @apply .p-5 .bg-white;
 
-    form {
-        // @extend .form-inline;
+    table {
+        @apply .w-full .text-left .bg-white;
     }
 }
 
-.table__views {
-    @apply .p-5;
+.table__filters {
+    @apply .p-5 .bg-white;
+
+    form {
+        @apply .flex
+    }
+}
+
+.table__views,
+.table__header {
+    @apply .p-5 .bg-white;
+}
+
+.table__buttons {
+    @apply .text-right;
 }

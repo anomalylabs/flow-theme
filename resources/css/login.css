@@ -60306,7 +60306,7 @@ readers do not read off random characters that represent icons */
           justify-content: space-between;
   flex-wrap: wrap;
   background-color: #fff;
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 
 .header__brand {
@@ -60458,12 +60458,14 @@ readers do not read off random characters that represent icons */
 
 #actions {
   padding: 1.25rem;
+  background-color: #fff;
 }
 
 #content {
   -webkit-box-flex: 1;
           flex-grow: 1;
   background-color: #f7fafc;
+  padding: 1.25rem;
 }
 
 #sidebar {
@@ -60473,17 +60475,46 @@ readers do not read off random characters that represent icons */
   border-radius: 0.25rem;
 }
 
-.table {
+.form__wrapper {
+  width: 100%;
+  padding: 1.25rem;
+  background-color: #fff;
+}
+
+.form__controls {
+  padding: 1.25rem;
+  background-color: #fff;
+}
+
+.table__container {
+  padding: 1.25rem;
+  background-color: #fff;
+}
+
+.table__container table {
   width: 100%;
   text-align: left;
+  background-color: #fff;
 }
 
 .table__filters {
   padding: 1.25rem;
+  background-color: #fff;
 }
 
-.table__views {
+.table__filters form {
+  display: -webkit-box;
+  display: flex;
+}
+
+.table__views,
+.table__header {
   padding: 1.25rem;
+  background-color: #fff;
+}
+
+.table__buttons {
+  text-align: right;
 }
 
 .button {

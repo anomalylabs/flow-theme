@@ -1,9 +1,10 @@
-// .form__wrapper {}
+.form__wrapper {
+    @apply .w-full .p-5 .bg-white;
+}
 
-// .form__controls {
-//     @extend .card,
-//     .card-body;
-// }
+.form__controls {
+    @apply .p-5 .bg-white;
+}
 
 // .form__field {
 //     @extend .form-group;

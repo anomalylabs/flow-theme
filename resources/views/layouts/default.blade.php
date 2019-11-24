@@ -17,6 +17,7 @@
 
         <div id="content">
 
+            @include('anomaly.theme.flow::partials/breadcrumb')
             @include('anomaly.theme.flow::partials/actions')
 
             @yield('content')
