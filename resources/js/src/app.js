@@ -1,5 +1,6 @@
 import Vue from 'vue';
 
+window.Mousetrap = require('mousetrap');
 window.Noty = require('noty');
 
 window.app = new Vue({
