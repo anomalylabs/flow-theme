@@ -38,6 +38,7 @@
                 (function (window, document) {
                     new Noty({
                         timeout: 5000,
+                        type: 'warning',
                         theme: 'streams',
                         layout: 'bottomRight',
                         text: '{{ trans($message) }}',
@@ -52,6 +53,7 @@
             <script>
                 (function (window, document) {
                     new Noty({
+                        type: 'error',
                         timeout: 5000,
                         theme: 'streams',
                         layout: 'bottomRight',
