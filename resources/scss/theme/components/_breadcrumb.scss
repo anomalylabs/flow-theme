@@ -1,12 +1,19 @@
 .breadcrumb {
-    @apply .text-black .font-bold .list-none .p-0 .inline-flex;
+    background: rgba(0, 0, 0, 0.01);
 
-    a,
-    span {
-        @apply .mx-3;
-    }
+    ol {
+        @apply .text-black .font-bold .list-none .p-0 .inline-flex;
 
-    span {
-        @apply .text-gray-500
+        li {
+
+            a,
+            span {
+                @apply .mx-1;
+            }
+
+            span {
+                @apply .text-gray-500
+            }
+        }
     }
 }

@@ -1,4 +1,5 @@
 .tabs {
+    @apply .bg-white;
 
     ul {
         @apply .flex .mb-5 .bg-gray-300 .text-gray-500;
