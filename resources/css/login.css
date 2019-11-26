@@ -60732,11 +60732,40 @@ readers do not read off random characters that represent icons */
   border-radius: 0.25rem;
 }
 
+.tabs ul {
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 1.25rem;
+  background-color: #e2e8f0;
+  color: #a0aec0;
+}
+
+.tabs ul li a {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  display: inline-block;
+}
+
+.tabs ul li.active a {
+  background-color: #fff;
+}
+
+.tabs > div {
+  display: none;
+  background-color: #fff;
+  padding: 1.25rem;
+}
+
+.tabs > div.active {
+  display: block;
+}
+
 .form__wrapper {
   width: 100%;
 }
 
-.form__layout,
 .form__controls {
   padding: 1.25rem;
   background-color: #fff;
@@ -60745,6 +60774,16 @@ readers do not read off random characters that represent icons */
 .form__controls {
   display: -webkit-box;
   display: flex;
+}
+
+.form__field {
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.form__field label {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 .form__input {
@@ -60757,6 +60796,18 @@ readers do not read off random characters that represent icons */
   padding-bottom: 0.5rem;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
   color: #4a5568;
+}
+
+.field__instructions {
+  color: #a0aec0;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.field__warning {
+  color: #ed8936;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
 }
 
 .table__container {

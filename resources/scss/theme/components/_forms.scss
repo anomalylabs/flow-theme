@@ -2,10 +2,11 @@
     @apply .w-full;
 }
 
-.form__layout,
 .form__controls {
     @apply .p-5 .bg-white;
 }
+
+.form__layout {}
 
 .form__controls {
     @apply .flex;
@@ -15,6 +16,22 @@
 //     @extend .form-group;
 // }
 
+.form__field {
+    @apply .pb-5 .mb-5;
+
+    label {
+        @apply .font-bold .mb-2;
+    }
+}
+
 .form__input {
     @apply .rounded .w-full .border .px-3 .py-2 .shadow .text-gray-700;
+}
+
+.field__instructions {
+    @apply .text-gray-500 .text-sm .mb-2;
+}
+
+.field__warning {
+    @apply .text-orange-500 .text-sm .mb-2;
 }
