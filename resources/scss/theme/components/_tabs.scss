@@ -2,27 +2,28 @@
     @apply .bg-white;
 
     ul {
-        @apply .flex .mb-5 .bg-gray-300 .text-gray-400;
+        @apply .flex .mb-5 .bg-gray-200 .text-gray-400;
 
         li {
-
             a {
                 @apply .py-2 .px-5 .inline-block;
 
-                &:hover {}
+                &:hover {
+                }
             }
 
             &.active {
                 a {
                     @apply .bg-white;
 
-                    &:hover {}
+                    &:hover {
+                    }
                 }
             }
         }
     }
 
-    >div {
+    > div {
         @apply .hidden .bg-white .p-5;
 
         &.active {
