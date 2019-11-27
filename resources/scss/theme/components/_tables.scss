@@ -1,12 +1,24 @@
 .table__wrapper {
-    //@extend .table-responsive;
+    @apply .m-6;
+}
+
+.table__filters {
+    @apply .section;
+
+    form {
+        @apply .flex;
+    }
+}
+
+.table__views {
+    @apply .section;
 }
 
 .table__container {
-    @apply .p-6 .bg-white;
+    @apply .section;
 
     table {
-        @apply .w-full .text-left .bg-white;
+        @apply .w-full .text-left;
 
         thead {
             th {
@@ -22,19 +34,28 @@
     }
 }
 
-.table__filters {
-    @apply .p-6 .bg-white;
-
-    form {
-        @apply .flex;
-    }
+.table__checkbox {
+    width: 30px;
 }
 
-.table__views,
 .table__header {
-    @apply .p-6 .bg-white;
+    @apply .section;
 }
+
+.table__footer {
+    @apply .flex;
+}
+
+.table__actions {}
 
 .table__buttons {
     @apply .text-right;
+
+    .button {
+        @apply .text-sm .py-1 .px-2;
+    }
+}
+
+.table__total {
+    @apply .text-sm .text-gray-400;
 }

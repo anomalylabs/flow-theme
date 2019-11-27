@@ -3,8 +3,10 @@
 
     >ul {
         >li {
+            @apply .mb-1;
+
             >a {
-                @apply .text-uppercase;
+                @apply .block .mb-1 .uppercase .text-gray-400 .font-bold;
 
                 i {
                     @apply .hidden;
@@ -13,7 +15,15 @@
 
             >ul {
                 >li {
-                    >a {}
+                    @apply .mb-1;
+
+                    >a {
+                        @apply .block .text-gray-700;
+
+                        &.active {
+                            @apply .font-bold .text-green-500;
+                        }
+                    }
                 }
             }
         }

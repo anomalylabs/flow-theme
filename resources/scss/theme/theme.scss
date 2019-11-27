@@ -7,6 +7,8 @@
 
 @import "../../../node_modules/noty/lib/noty.css";
 
+@import "root";
+
 @import "core/fonts";
 @import "core/sections";
 
@@ -18,7 +20,6 @@
 @import "components/buttons";
 @import "components/messages";
 @import "components/dropdowns";
-@import "components/breadcrumb";
 
 @import "layout/app";
 @import "layout/main";
