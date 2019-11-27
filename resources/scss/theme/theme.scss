@@ -7,7 +7,18 @@
 
 @import "../../../node_modules/noty/lib/noty.css";
 
-@import "fonts";
+@import "core/fonts";
+@import "core/sections";
+
+@import "components/tabs";
+@import "components/forms";
+@import "components/fields";
+@import "components/inputs";
+@import "components/tables";
+@import "components/buttons";
+@import "components/messages";
+@import "components/dropdowns";
+@import "components/breadcrumb";
 
 @import "layout/app";
 @import "layout/main";
@@ -16,13 +27,6 @@
 @import "layout/content";
 @import "layout/sidebar";
 
-@import "components/tabs";
-@import "components/forms";
-@import "components/tables";
-@import "components/buttons";
-@import "components/messages";
-@import "components/dropdowns";
-@import "components/breadcrumb";
 
 .svg-fill-white {
     path {

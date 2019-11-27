@@ -14,7 +14,7 @@
                         @foreach ($template->get('cp')->getSections()->root()->visible() as $section)
                             <li class="{{ $section->isHighlighted() ? 'text-gray-600 font-bold' : '' }} {{ $section->isActive() ? 'active' : '' }} {{ $section->getClass() }}">
 
-                                <a {!! html_attributes($section->getAttributes()) !!}>
+                                <a {!! html_attributes($section->attributes()) !!}>
                                     {{-- {{ section.icon ? icon(section.icon)|raw }} --}}
                                     {{ $section->getTitle() }}
 

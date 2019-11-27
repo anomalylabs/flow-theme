@@ -7,6 +7,18 @@
 
     table {
         @apply .w-full .text-left .bg-white;
+
+        thead {
+            th {
+                i {
+                    @apply .ml-1;
+
+                    &.fa-sort {
+                        @apply .text-gray-300;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -14,7 +26,7 @@
     @apply .p-5 .bg-white;
 
     form {
-        @apply .flex
+        @apply .flex;
     }
 }
 

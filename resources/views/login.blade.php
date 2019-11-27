@@ -26,7 +26,7 @@
 
                 
                     <div class="form__actions">
-                        <button class="btn btn-block btn-success" type="submit">
+                        <button class="button" type="submit">
                             {{ trans('anomaly.module.users::button.login') }}
                         </button>
                     </div>
