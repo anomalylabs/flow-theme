@@ -1,3 +1,21 @@
 #sidebar {
     @apply .w-56 .p-6 .bg-white .rounded;
+
+    >ul {
+        >li {
+            >a {
+                @apply .text-uppercase;
+
+                i {
+                    @apply .hidden;
+                }
+            }
+
+            >ul {
+                >li {
+                    >a {}
+                }
+            }
+        }
+    }
 }

@@ -1,15 +1,19 @@
 .field {
-    @apply .pb-3 .mb-3;
+    @apply .pb-6 .mb-6;
 
     >label {
-        @apply .font-bold .mb-2;
+        @apply .font-bold .inline-block .mb-3;
     }
 }
 
+.field_required {
+    @apply .text-red-500 .ml-1;
+}
+
 .field__instructions {
-    @apply .text-gray-500 .text-sm .mb-2;
+    @apply .text-gray-600 .mb-3;
 }
 
 .field__warning {
-    @apply .text-orange-500 .text-sm .mb-2;
+    @apply .text-orange-500 .mb-3;
 }

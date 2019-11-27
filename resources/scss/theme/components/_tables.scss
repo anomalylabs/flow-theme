@@ -3,7 +3,7 @@
 }
 
 .table__container {
-    @apply .p-5 .bg-white;
+    @apply .p-6 .bg-white;
 
     table {
         @apply .w-full .text-left .bg-white;
@@ -23,7 +23,7 @@
 }
 
 .table__filters {
-    @apply .p-5 .bg-white;
+    @apply .p-6 .bg-white;
 
     form {
         @apply .flex;
@@ -32,7 +32,7 @@
 
 .table__views,
 .table__header {
-    @apply .p-5 .bg-white;
+    @apply .p-6 .bg-white;
 }
 
 .table__buttons {

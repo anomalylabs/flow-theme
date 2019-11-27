@@ -9937,7 +9937,7 @@ video {
   }
 
   .sm\:shadow{
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
   }
 
   .sm\:shadow-md{
@@ -9969,7 +9969,7 @@ video {
   }
 
   .sm\:hover\:shadow:hover{
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
   }
 
   .sm\:hover\:shadow-md:hover{
@@ -10001,7 +10001,7 @@ video {
   }
 
   .sm\:focus\:shadow:focus{
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
   }
 
   .sm\:focus\:shadow-md:focus{
@@ -20713,7 +20713,7 @@ video {
   }
 
   .md\:shadow{
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
   }
 
   .md\:shadow-md{
@@ -20745,7 +20745,7 @@ video {
   }
 
   .md\:hover\:shadow:hover{
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
   }
 
   .md\:hover\:shadow-md:hover{
@@ -20777,7 +20777,7 @@ video {
   }
 
   .md\:focus\:shadow:focus{
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
   }
 
   .md\:focus\:shadow-md:focus{
@@ -31489,7 +31489,7 @@ video {
   }
 
   .lg\:shadow{
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
   }
 
   .lg\:shadow-md{
@@ -31521,7 +31521,7 @@ video {
   }
 
   .lg\:hover\:shadow:hover{
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
   }
 
   .lg\:hover\:shadow-md:hover{
@@ -31553,7 +31553,7 @@ video {
   }
 
   .lg\:focus\:shadow:focus{
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
   }
 
   .lg\:focus\:shadow-md:focus{
@@ -42265,7 +42265,7 @@ video {
   }
 
   .xl\:shadow{
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
   }
 
   .xl\:shadow-md{
@@ -42297,7 +42297,7 @@ video {
   }
 
   .xl\:hover\:shadow:hover{
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
   }
 
   .xl\:hover\:shadow-md:hover{
@@ -42329,7 +42329,7 @@ video {
   }
 
   .xl\:focus\:shadow:focus{
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
   }
 
   .xl\:focus\:shadow-md:focus{
@@ -53040,7 +53040,7 @@ video {
 }
 
 .shadow{
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
 }
 
 .shadow-md{
@@ -53072,7 +53072,7 @@ video {
 }
 
 .hover\:shadow:hover{
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
 }
 
 .hover\:shadow-md:hover{
@@ -53104,7 +53104,7 @@ video {
 }
 
 .focus\:shadow:focus{
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
 }
 
 .focus\:shadow-md:focus{
@@ -60537,6 +60537,7 @@ readers do not read off random characters that represent icons */
   padding: 1.25rem;
   background-color: #fff;
   margin-bottom: 1.25rem;
+  box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
 }
 
 .tabs {
@@ -60581,46 +60582,69 @@ readers do not read off random characters that represent icons */
   margin-bottom: 1.25rem;
 }
 
+.form__section {
+  background-color: #fff;
+}
+
 .form__controls {
   padding: 1.25rem;
   background-color: #fff;
   margin-bottom: 1.25rem;
+  box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
   display: -webkit-box;
   display: flex;
 }
 
+.form__actions {
+  width: 50%;
+}
+
+.form__buttons {
+  width: 50%;
+  text-align: right;
+}
+
 .field {
-  padding-bottom: 0.75rem;
-  margin-bottom: 0.75rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .field > label {
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.field_required {
+  color: #f56565;
+  margin-left: 0.25rem;
 }
 
 .field__instructions {
-  color: #a0aec0;
-  font-size: 0.875rem;
-  margin-bottom: 0.5rem;
+  color: #718096;
+  margin-bottom: 0.75rem;
 }
 
 .field__warning {
   color: #ed8936;
-  font-size: 0.875rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .input {
   border-radius: 0.25rem;
   width: 100%;
-  border-width: 1px;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  border-width: 2px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+  border-color: #cbd5e0;
   color: #4a5568;
+}
+
+.input:focus {
+  border-color: #4299e1;
+  outline: 0;
 }
 
 .table__container {
@@ -60685,7 +60709,7 @@ readers do not read off random characters that represent icons */
 .noty_bar {
   display: -webkit-box;
   display: flex;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
   -webkit-box-align: center;
           align-items: center;
   color: #fff;
@@ -60714,7 +60738,8 @@ readers do not read off random characters that represent icons */
 }
 
 .breadcrumb {
-  background: rgba(0, 0, 0, 0.01);
+  padding: 1.25rem;
+  background: rgba(33, 33, 33, 0.01);
 }
 
 .breadcrumb ol {
@@ -60777,6 +60802,9 @@ readers do not read off random characters that represent icons */
   flex-shrink: 0;
   color: #fff;
   margin-right: 1.5rem;
+  padding: 1.25rem;
+  margin: -1.25rem;
+  width: 14rem;
 }
 
 .header__brand svg {

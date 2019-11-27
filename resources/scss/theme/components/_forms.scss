@@ -1,11 +1,23 @@
 .form__wrapper {
-    @apply .m-5;
+    @apply .m-6;
 }
 
 .form__layout {
-    @apply .mb-5;
+    @apply .mb-6;
+}
+
+.form__section {
+    @apply .bg-white;
 }
 
 .form__controls {
     @apply .section .flex;
+}
+
+.form__actions {
+    @apply .w-1/2;
+}
+
+.form__buttons {
+    @apply .w-1/2 .text-right;
 }

@@ -3,37 +3,24 @@
     <ul>
         @foreach ($template->get('cp')->getNavigation() as $key => $navigation)
             <li data-slug="{{ $navigation->getSlug() }}">
-                <h4>
                 <a {!! html_attributes($navigation->attributes()) !!}>
                     {!! $navigation->icon() !!}
                     <span>{{ trans($navigation->getTitle()) }}</span>
                 </a>
-                </h4>
                 @if ($navigation->isActive())
                     <ul>
                         @foreach ($template->get('cp')->getSections()->root()->visible() as $section)
-                            <li class="{{ $section->isHighlighted() ? 'text-gray-600 font-bold' : '' }} {{ $section->isActive() ? 'active' : '' }} {{ $section->getClass() }}">
-
+                            <li>
                                 <a {!! html_attributes($section->attributes()) !!}>
-                                    {{-- {{ section.icon ? icon(section.icon)|raw }} --}}
+                                    {!! $section->icon() !!}
                                     {{ $section->getTitle() }}
 
                                     @if ($section->getLabel())    
-                                        <span class="tag tag-{{ $section->getContext() }}">
+                                        <span class="tag {{ $section->getContext() }}">
                                             {{ $section->getLabel() }}
                                         </span>
                                     @endif
                                 </a>
-
-                                {{-- @if ($section->highlighted)    
-                                    <ul>
-                                        @foreach ($section->children($section->slug)->visible() as $item)
-                                            
-                                        @endforeach
-                                            {{ self.sections(sections, child) }}
-                                        {% endfor %}
-                                    </ul>
-                                @endif --}}
                             </li>
                         @endforeach
                     </ul>

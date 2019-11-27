@@ -3,7 +3,7 @@
 }
 
 .header__brand {
-    @apply .flex .items-center .flex-shrink-0 .text-white .mr-6;
+    @apply .flex .items-center .flex-shrink-0 .text-white .mr-6 .p-5 .-m-5 .w-56;
 
     svg {
         width: 40px;
