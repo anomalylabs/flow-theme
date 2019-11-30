@@ -3,7 +3,7 @@
 }
 
 .table__filters {
-    @apply .section;
+    @apply .mb-6;
 
     form {
         @apply .flex;
@@ -11,7 +11,15 @@
 }
 
 .table__views {
-    @apply .section;
+    @apply .section .p-0 .px-3;
+
+    nav {
+        @apply .flex;
+
+        a {
+            @apply .py-6 .mx-3;
+        }
+    }
 }
 
 .table__container {

@@ -2,8 +2,10 @@
     @apply .w-56 .p-6 .bg-white .rounded;
 
     >ul {
+        @apply .mb-3;
+
         >li {
-            @apply .mb-1;
+            @apply .mb-3;
 
             >a {
                 @apply .block .mb-1 .uppercase .text-gray-400 .font-bold;

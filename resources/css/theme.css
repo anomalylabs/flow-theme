@@ -60964,10 +60964,7 @@ readers do not read off random characters that represent icons */
 }
 
 .table__filters {
-  padding: 1.25rem;
-  background-color: #fff;
-  margin-bottom: 1.25rem;
-  box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
+  margin-bottom: 1.5rem;
 }
 
 .table__filters form {
@@ -60980,6 +60977,21 @@ readers do not read off random characters that represent icons */
   background-color: #fff;
   margin-bottom: 1.25rem;
   box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
+  padding: 0;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.table__views nav {
+  display: -webkit-box;
+  display: flex;
+}
+
+.table__views nav a {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 .table__container {
@@ -61313,8 +61325,12 @@ readers do not read off random characters that represent icons */
   border-radius: 0.25rem;
 }
 
+#sidebar > ul {
+  margin-bottom: 0.75rem;
+}
+
 #sidebar > ul > li {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
 }
 
 #sidebar > ul > li > a {
