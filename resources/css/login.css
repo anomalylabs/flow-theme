@@ -60895,7 +60895,10 @@ readers do not read off random characters that represent icons */
 }
 
 .form__section {
+  padding: 1.25rem;
   background-color: #fff;
+  margin-bottom: 1.25rem;
+  box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
 }
 
 .form__controls {

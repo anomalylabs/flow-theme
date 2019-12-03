@@ -491,6 +491,6 @@ module.exports = {
     },
     plugins: [
         require('tailwindcss-transitions'),
-        require('tailwind-css-variables')
+        require('tailwind-css-variables'),
     ]
 };
