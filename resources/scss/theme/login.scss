@@ -6,6 +6,10 @@
 
 .login__left {
     @apply .w-1/2 .flex .justify-center .items-center .overflow-hidden .p-4 .px-3 .py-10 .bg-gray-200 .border-gray-400 .border-0 .border-r-2;
+
+    .field {
+        @apply .mb-0;
+    }
 }
 
 .login__right {
@@ -49,7 +53,7 @@
             @apply .shadow .appearance-none .border .rounded .w-full .py-2 .px-3 .text-gray-700 .leading-tight;
 
             &:focus {
-                @apply .outline-none .shadow-outline
+                @apply .outline-none .shadow-outline;
             }
         }
     }
