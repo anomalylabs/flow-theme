@@ -61002,11 +61002,17 @@ readers do not read off random characters that represent icons */
   background-color: #fff;
   margin-bottom: 1.25rem;
   box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
+  padding: 0;
 }
 
 .table__container table {
   width: 100%;
   text-align: left;
+}
+
+.table__container table thead th {
+  padding: 0.5rem;
+  color: #a0aec0;
 }
 
 .table__container table thead th i {
@@ -61015,6 +61021,15 @@ readers do not read off random characters that represent icons */
 
 .table__container table thead th i.fa-sort {
   color: #e2e8f0;
+}
+
+.table__container table thead th.\--sorting a {
+  color: #48bb78;
+}
+
+.table__container table tbody tr td,
+.table__container table tfoot tr td {
+  padding: 0.5rem;
 }
 
 .table__checkbox {

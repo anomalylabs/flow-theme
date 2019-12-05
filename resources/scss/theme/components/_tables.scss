@@ -23,19 +23,36 @@
 }
 
 .table__container {
-    @apply .section;
+    @apply .section .p-0;
 
     table {
         @apply .w-full .text-left;
 
         thead {
             th {
+                @apply .p-2 .text-gray-500;
+
                 i {
                     @apply .ml-1;
 
                     &.fa-sort {
                         @apply .text-gray-300;
                     }
+                }
+
+                &.--sorting {
+                    a {
+                        @apply .text-green-500;
+                    }
+                }
+            }
+        }
+
+        tbody,
+        tfoot {
+            tr {
+                td {
+                    @apply .p-2;
                 }
             }
         }
@@ -54,7 +71,8 @@
     @apply .flex;
 }
 
-.table__actions {}
+.table__actions {
+}
 
 .table__buttons {
     @apply .text-right;
