@@ -60864,7 +60864,7 @@ readers do not read off random characters that represent icons */
   color: #cbd5e0;
 }
 
-.tabs ul li a {
+.tabs ul li button {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1.5rem;
@@ -60872,17 +60872,21 @@ readers do not read off random characters that represent icons */
   display: inline-block;
 }
 
-.tabs ul li.active a {
+.tabs ul li button:active, .tabs ul li button:focus {
+  outline: 0;
+}
+
+.tabs ul li button.active {
   background-color: #fff;
 }
 
-.tabs > div {
+.tabs__pane {
   display: none;
   background-color: #fff;
   padding: 1.5rem;
 }
 
-.tabs > div.active {
+.tabs__pane.active {
   display: block;
 }
 

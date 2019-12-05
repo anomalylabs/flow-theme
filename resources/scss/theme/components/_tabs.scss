@@ -5,29 +5,30 @@
         @apply .flex .mb-6 .bg-gray-200 .text-gray-400;
 
         li {
-            a {
+            button {
                 @apply .py-2 .px-6 .inline-block;
 
-                &:hover {
-                }
-            }
+                &:hover {}
 
-            &.active {
-                a {
+                &:active,
+                &:focus {
+                    @apply .outline-none;
+                }
+
+                &.active {
                     @apply .bg-white;
 
-                    &:hover {
-                    }
+                    &:hover {}
                 }
             }
         }
     }
+}
 
-    > div {
-        @apply .hidden .bg-white .p-6;
+.tabs__pane {
+    @apply .hidden .bg-white .p-6;
 
-        &.active {
-            @apply .block;
-        }
+    &.active {
+        @apply .block;
     }
 }
