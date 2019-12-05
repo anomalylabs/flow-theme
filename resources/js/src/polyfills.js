@@ -55,3 +55,25 @@ if (!Element.prototype.closest) {
         });
     });
 })([Element.prototype, CharacterData.prototype, DocumentType.prototype]);
+
+/**
+ * Polyfill for new Event()
+ * for IE11 and maybe IE9+
+ */
+(function () {
+
+    if (typeof window.CustomEvent === "function") return false;
+
+    function CustomEvent(event, params) {
+        params = params || {
+            bubbles: false,
+            cancelable: false,
+            detail: null
+        };
+        var evt = document.createEvent('CustomEvent');
+        evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail);
+        return evt;
+    }
+
+    window.Event = CustomEvent;
+})();
