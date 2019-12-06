@@ -39,5 +39,23 @@ window.app = new Vue({
 
             target.click();
         });
+
+
+        /**
+         * Bind (Control || Command) + Space for
+         * jumping to the global search input.
+         */
+        Mousetrap.bind(['command+space', 'ctrl+space'], function (event) {
+
+            event.preventDefault();
+
+            let search = document.querySelector('.header__search input');
+
+            if (!search) {
+                return;
+            }
+
+            search.focus();
+        });
     });
 })(window, document);

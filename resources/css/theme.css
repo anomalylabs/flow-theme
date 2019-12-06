@@ -60966,6 +60966,12 @@ readers do not read off random characters that represent icons */
   outline: 0;
 }
 
+select.input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 .table__wrapper {
   margin: 1.5rem;
 }
