@@ -30,6 +30,13 @@ window.app = new Vue({
 
             event.preventDefault();
 
+            if (target.matches('input, textarea, select')) {
+
+                target.focus();
+
+                return;
+            }
+
             target.click();
         });
     });
