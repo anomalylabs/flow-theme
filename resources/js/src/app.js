@@ -13,16 +13,16 @@ window.app = new Vue({
 
 (function (window, document) {
 
-    let actions = Array.prototype.slice.call(
+    /**
+     * Bind keymaps.
+     */
+    let keymaps = Array.prototype.slice.call(
         document.querySelectorAll('[data-keymap]')
     );
 
-    actions.forEach(function (action) {
+    keymaps.forEach(function (target) {
 
-        /**
-         * !:focus + ESC
-         */
-        Mousetrap.bind([action.dataset.keymap], function (event) {
+        Mousetrap.bind([target.dataset.keymap], function (event) {
 
             if (!event.target.matches('body')) {
                 return;
@@ -30,15 +30,7 @@ window.app = new Vue({
 
             event.preventDefault();
 
-            if (action.matches('input, textarea, select')) {
-
-                action.focus();
-
-                return;
-            }
-
-            action.click();
+            target.click();
         });
-
     });
 })(window, document);
