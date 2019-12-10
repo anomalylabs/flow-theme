@@ -7,7 +7,7 @@
 .login__left {
     @apply .w-1/2 .flex .justify-center .items-center .overflow-hidden .p-4 .px-3 .py-10 .bg-gray-200 .border-gray-400 .border-0 .border-r-2;
 
-    .field {
+    .form__fieldset {
         @apply .mb-0;
     }
 }

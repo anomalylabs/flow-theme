@@ -61438,7 +61438,7 @@ button {
   border-right-width: 2px;
 }
 
-.login__left .field {
+.login__left .form__fieldset {
   margin-bottom: 0;
 }
 
