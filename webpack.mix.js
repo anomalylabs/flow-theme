@@ -22,6 +22,11 @@ mix
     .js([
         'resources/js/src/polyfills.js',
         'resources/js/src/app.js',
+
+        'resources/js/src/keyboard.js',
+        'resources/js/src/confirm.js',
+        'resources/js/src/prompt.js',
+        'resources/js/src/modal.js',
     ], 'resources/js/theme.js')
     .options({
         processCssUrls: false,
