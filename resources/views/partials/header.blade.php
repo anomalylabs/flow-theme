@@ -1,11 +1,11 @@
 <header id="header">
-    
+
     <div class="header__brand">
         {!! img('anomaly.theme.flow::img/logo.svg')->data() !!}
         <span>{{ config('app.name') }}</span>
     </div>
 
-    @include('anomaly.theme.flow::partials/search')
+    @include('anomaly.theme.flow::partials.search')
 
     <div class="header__toggle">
         <button>
