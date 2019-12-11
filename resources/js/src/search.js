@@ -16,6 +16,7 @@
      */
     let close = function (search) {
         search.classList.remove('-open');
+        search.querySelector('form input').value = '';
     }
 
     /**

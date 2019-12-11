@@ -28,6 +28,10 @@
 
     ul {
         display: none;
+
+        .selected {
+            font-weight: bold;
+        }
     }
 
     &.-open {
