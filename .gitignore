@@ -8,4 +8,6 @@ package-lock.json
 /vendor
 /coverage
 /node_modules
-resources/js/src-old
+/resources/js/src-old
+/yarn.lock
+/yarn.errors
