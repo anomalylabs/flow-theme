@@ -61492,6 +61492,18 @@ select.input {
   padding: 1.5rem;
 }
 
+.header__search ul {
+  display: none;
+}
+
+.header__search.-open {
+  background: red;
+}
+
+.header__search.-open ul {
+  display: inherit;
+}
+
 .header__search input[type=search] {
   border-radius: 0.25rem;
   width: 100%;

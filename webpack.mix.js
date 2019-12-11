@@ -26,6 +26,7 @@ mix
         'resources/js/src/keyboard.js',
         'resources/js/src/confirm.js',
         'resources/js/src/prompt.js',
+        'resources/js/src/search.js',
         'resources/js/src/modal.js',
     ], 'resources/js/theme.js')
     .options({

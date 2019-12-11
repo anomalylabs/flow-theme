@@ -5,9 +5,7 @@
         <span>{{ config('app.name') }}</span>
     </div>
 
-    <div class="header__search">
-        <input type="search" placeholder="{{ trans('anomaly.theme.flow::control_panel.search_input') }}">
-    </div>
+    @include('anomaly.theme.flow::partials/search')
 
     <div class="header__toggle">
         <button>

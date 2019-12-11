@@ -1,7 +1,7 @@
 #header {
     @apply .flex .items-center .flex-wrap .bg-white;
 
-    >nav {
+    > nav {
         @apply .p-6 .flex-grow .text-right;
     }
 }
@@ -25,6 +25,18 @@
 
 .header__search {
     @apply .p-6;
+
+    ul {
+        display: none;
+    }
+
+    &.-open {
+        background: red;
+
+        ul {
+            display: inherit;
+        }
+    }
 
     input[type="search"] {
         @apply .input .shadow-none .border-none .bg-gray-100;
@@ -50,7 +62,6 @@
     }
 
     &.-open {
-
         button.-open {
             @apply .hidden;
         }
