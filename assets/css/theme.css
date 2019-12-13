@@ -61335,10 +61335,6 @@ select.input {
   color: #48bb78;
 }
 
-.table__container table tbody tr:hover {
-  background: #efefef;
-}
-
 .table__container table tbody tr td,
 .table__container table tfoot tr td {
   padding: 0.5rem;
@@ -61498,10 +61494,6 @@ select.input {
 
 .header__search ul {
   display: none;
-}
-
-.header__search ul .selected {
-  font-weight: bold;
 }
 
 .header__search.-open {
