@@ -9,7 +9,7 @@
                     type: 'success',
                     theme: 'streams',
                     layout: 'bottomRight',
-                    text: '{{ trans($message) }}',
+                    text: '{{ $message["text"] }}',
                 }).show();
             })(window, document);
         </script>
@@ -25,7 +25,7 @@
                         timeout: 5000,
                         theme: 'streams',
                         layout: 'bottomRight',
-                        text: '{{ trans($message) }}',
+                        text: '{{ $message["text"] }}',
                     }).show();
                 })(window, document);
             </script>
@@ -41,7 +41,7 @@
                         type: 'warning',
                         theme: 'streams',
                         layout: 'bottomRight',
-                        text: '{{ trans($message) }}',
+                        text: '{{ $message["text"] }}',
                     }).show();
                 })(window, document);
             </script>
@@ -57,7 +57,7 @@
                         timeout: 5000,
                         theme: 'streams',
                         layout: 'bottomRight',
-                        text: '{{ trans($message) }}',
+                        text: '{{ $message["text"] }}',
                     }).show();
                 })(window, document);
             </script>
