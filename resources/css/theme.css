@@ -61536,6 +61536,10 @@ select.input {
   display: none;
 }
 
+.header__search ul .selected {
+  font-weight: bold;
+}
+
 .header__search.-open {
   background: red;
 }
