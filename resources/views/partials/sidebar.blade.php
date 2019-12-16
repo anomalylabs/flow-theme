@@ -1,30 +1,31 @@
 <aside id="sidebar">
 
     <ul>
-        @foreach ($template->get('cp')->getNavigation() as $key => $navigation)
-            <li data-slug="{{ $navigation->getSlug() }}">
-                <a {!! html_attributes($navigation->attributes()) !!}>
-                    {!! $navigation->icon() !!}
-                    <span>{{ trans($navigation->getTitle()) }}</span>
+        @foreach ($template->get('cp')->getNavigation() as $key => $item)
+            <li data-slug="{{ $item->getSlug() }}">
+                
+                <a {!! html_attributes($item->attributes()) !!}>
+                    {!! $item->icon() !!}
+                    <span>{{ trans($item->getTitle()) }}</span>
                 </a>
-                @if ($navigation->isActive())
-                    <ul>
-                        @foreach ($template->get('cp')->getSections()->root()->visible() as $section)
-                            <li>
-                                <a {!! html_attributes($section->attributes()) !!}>
-                                    {!! $section->icon() !!}
-                                    {{ $section->getTitle() }}
+                
+                <ul class="<?php $item->isActive() ? 'active' : null; ?>">
+                    @foreach ($item->getSections()->root()->visible() as $section)
+                        <li>
+                            <a {!! html_attributes($section->attributes()) !!}>
+                                {!! $section->icon() !!}
+                                {{ $section->getTitle() }}
 
-                                    @if ($section->getLabel())    
-                                        <span class="tag {{ $section->getContext() }}">
-                                            {{ $section->getLabel() }}
-                                        </span>
-                                    @endif
-                                </a>
-                            </li>
-                        @endforeach
-                    </ul>
-                @endif
+                                @if ($section->getLabel())    
+                                    <span class="tag {{ $section->getContext() }}">
+                                        {{ $section->getLabel() }}
+                                    </span>
+                                @endif
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
+                
             </li>
         @endforeach
     </ul>
