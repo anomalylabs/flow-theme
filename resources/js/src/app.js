@@ -1,8 +1,4 @@
-import Vue from 'vue';
-
-window.app = new Vue({
-    el: '#app'
-});
+window.app = {};
 
 app.mousetrap = require('mousetrap');
 app.swal = require('sweetalert');
