@@ -77,7 +77,7 @@
         /**
          * Open a modal with the loading content.
          */
-        let modal = new app.tingle.modal({
+        window.modal = new app.tingle.modal({
             closeMethods: ['overlay', 'button', 'escape'],
             closeLabel: 'Close',
         });
@@ -117,6 +117,18 @@
             }).catch(function (error) {
                 alert(error);
             });
+    });
+
+
+    document.addEventListener('click', function (event) {
+
+        if (!event.target.matches('[data-modal="close"]')) {
+            return;
+        }
+
+        event.preventDefault();
+
+        modal.close();
     });
 
 })(window, document);
