@@ -114,6 +114,9 @@
                 if (first = inputs.find((input) => (input.offsetWidth > 0 && input.offsetHeight > 0))) {
                     first.focus();
                 }
+
+                modal.checkOverflow();
+
             }).catch(function (error) {
                 alert(error);
             });
