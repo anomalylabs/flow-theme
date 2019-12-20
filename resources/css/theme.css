@@ -61758,6 +61758,10 @@ select.input {
   color: #48bb78;
 }
 
+.tingle-modal-box__content {
+  padding: 0;
+}
+
 .svg-fill-white path {
   fill: white;
 }

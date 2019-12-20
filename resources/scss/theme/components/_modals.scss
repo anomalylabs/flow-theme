@@ -1,14 +1,13 @@
-.modal {}
+.modal {
+}
 
 .modal__filter {
-
     input {
         @apply .input;
     }
 
     ul {
         li {
-
             &.selected {
                 @apply .bg-gray-300;
             }
