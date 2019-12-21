@@ -35,7 +35,6 @@
 {!!  assets()->script('public::assets/js/vue.js')  !!}
 {!!  assets()->script('public::assets/js/anomaly__streams_platform.chunk.vendors.js')  !!}
 {!!  assets()->script('public::assets/js/anomaly__streams_platform.js')  !!}
-{!!  assets()->script('public::assets/js/anomaly__slug_field_type.js')  !!}
 
 <script>
 (function () {
@@ -45,7 +44,6 @@
     app.bootstrap({
             providers: [
                 window.pyro.anomaly__streams_platform.PlatformServiceProvider,
-                window.pyro.anomaly__slug_field_type.SlugFieldTypeServiceProvider,
             ],
             config   : {},
             data     : {},
