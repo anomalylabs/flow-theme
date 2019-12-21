@@ -2,7 +2,7 @@
 <html lang="{{ config('app.locale') }}">
 
 <head>
-    @include('anomaly.theme.flow::partials/metadata')
+    @include('anomaly.theme.flow::partials.metadata')
 </head>
 
 <body>
@@ -11,8 +11,8 @@
     @yield('content')
 </div>
 
-@include('anomaly.theme.flow::partials/assets')
-@include('anomaly.theme.flow::partials/messages')
+@include('anomaly.theme.flow::partials.assets')
+@include('anomaly.theme.flow::partials.messages')
 
 </body>
 </html>

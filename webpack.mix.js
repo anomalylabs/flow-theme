@@ -12,6 +12,31 @@ const tailwindcss = require('tailwindcss');
  |
  */
 
+/** @var {Configuration} webpackConfig */
+const webpackConfig = {
+    output   : {
+        libraryTarget: 'window',
+        // all exports from index.js will be available under:
+        // window.pyrocms.flow_theme
+        library      : ['pyrocms', 'flow_theme']
+    },
+    externals: {
+        // '[import name]' : '[global (window) name]'
+        // External libraries will not be bundle'd into theme.js and should be available globally (so other scripts can use it as well)
+        // So include these scripts with Asset
+        'vue'       : 'Vue',
+        'sweetalert': 'Swal',
+        'tingle.js' : 'tingle',
+        'mousetrap' : 'Mousetrap',
+
+        // In other scripts you could use something like this to gain access to this script it's exports
+        // so something like `import {app} from '@pyrocms/flow_theme'`
+
+        // '@pyrocms/flow_theme': ['pyrocms','flow_theme']
+    }
+};
+
+
 mix
     .copyDirectory(
         'node_modules/@fortawesome/fontawesome-free/webfonts',
@@ -19,22 +44,14 @@ mix
     )
     .sass('resources/scss/theme/theme.scss', 'resources/css')
     .sass('resources/scss/theme/login.scss', 'resources/css')
-    .js([
-        'resources/js/src/polyfills.js',
-        'resources/js/src/app.js',
-
-        'resources/js/src/keyboard.js',
-        'resources/js/src/confirm.js',
-        'resources/js/src/prompt.js',
-        'resources/js/src/search.js',
-        'resources/js/src/modal.js',
-    ], 'resources/js/theme.js')
+    .js('resources/js/src/index.js', 'resources/js/theme.js')
     .options({
         processCssUrls: false,
-        postCss: [
+        postCss       : [
             tailwindcss('./tailwind.config.js'),
         ]
     })
+    .webpackConfig(webpackConfig)
     .sourceMaps();
 
 // Full API
