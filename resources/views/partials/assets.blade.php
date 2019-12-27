@@ -8,5 +8,3 @@
 @foreach (assets()->styles("styles.css", ["min"]) as $style)
     {!! $style !!}
 @endforeach
-
-@include('streams::init_platform')

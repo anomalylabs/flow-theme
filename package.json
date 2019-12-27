@@ -10,15 +10,11 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "@fortawesome/fontawesome-free": "^5.11.2",
         "axios": "^0.19",
         "cross-env": "^5.1",
         "laravel-mix": "^4.0",
         "lodash": "^4.17",
         "mousetrap": "^1.6.3",
-        "sweetalert": "^2.1.2",
-        "tingle.js": "^0.15.2",
-        "noty": "^3.2.0-beta",
         "popper.js": "^1.12",
         "postcss": "^7.0.23",
         "sass": "^1.23.3",

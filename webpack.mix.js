@@ -13,22 +13,8 @@ const tailwindcss = require('tailwindcss');
  */
 
 mix
-    .copyDirectory(
-        'node_modules/@fortawesome/fontawesome-free/webfonts',
-        'resources/fonts/fontawesome'
-    )
     .sass('resources/scss/theme/theme.scss', 'resources/css')
     .sass('resources/scss/theme/login.scss', 'resources/css')
-    .js([
-        'resources/js/src/polyfills.js',
-        'resources/js/src/app.js',
-
-        'resources/js/src/keyboard.js',
-        'resources/js/src/confirm.js',
-        'resources/js/src/prompt.js',
-        'resources/js/src/search.js',
-        'resources/js/src/modal.js',
-    ], 'resources/js/theme.js')
     .options({
         processCssUrls: false,
         postCss: [
