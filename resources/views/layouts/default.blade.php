@@ -32,31 +32,5 @@
 @include('anomaly.theme.flow::partials.assets')
 @include('anomaly.theme.flow::partials.messages')
 
-{!!  assets()->script('public::assets/js/vue.js')  !!}
-{!!  assets()->script('public::assets/js/anomaly__streams_platform.chunk.vendors.js')  !!}
-{!!  assets()->script('public::assets/js/anomaly__streams_platform.js')  !!}
-
-<script>
-(function () {
-
-    var app = window.pyro.anomaly__streams_platform.app;
-
-    app.bootstrap({
-            providers: [
-                window.pyro.anomaly__streams_platform.PlatformServiceProvider,
-            ],
-            config   : {},
-            data     : {},
-        })
-        .then(app.boot)
-        .then(function (app) {
-            console.log('App Start')
-            return app.start('#app');
-        })
-        .catch(app.error);
-}());
-</script>
-
-
 </body>
 </html>
