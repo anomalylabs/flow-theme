@@ -15,7 +15,9 @@ const tailwindcss = require('tailwindcss');
 mix
     .sass('resources/scss/theme/theme.scss', 'assets/css')
     .sass('resources/scss/theme/login.scss', 'assets/css')
-    .js('resources/js/search.js', 'resources/css')
+    .js([
+        'resources/js/search.js'
+    ], 'resources/css/theme.js')
     .copyDirectory('resources/img', 'assets/img')
     .options({
         processCssUrls: false,

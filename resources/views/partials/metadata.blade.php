@@ -24,6 +24,7 @@
 
 {{ constants() }}
 
-{!! assets()->style("public::vendor/anomaly/theme/flow/css/theme.css", ["min", "parse"]) !!}
+{!! assets()->style('public::vendor/anomaly/theme/flow/css/theme.css') !!}
+{!! assets()->style('public::vendor/anomaly/core/css/fonts.css') !!}
 
 {{ $template->includes->render('head') }}
