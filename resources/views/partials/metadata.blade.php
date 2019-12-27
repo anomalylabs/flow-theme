@@ -20,10 +20,10 @@
     @endif
 </title>
 
-{{ favicons("anomaly.theme.flow::img/favicon.png") }}
+{{ favicons("public::vendor/anomaly/theme/flow/img/favicon.png") }}
 
 {{ constants() }}
 
-{!! assets()->style("anomaly.theme.flow::css/theme.css", ["min", "parse"]) !!}
+{!! assets()->style("public::vendor/anomaly/theme/flow/css/theme.css", ["min", "parse"]) !!}
 
 {{ $template->includes->render('head') }}
