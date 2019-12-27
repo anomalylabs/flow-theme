@@ -1,4 +1,4 @@
-(function (window, document) {
+(function () {
 
     /**
      * Open the search component.
@@ -16,6 +16,7 @@
      */
     let close = function (search) {
         search.classList.remove('-open');
+        search.querySelector('form input').value = '';
     }
 
     /**
@@ -262,4 +263,4 @@
         close(document.querySelector('.header__search'));
     }, true);
 
-})(window, document);
+});

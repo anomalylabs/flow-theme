@@ -13,8 +13,10 @@ const tailwindcss = require('tailwindcss');
  */
 
 mix
-    .sass('resources/scss/theme/theme.scss', 'resources/css')
-    .sass('resources/scss/theme/login.scss', 'resources/css')
+    .sass('resources/scss/theme/theme.scss', 'assets/css')
+    .sass('resources/scss/theme/login.scss', 'assets/css')
+    .js('resources/js/search.js', 'resources/css')
+    .copyDirectory('resources/img', 'assets/img')
     .options({
         processCssUrls: false,
         postCss: [
