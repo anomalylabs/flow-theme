@@ -17,7 +17,7 @@ mix
     .sass('resources/scss/theme/login.scss', 'assets/css')
     .js([
         'resources/js/search.js'
-    ], 'resources/css/theme.js')
+    ], 'assets/js/theme.js')
     .copyDirectory('resources/img', 'assets/img')
     .options({
         processCssUrls: false,
