@@ -3,7 +3,7 @@
     @if (app('messages')->has('success'))
         @foreach (app('messages')->pull('success') as $message)
         <script>
-            (function (window, document) {
+            (function () {
                 new Noty({
                     timeout: 5000,
                     type: 'success',
@@ -11,7 +11,7 @@
                     layout: 'bottomRight',
                     text: '{{ trans($message) }}',
                 }).show();
-            })(window, document);
+            })();
         </script>
         @endforeach
     @endif
@@ -19,7 +19,7 @@
     @if (app('messages')->has('info'))
         @foreach (app('messages')->pull('info') as $message)
             <script>
-                (function (window, document) {
+                (function () {
                     new Noty({
                         type: 'info',
                         timeout: 5000,
@@ -27,7 +27,7 @@
                         layout: 'bottomRight',
                         text: '{{ trans($message) }}',
                     }).show();
-                })(window, document);
+                })();
             </script>
         @endforeach
     @endif
@@ -35,7 +35,7 @@
     @if (app('messages')->has('warning'))
         @foreach (app('messages')->pull('warning') as $message)
             <script>
-                (function (window, document) {
+                (function () {
                     new Noty({
                         timeout: 5000,
                         type: 'warning',
@@ -43,7 +43,7 @@
                         layout: 'bottomRight',
                         text: '{{ trans($message) }}',
                     }).show();
-                })(window, document);
+                })();
             </script>
         @endforeach
     @endif
@@ -51,7 +51,7 @@
     @if (app('messages')->has('error'))
         @foreach (app('messages')->pull('error') as $message)
             <script>
-                (function (window, document) {
+                (function () {
                     new Noty({
                         type: 'error',
                         timeout: 5000,
@@ -59,7 +59,7 @@
                         layout: 'bottomRight',
                         text: '{{ trans($message) }}',
                     }).show();
-                })(window, document);
+                })();
             </script>
         @endforeach
     @endif
