@@ -1,3 +1,4 @@
+{!! assets()->style('public::vendor/anomaly/core/js/cp.js') !!}
 
 @foreach (assets()->scripts("scripts.js", ["min"]) as $script)
     {!! $script !!}
