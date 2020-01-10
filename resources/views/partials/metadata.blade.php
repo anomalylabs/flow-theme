@@ -25,6 +25,6 @@
 {{ constants() }}
 
 {!! assets()->style('public::vendor/anomaly/theme/flow/css/theme.css') !!}
-{!! assets()->style('public::vendor/anomaly/core/css/cp.css') !!}
+
 
 {{ $template->includes->render('head') }}
