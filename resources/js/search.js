@@ -241,7 +241,7 @@
      * Listen for focus.
      */
     document.addEventListener('focus', function (event) {
-        console.log(event.target);
+
         if (!event.target.matches('.header__search form input')) {
             return;
         }
