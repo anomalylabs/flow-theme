@@ -537,8 +537,6 @@
     transform: scale(1);
   }
 }
-@charset "UTF-8";
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -55369,7 +55367,7 @@ video {
  */
 
 @font-face {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
 
   font-style: normal;
 
@@ -55383,7 +55381,7 @@ video {
 }
 
 .far {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-weight: 400;
 }
 
@@ -55393,7 +55391,7 @@ video {
  */
 
 @font-face {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
 
   font-style: normal;
 
@@ -55408,12 +55406,12 @@ video {
 
 .fa,
 .fas {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
 }
 
 @font-face {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
 
   font-style: normal;
 
@@ -55427,7 +55425,7 @@ video {
 }
 
 @font-face {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
 
   font-style: normal;
 
@@ -55456,17 +55454,17 @@ video {
 }
 
 .fa-lg {
-  font-size: 1.3333333333em;
+  font-size: 1.33333333em;
   line-height: 0.75em;
-  vertical-align: -0.0667em;
+  vertical-align: -.0667em;
 }
 
 .fa-xs {
-  font-size: 0.75em;
+  font-size: .75em;
 }
 
 .fa-sm {
-  font-size: 0.875em;
+  font-size: .875em;
 }
 
 .fa-1x {
@@ -61290,6 +61288,17 @@ select.input {
           appearance: none;
 }
 
+.tingle-modal-box {
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  position: absolute;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: unset;
+}
+
 .tingle-modal-box__content {
   padding: 0 !important;
 }
@@ -61495,7 +61504,7 @@ select.input {
   -webkit-box-align: center;
           align-items: center;
   flex-wrap: wrap;
-  background-color: #fff;
+  background: #EFF3F6;
 }
 
 #header > nav {
@@ -61552,7 +61561,7 @@ select.input {
   display: inherit;
 }
 
-.header__search input[type=search] {
+.header__search input[type="search"] {
   border-radius: 0.25rem;
   width: 100%;
   border-width: 2px;
@@ -61568,7 +61577,7 @@ select.input {
   width: 25rem;
 }
 
-.header__search input[type=search]:focus:focus {
+.header__search input[type="search"]:focus:focus {
   border-color: #4299e1;
   outline: 0;
 }
@@ -61718,14 +61727,13 @@ select.input {
 #content {
   -webkit-box-flex: 1;
           flex-grow: 1;
-  background-color: #f7fafc;
+  background: #EFF3F6;
 }
 
 #sidebar {
   width: 14rem;
   padding: 1.5rem;
-  background-color: #fff;
-  border-radius: 0.25rem;
+  background: #EFF3F6;
 }
 
 #sidebar > ul {
@@ -61739,13 +61747,17 @@ select.input {
 #sidebar > ul > li > a {
   display: block;
   margin-bottom: 0.25rem;
-  text-transform: uppercase;
   color: #cbd5e0;
   font-weight: 700;
 }
 
-#sidebar > ul > li > a i {
-  display: none;
+#sidebar > ul > li > a.active {
+  font-weight: 700;
+  color: #4299e1;
+}
+
+#sidebar > ul > li > ul {
+  margin-left: 1.5rem;
 }
 
 #sidebar > ul > li > ul > li {
@@ -61759,7 +61771,7 @@ select.input {
 
 #sidebar > ul > li > ul > li > a.active {
   font-weight: 700;
-  color: #48bb78;
+  color: #4299e1;
 }
 
 .tingle-modal-box__content {

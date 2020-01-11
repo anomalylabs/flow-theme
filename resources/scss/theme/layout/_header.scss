@@ -1,7 +1,8 @@
 #header {
-    @apply .flex .items-center .flex-wrap .bg-white;
+    @apply .flex .items-center .flex-wrap;
+    background: #EFF3F6;
 
-    > nav {
+    >nav {
         @apply .p-6 .flex-grow .text-right;
     }
 }

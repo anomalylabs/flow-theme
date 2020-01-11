@@ -1,3 +1,14 @@
+.tingle-modal-box {
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: unset;
+}
+
 .tingle-modal-box__content {
     padding: 0 !important;
 }
