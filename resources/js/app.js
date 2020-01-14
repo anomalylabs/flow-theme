@@ -5,8 +5,9 @@ import Messages from "./components/Messages";
 // Let's do it the way Laravel does it for now.
 window.Vue = require('vue');
 
-// Components
+// Global Components - their tag can be used anywhere on the website within #app 
 Vue.component('messages', Messages);
+
 
 // Globally register it.
 Vue.use(VueNoty)

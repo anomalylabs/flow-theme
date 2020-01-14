@@ -8,12 +8,13 @@
         $form = form('login')->redirect('admin')->get();
     @endphp
 
+
     <div class="login__wrapper">
         <div class="login__left">
 
             <div class="form__wrapper">
                 {!! $form->open(['class' => 'fadeIn fast animated']) !!}
-
+                
                     <div class="form__fieldset">
                         @if (config('anomaly.module.users::login', 'email') == 'username')
                             {!! $form->fields->username->setPlaceholder($form->fields->username->label).addAttribute('autofocus', 1)->render() !!}
@@ -27,7 +28,7 @@
                     </div>
 
                     <div class="form__actions">
-                        <button class="button" type="submit">
+                        <button class="bg-teal-500 hover:bg-teal-600 focus:outline-none focus:shadow-outline" type="submit">
                             {{ trans('anomaly.module.users::button.login') }}
                         </button>
                     </div>
