@@ -1,7 +1,7 @@
 <header id="header">
 
     <div class="header__brand">
-        {!! img('anomaly.theme.flow::img/logo.svg')->data() !!}
+        {{--!! img('anomaly.theme.flow::img/logo.svg')->data() !!--}}
         <span>{{ config('app.name') }}</span>
     </div>
 

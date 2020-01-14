@@ -26,11 +26,12 @@
     </div>
 
     @include('anomaly.theme.flow::partials.footer')
-
+    @include('anomaly.theme.flow::partials.messages')
 </div>
 
+
 @include('anomaly.theme.flow::partials.assets')
-@include('anomaly.theme.flow::partials.messages')
+
 
 </body>
 </html>

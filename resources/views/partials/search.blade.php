@@ -4,6 +4,7 @@
         <input type="search" placeholder="{{ trans('anomaly.theme.flow::control_panel.search_input') }}">
     </form>
 
+
     <ul>
         @foreach ($template->get('cp')->getNavigation() as $key => $navigation)
             <li>

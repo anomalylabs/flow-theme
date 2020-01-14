@@ -23,7 +23,7 @@ mix
         ]
     })
     .copy('./assets/js/app.js', '../../../public/js/app.js')
-    .copy('./assets/css/theme.css', '../../../public/js/theme.css')
+    .copy('./assets/css/theme.css', '../../../public/css/theme.css')
     .sourceMaps();
 
 

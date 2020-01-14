@@ -9,10 +9,12 @@
 
 <div id="app">
     @yield('content')
+    @include('anomaly.theme.flow::partials.messages')
 </div>
 
+
 @include('anomaly.theme.flow::partials.assets')
-@include('anomaly.theme.flow::partials.messages')
+
 
 </body>
 </html>

@@ -47,7 +47,7 @@
         </div>
         <div class="login__right">
             <div class="login__brand">
-                {!! img('anomaly.theme.flow::img/logo.svg')->data() !!}
+                {{--!! img('anomaly.theme.flow::img/logo.svg')->data() !!--}}
             </div>
         </div>
     </div>
