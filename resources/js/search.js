@@ -1,5 +1,7 @@
-(function () {
-
+//TODO: Vue component instead
+export default (function () {
+    
+    
     /**
      * Open the search component.
      * 
@@ -172,70 +174,70 @@
      * Listen for down arrow to
      * move the item selection.
      */
-    app.mousetrap.bind(['up', 'down'], function (event) {
+    // app.mousetrap.bind(['up', 'down'], function (event) {
 
-        if (!event.target.matches('.header__search form input')) {
-            return;
-        }
+    //     if (!event.target.matches('.header__search form input')) {
+    //         return;
+    //     }
 
-        event.preventDefault();
+    //     event.preventDefault();
 
-        let search = event.target.closest('.header__search');
+    //     let search = event.target.closest('.header__search');
 
-        let [items, selected] = setup(search);
+    //     let [items, selected] = setup(search);
 
-        let visible = visibility(items);
+    //     let visible = visibility(items);
 
-        if (selected) {
+    //     if (selected) {
 
-            /**
-             * If we have a selection then
-             * push to the next visible option.
-             */
-            visible.some((item, i) => {
-                if (item == selected && item.offsetWidth > 0 && item.offsetHeight > 0) {
+    //         /**
+    //          * If we have a selection then
+    //          * push to the next visible option.
+    //          */
+    //         visible.some((item, i) => {
+    //             if (item == selected && item.offsetWidth > 0 && item.offsetHeight > 0) {
 
-                    // UP- (prev) | DOWN+ (next)
-                    var index = event.which == 40 ? i + 1 : i - 1; // 40 = DOWN
+    //                 // UP- (prev) | DOWN+ (next)
+    //                 var index = event.which == 40 ? i + 1 : i - 1; // 40 = DOWN
 
-                    if ((target = visible[index]) != undefined) {
+    //                 if ((target = visible[index]) != undefined) {
 
-                        clearSelection(visible);
-                        select(target);
+    //                     clearSelection(visible);
+    //                     select(target);
 
-                        return true;
-                    }
-                }
-            });
+    //                     return true;
+    //                 }
+    //             }
+    //         });
 
-            return;
-        }
+    //         return;
+    //     }
 
-        /**
-         * Select the first visible by default.
-         */
-        if (visible[0] && (!selected || !(selected.offsetWidth > 0 && selected.offsetHeight > 0))) {
-            clearSelection(items);
-            select(visible[0]);
-        }
-    });
+    //     /**
+    //      * Select the first visible by default.
+    //      */
+    //     if (visible[0] && (!selected || !(selected.offsetWidth > 0 && selected.offsetHeight > 0))) {
+    //         clearSelection(items);
+    //         select(visible[0]);
+    //     }
+    // });
 
-    /**
-     * Bind (Control || Command) + Space for
-     * jumping to the global search input.
-     */
-    app.mousetrap.bind(['command+space', 'ctrl+space'], function (event) {
+    // /**
+    //  * Bind (Control || Command) + Space for
+    //  * jumping to the global search input.
+    //  */
+    // app.mousetrap.bind(['command+space', 'ctrl+space'], function (event) {
 
-        event.preventDefault();
+    //     event.preventDefault();
 
-        let search = document.querySelector('.header__search input');
+    //     let search = document.querySelector('.header__search input');
 
-        if (!search) {
-            return;
-        }
+    //     if (!search) {
+    //         return;
+    //     }
 
-        search.focus();
-    });
+    //     search.focus();
+    // });
 
     /**
      * Listen for focus.
@@ -265,4 +267,5 @@
         close(document.querySelector('.header__search'));
     }, true);
 
-})();
+
+}());
