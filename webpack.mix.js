@@ -14,8 +14,8 @@ const tailwindcss = require('tailwindcss');
 
 mix
     .disableSuccessNotifications()
-    .js('./resources/js/app.js', 'js')
-    .sass('./resources/sass/theme.scss', 'css')
+    .js('./resources/js/app.js', './assets/js')
+    .sass('./resources/sass/theme.scss', './assets/css')
     .options({
         processCssUrls: false,
         postCss: [

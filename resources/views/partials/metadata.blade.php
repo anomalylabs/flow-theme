@@ -20,7 +20,7 @@
     @endif
 </title>
 
-{-- { favicons("public::vendor/anomaly/theme/flow/img/favicon.png") } --}
+{{-- { favicons("public::vendor/anomaly/theme/flow/img/favicon.png") } --}}
 
 {{ constants() }}
 
