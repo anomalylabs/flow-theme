@@ -1,6 +1,6 @@
 let mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss');
-
+require('laravel-mix-purgecss');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -14,7 +14,7 @@ const tailwindcss = require('tailwindcss');
 
 mix
     .disableSuccessNotifications()
-    .js('./resources/js/app.js', './assets/js')
+    .js('./resources/js/app.js',       './assets/js')
     .sass('./resources/sass/theme.scss', './assets/css')
     .options({
         processCssUrls: false,
@@ -22,7 +22,37 @@ mix
             tailwindcss('./tailwind.config.js'),
         ]
     })
+    .copy('./assets/js/app.js', '../../../public/js/app.js')
+    .copy('./assets/css/theme.css', '../../../public/js/theme.css')
     .sourceMaps();
+
+
+   // We need to use purge css later
+
+//    if (mix.inProduction()) {
+//     mix.purgeCss({
+//         enabled: true,
+
+//         whitelist: [
+//             'o-navbar--shadow',
+//             'o-navbar--white-bg',
+//             'pm--toggle',
+//             'pm--open',
+//             'pm--open-menu',
+//             'in-viewport'
+//         ],
+
+//         globs: [
+//             path.join(__dirname, 'addons/stengarde/pixney/stengarde-theme/resources/**/*.twig'),
+//             path.join(__dirname, 'addons/stengarde/pixney/stengarde-theme/resources/**/*.vue'),
+
+//         ],
+
+//         extensions: ['html', 'js', 'php', 'vue', 'twig'],
+
+//     })
+//         .version();
+// }
 
 // Full API
 // mix.js(src, output);

@@ -14,12 +14,13 @@
         "axios": "^0.19.1",
         "cross-env": "^6.0.3",
         "laravel-mix": "^5.0.1",
+        "laravel-mix-purgecss": "^4.2.0",
+        "noty": "^3.2.0-beta",
         "sass": "^1.24.4",
         "sass-loader": "^8.0.2",
         "tailwindcss": "^1.1.4",
+        "tingle.js": "^0.15.2",
         "vue": "^2.6.11",
-        "vue-template-compiler": "^2.6.11",
-        "noty": "^3.2.0-beta",
-        "tingle.js": "^0.15.2"
+        "vue-template-compiler": "^2.6.11"
     }
 }

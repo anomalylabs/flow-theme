@@ -86,14 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/app.js":
-/*!*****************************!*\
-  !*** ./resources/js/app.js ***!
-  \*****************************/
+/***/ "./resources/js/appse.js":
+/*!*******************************!*\
+  !*** ./resources/js/appse.js ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('%c >>> Hello', 'background-color:red;color:white;font-size:11px;padding:5px 10px;');//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvYXBwLmpzPzZkNDAiXSwibmFtZXMiOlsiY29uc29sZSIsImxvZyJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU8sQ0FBQ0MsR0FBUixDQUNBLGNBREEsRUFFQSxtRUFGQSIsImZpbGUiOiIuL3Jlc291cmNlcy9qcy9hcHAuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zb2xlLmxvZyhcbiclYyA+Pj4gSGVsbG8nLFxuJ2JhY2tncm91bmQtY29sb3I6cmVkO2NvbG9yOndoaXRlO2ZvbnQtc2l6ZToxMXB4O3BhZGRpbmc6NXB4IDEwcHg7JykiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/js/app.js\n");
+eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL3Jlc291cmNlcy9qcy9hcHBzZS5qcy5qcyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/js/appse.js\n");
 
 /***/ }),
 
@@ -109,13 +109,13 @@ eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourc
 /***/ }),
 
 /***/ 0:
-/*!***************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/theme.scss ***!
-  \***************************************************************/
+/*!*****************************************************************!*\
+  !*** multi ./resources/js/appse.js ./resources/sass/theme.scss ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/pixney/Development/Web/streams/vendor/anomaly/flow-theme/resources/js/app.js */"./resources/js/app.js");
+__webpack_require__(/*! /Users/pixney/Development/Web/streams/vendor/anomaly/flow-theme/resources/js/appse.js */"./resources/js/appse.js");
 module.exports = __webpack_require__(/*! /Users/pixney/Development/Web/streams/vendor/anomaly/flow-theme/resources/sass/theme.scss */"./resources/sass/theme.scss");
 
 

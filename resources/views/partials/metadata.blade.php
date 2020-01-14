@@ -24,7 +24,7 @@
 
 {{ constants() }}
 
-{!! assets()->style('public::vendor/anomaly/theme/flow/css/theme.css') !!}
+{!! assets()->style('public::css/theme.css') !!}
 
 
 {{ $template->includes->render('head') }}
