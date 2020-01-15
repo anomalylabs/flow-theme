@@ -600,6 +600,8 @@ video {
 }
 
 :root {
+  --theme-blue-primary-color-hs:214, 47%;
+  --theme-blue-primary-color-lightness:97%;
   --color-transparent: transparent;
   --color-black: #000;
   --color-white: #fff;
@@ -1723,6 +1725,23 @@ video {
 .noty_theme__nest.noty_type__success {
   background-color: #06D6A0;
   color: #fff;
+}
+
+.o-login {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.o-login__form {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  width: 280px;
+  height: 280px;
+  background: #fff;
 }
 
 .container {
@@ -12525,6 +12544,10 @@ video {
 
 .z-auto {
   z-index: auto;
+}
+
+body {
+  background-color: hsl(var(--theme-blue-primary-color-hs), var(--theme-blue-primary-color-lightness));
 }
 
 @media (min-width: 640px) {

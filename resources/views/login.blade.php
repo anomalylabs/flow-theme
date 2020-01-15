@@ -9,7 +9,30 @@
     @endphp
 
 
-    <div class="login__wrapper">
+    <div class="o-login">
+        {!! $form->open(['class' => 'o-login__form']) !!}
+
+       
+            @if (config('anomaly.module.users::login', 'email') == 'username')
+            a
+                {!! $form->fields->username->setPlaceholder($form->fields->username->label).addAttribute('autofocus', 1)->render() !!}
+            @else
+            no
+                {!! $form->fields->email->setPlaceholder($form->fields->email->label)->addAttribute('autofocus', 1)->render() !!}
+            @endif
+       
+
+       
+            {!! $form->fields->password->setPlaceholder($form->fields->password->label)->render() !!}
+       
+            <button class="bg-teal-500 hover:bg-teal-600 focus:outline-none focus:shadow-outline" type="submit">
+                {{ trans('anomaly.module.users::button.login') }}
+            </button>
+       
+
+        {!! $form->close() !!}
+    </div>
+    {{-- <div class="login__wrapper">
         <div class="login__left">
 
             <div class="form__wrapper">
@@ -48,9 +71,9 @@
         </div>
         <div class="login__right">
             <div class="login__brand">
-                {{--!! img('anomaly.theme.flow::img/logo.svg')->data() !!--}}
+                {{--!! img('anomaly.theme.flow::img/logo.svg')->data() !!
             </div>
         </div>
-    </div>
+    </div> --}}
 
 @endsection

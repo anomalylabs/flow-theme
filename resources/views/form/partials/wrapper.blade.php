@@ -1,4 +1,16 @@
-<div {!! html_attributes($fieldType->wrapperAttributes()) !!}>
+{{-- <code style='padding:.5rem 1rem; background:hsl(0, 100%, 87%); color: hsla(0, 100%, 66%, 1);'>~/Development/Web/streams/vendor/anomaly/flow-theme/resources/views/form/partials/wrapper.blade.php</code> --}}
+
+<div class="o-form__row">
+    
+    <label for="{{ $fieldType->getInputName() }}">
+        
+            {!! $fieldType->getInput(['form' => isset($form) ? $form : null]) !!}
+            <span>{{ $fieldType->getLabel() }}</span>
+    
+    </label>
+</div>
+
+{{-- <div {!! html_attributes($fieldType->wrapperAttributes()) !!}>
 
     <label for="{{ $fieldType->getInputName() }}">
         {{ $fieldType->getLabel() }}
@@ -27,4 +39,4 @@
         {!! $fieldType->getInput(['form' => isset($form) ? $form : null]) !!}
     </div>
 
-</div>
+</div> --}}
