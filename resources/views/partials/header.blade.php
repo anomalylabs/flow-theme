@@ -18,7 +18,7 @@
 
     <nav>
         <div>
-            @foreach (cp()->getShortcuts()->decorate() as $shortcut)
+            @foreach (cp()->getShortcuts() as $shortcut)
                 <a {!! html_attributes($shortcut->attributes()) !!}>
                     {{ $shortcut->getTitle() }}
                 </a>
