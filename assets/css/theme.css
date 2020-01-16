@@ -1798,6 +1798,12 @@ video {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   background: #8ab8f4;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.o-form__actions button:hover {
+  background: #a2c6f6;
 }
 
 .o-form__actions a {

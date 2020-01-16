@@ -48,6 +48,12 @@
     
     @apply text-white font-bold py-2 px-4 pb-2 rounded-sm leading-none mx-2;
     background:hsla(214, 83%, 75%, 1);
+    transition: all 200ms ease-in-out;
+
+    &:hover 
+    {
+        background:hsla(214, 83%, 80%, 1);
+    }
 
 }
 .o-form__actions a 
