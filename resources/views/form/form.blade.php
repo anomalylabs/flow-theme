@@ -10,6 +10,6 @@ aaaaa
         @include('theme::form/partials/layout')
         @include('theme::form/partials/controls')
         {!! $form->close() !!}
-
+x
     </div>
 @endsection

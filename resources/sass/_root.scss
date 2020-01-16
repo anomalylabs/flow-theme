@@ -1,6 +1,16 @@
 :root{
-    --theme-blue-primary-color-hs:214, 47%;
-    --theme-blue-primary-color-lightness:97%;
+    --theme-background:hsl(214, 47%, 97%);
+    --color-blue-100:hsl(214, 47%, 97%);
+    --color-blue-200:hsl(214, 47%, 96%);
+    --color-blue-300:hsl(214, 47%, 95%);
+    --color-blue-400:hsl(214, 47%, 94%);
+    --color-blue-500:hsl(214, 47%, 93%);
+    --color-blue-600:hsl(214, 47%, 91%);
+    --color-blue-700:hsl(214, 47%, 88%);
+    --color-blue-800:hsl(214, 47%, 83%);
+    --color-blue-900:hsl(214, 47%, 79%);
+    
     --color-primary: #000;
-    --color-secondary: #fff,
+    --color-secondary: #fff;
+    --color-modest:#f4f7fb;
 }

@@ -13,6 +13,13 @@
 .o-form input
 {
     @apply  appearance-none border rounded w-full py-2 px-3 text-black leading-tight outline-none;
+    @apply bg-white shadow; 
+    transition: all 200ms ease-in-out;
+    &:hover,&:focus
+    {
+        @apply  border-blue-700;
+    }
+    
 }
 
 //  ----------------------------------------------------------------------------
@@ -45,14 +52,11 @@
 //  ----------------------------------------------------------------------------
 .o-form__actions button
 {
-    
-    @apply text-white font-bold py-2 px-4 pb-2 rounded-sm leading-none mx-2;
-    background:hsla(214, 83%, 75%, 1);
     transition: all 200ms ease-in-out;
-
+    @apply text-white font-bold py-2 px-4 pb-2 rounded-sm leading-none mx-2 bg-blue-900;
     &:hover 
     {
-        background:hsla(214, 83%, 80%, 1);
+        @apply bg-blue-800;
     }
 
 }
