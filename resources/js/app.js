@@ -9,7 +9,7 @@ window.Vue = require('vue');
 Vue.component('messages', Messages);
 
 
-// Globally register it.
+// Globally register it. // TODO: Instance prop.
 Vue.use(VueNoty)
 
 // Our bus for future use.
