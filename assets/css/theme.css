@@ -1763,7 +1763,7 @@ video {
 }
 
 .o-form__row + .o-form__row {
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
 }
 
 .o-form__actions {
