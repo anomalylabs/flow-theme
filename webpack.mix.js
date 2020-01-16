@@ -14,13 +14,24 @@ require('laravel-mix-purgecss');
 
 mix
     .disableSuccessNotifications()
-    .js('./resources/js/app.js',       './assets/js')
+    .js('./resources/js/app.js', './assets/js')
     .sass('./resources/sass/theme.scss', './assets/css')
+    .webpackConfig({
+        plugins: [
+            
+        ],
+        resolve: {
+            extensions: ['.js', '.vue', '.json'],
+            alias: {
+                '@': __dirname + '/resources/js'
+            },
+        },
+    })
     .options({
         processCssUrls: false,
         postCss: [
             tailwindcss('./tailwind.config.js'),
-        ]
+        ],
     })
     .copy('./assets/js/app.js', '../../../public/js/app.js')
     .copy('./assets/css/theme.css', '../../../public/css/theme.css')
