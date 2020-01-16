@@ -10,29 +10,32 @@
 
 
     <div class="o-form">
+        
         {!! $form->open(['class' => 'o-form__form']) !!}
-        {{-- <div class="relative border rounded mb-4 shadow appearance-none label-floating">
-            <input class="w-full py-2 px-3 text-green-darker leading-normal rounded" id="username" type="text" placeholder="Username">
-            <label class="absolute block text-green-darker top-0 left-0 w-full px-3 py-2 leading-normal" for="username">
-              Username
-            </label>
-          </div> --}}
+
+        <div class="o-form__fields-wrapper">
+       
        
             @if (config('anomaly.module.users::login', 'email') == 'username')
-            a
+           
                 {!! $form->fields->username->setPlaceholder('username').addAttribute('autofocus', 1)->render() !!}
             @else
-            no
+           
                 {!! $form->fields->email->setPlaceholder('email')->addAttribute('autofocus', 1)->render() !!}
             @endif
        
-
-       
             {!! $form->fields->password->setPlaceholder('password')->render() !!}
+        </div>
+            <div class="o-form__actions o-form__footer">
+                <button type="submit">
+                    {{ trans('anomaly.module.users::button.login') }}
+                </button>
+                <a href="#">
+                    {{ trans('anomaly.module.users::message.forgot_password') }}
+                </a>
+              </div>
        
-            <button class="bg-teal-500 hover:bg-teal-600 focus:outline-none focus:shadow-outline" type="submit">
-                {{ trans('anomaly.module.users::button.login') }}
-            </button>
+            
        
 
         {!! $form->close() !!}

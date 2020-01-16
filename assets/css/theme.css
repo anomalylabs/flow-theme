@@ -913,16 +913,6 @@ video {
   --opacity-100: 1;
 }
 
-.o-form__row--input > div input:not(:placeholder-shown) {
-  padding-top: 1.4rem;
-}
-
-.o-form__row--input > div input:not(:placeholder-shown) ~ label {
-  font-size: 0.6rem;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
 .noty_layout_mixin, #noty_layout__top, #noty_layout__topLeft, #noty_layout__topCenter, #noty_layout__topRight, #noty_layout__bottom, #noty_layout__bottomLeft, #noty_layout__bottomCenter, #noty_layout__bottomRight, #noty_layout__center, #noty_layout__centerLeft, #noty_layout__centerRight {
   position: fixed;
   margin: 0;
@@ -1747,81 +1737,83 @@ video {
   height: 100vh;
 }
 
-.o-form__form {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  padding: 1.25rem;
-  width: 280px;
-  height: 280px;
-  background: #fff;
+.o-form label {
+  display: block;
+  color: #4a5568;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
-.o-form__form ::-webkit-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  opacity: 0;
-}
-
-.o-form__form ::-moz-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  opacity: 0;
-}
-
-.o-form__form :-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  opacity: 0;
-}
-
-.o-form__form ::-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  opacity: 0;
-}
-
-.o-form__form ::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  opacity: 0;
-}
-
-.o-form__form :-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  opacity: 0;
-}
-
-.o-form__form ::-ms-input-placeholder {
-  /* Microsoft Edge */
-  opacity: 0;
-}
-
-.o-form__row--input > div {
-  position: relative;
-  border-width: 1px;
-  border-radius: 0.25rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+.o-form input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-}
-
-.o-form__row--input input {
-  --theme-blue-primary-color-lightness:65%;
-  color: hsl(var(--theme-blue-primary-color-hs), var(--theme-blue-primary-color-lightness));
+  border-width: 1px;
+  border-radius: 0.25rem;
   width: 100%;
   padding-top: 0.5rem;
-  padding: 0.75rem;
-  line-height: 1.5;
-  border-radius: 0.25rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  color: #4a5568;
+  line-height: 1.25;
+  outline: 0;
 }
 
-.o-form__row--input > div > label {
-  --theme-blue-primary-color-lightness:85%;
-  color: hsl(var(--theme-blue-primary-color-hs), var(--theme-blue-primary-color-lightness));
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.75rem;
-  padding-top: 0.75rem;
-  line-height: 1.5;
+.o-form__row + .o-form__row {
+  margin-top: 0.5rem;
+}
+
+.o-form__actions {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.o-form__footer {
+  background-color: hsl(var(--theme-blue-primary-color-hs), var(--theme-blue-primary-color-lightness));
+  padding: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.o-form__actions button {
+  color: #fff;
+  font-weight: 700;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.125rem;
+  line-height: 1;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  background: #8ab8f4;
+}
+
+.o-form__actions a {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 0.875rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.o-form__fields-wrapper {
+  padding: 1.25rem;
+}
+
+.o-form__form {
+  width: 320px;
+  background: #fff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .container {
@@ -12628,6 +12620,13 @@ video {
 
 body {
   background-color: hsl(var(--theme-blue-primary-color-hs), var(--theme-blue-primary-color-lightness));
+}
+
+* {
+  outline: none;
+  font-family: "JetBrains Mono";
+  font-weight: normal;
+  font-style: normal;
 }
 
 @media (min-width: 640px) {

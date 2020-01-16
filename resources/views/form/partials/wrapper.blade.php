@@ -2,12 +2,12 @@
 
 <div class="o-form__row o-form__row--input">
     
-    <div>
-        {!! $fieldType->getInput(['form' => isset($form) ? $form : null]) !!}
-        <label for="{{$fieldType->getPlaceholder()}}">
-            {{ $fieldType->getLabel() }}
-        </label>
-    </div>
+    <label for="{{ $fieldType->getInputName() }}">
+        {{ $fieldType->getLabel() }}
+    </label>
+    {!! $fieldType->getInput(['form' => isset($form) ? $form : null]) !!}
+        
+    
 </div>
     {{-- <label for="{{ $fieldType->getInputName() }}">
         

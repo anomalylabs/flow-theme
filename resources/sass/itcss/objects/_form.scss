@@ -1,44 +1,73 @@
-.o-form {
+.o-form
+{
     @apply flex justify-center items-center h-screen;
+}
+
+//  ----------------------------------------------------------------------------
+//  Global element styling
+//  ----------------------------------------------------------------------------t
+.o-form label
+{
+    @apply block text-gray-700 text-sm font-bold mb-2 mb-1;
+}
+.o-form input
+{
+    @apply  appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight outline-none;
+}
+
+//  ----------------------------------------------------------------------------
+//  Separate rows in a form
+//  ----------------------------------------------------------------------------
+.o-form__row + .o-form__row
+{
+    @apply mt-2;
+}
+
+//  ----------------------------------------------------------------------------
+//  Actions - Flexed row with elements in it.
+//  ----------------------------------------------------------------------------
+.o-form__actions
+{
+    @apply flex items-center justify-between;
+}
+//  ----------------------------------------------------------------------------
+//  Form footer - can be combined with actions.
+//  ----------------------------------------------------------------------------
+.o-form__footer
+{
+    background-color: hsl(var(--theme-blue-primary-color-hs),var(--theme-blue-primary-color-lightness));
+    @apply p-4 px-3 mt-2;
+}
+
+//  ----------------------------------------------------------------------------
+//  Form Footer Common Action Elements Styling
+//  ----------------------------------------------------------------------------
+.o-form__actions button
+{
     
-}
+    @apply text-white font-bold py-2 px-4 pb-2 rounded-sm leading-none mx-2;
+    background:hsla(214, 83%, 75%, 1);
 
-.o-form__form {
-    @apply shadow-md  p-5;
-    width: 280px;
-    height: 280px;
+}
+.o-form__actions a 
+{
+    @apply inline-block align-baseline text-sm mx-2;
+}
+//  ----------------------------------------------------------------------------
+//  Fields wrapper
+//  ----------------------------------------------------------------------------
+.o-form__fields-wrapper
+{
+    @apply p-5;
+}
+//  ----------------------------------------------------------------------------
+//  Login form
+//  ----------------------------------------------------------------------------
+.o-form__form
+{
+    width: 320px;
+
     background: #fff;
-
-    ::placeholder {
-        /* Chrome, Firefox, Opera, Safari 10.1+ */
-        opacity: 0;
-    }
-
-    :-ms-input-placeholder {
-        /* Internet Explorer 10-11 */
-        opacity: 0;
-    }
-
-    ::-ms-input-placeholder {
-        /* Microsoft Edge */
-        opacity: 0;
-    }
+    @apply shadow-md;
 }
 
-//  ----------------------------------------------------------------------------
-//  Input
-//  ----------------------------------------------------------------------------
-.o-form__row--input > div {
-    @apply relative border rounded mb-4 shadow appearance-none;
-    @extend %floating-label;
-}
-.o-form__row--input input {
-    --theme-blue-primary-color-lightness:65%;
-    color:hsl(var(--theme-blue-primary-color-hs),var(--theme-blue-primary-color-lightness));
-    @apply w-full pt-2 p-3  leading-normal rounded;
-}
-.o-form__row--input > div > label {
-    --theme-blue-primary-color-lightness:85%;
-    color:hsl(var(--theme-blue-primary-color-hs),var(--theme-blue-primary-color-lightness));
-    @apply absolute block top-0 left-0 w-full p-3 pt-3 leading-normal;
-}
