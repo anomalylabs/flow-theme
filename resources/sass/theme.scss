@@ -1,20 +1,36 @@
 @tailwind base;
 @import './root';
-@import "./itcss/index";
+@import './itcss/index';
 @tailwind components;
 @tailwind utilities;
 
 
-body 
+body
 {
-    background-color:hsl(var(--theme-blue-primary-color-hs),var(--theme-blue-primary-color-lightness));
+    background-color: hsl(var(--theme-blue-primary-color-hs),var(--theme-blue-primary-color-lightness));
 }
 
 *
 {
-    outline:none;
     font-family: 'JetBrains Mono';
     font-weight: normal;
     font-style: normal;
+
+    outline: none;
+}
+
+.brand
+{
+    position: absolute;
+    z-index: -1;
     
+    top: 50%;
+    left: 50%;
+
+    width: 40vw;
+    height: 40vw;
+    margin-top: -20vw;
+    margin-left: -20vw;
+
+    fill: hsla(214, 47%, 98%, 1);
 }

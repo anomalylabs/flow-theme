@@ -12625,10 +12625,22 @@ body {
 }
 
 * {
-  outline: none;
   font-family: "JetBrains Mono";
   font-weight: normal;
   font-style: normal;
+  outline: none;
+}
+
+.brand {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 40vw;
+  height: 40vw;
+  margin-top: -20vw;
+  margin-left: -20vw;
+  fill: #f8fafc;
 }
 
 @media (min-width: 640px) {
