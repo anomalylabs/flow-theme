@@ -1,0 +1,14 @@
+%floating-label
+{
+     input:not(:placeholder-shown)
+    {
+        padding-top: 1.4rem;
+    }
+     input:not(:placeholder-shown) ~ label
+    {
+        font-size: .6rem;
+    
+        transition: all .2s ease-in-out;
+    }
+}
+

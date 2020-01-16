@@ -913,6 +913,16 @@ video {
   --opacity-100: 1;
 }
 
+.o-form__row--input > div input:not(:placeholder-shown) {
+  padding-top: 1.4rem;
+}
+
+.o-form__row--input > div input:not(:placeholder-shown) ~ label {
+  font-size: 0.6rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 .noty_layout_mixin, #noty_layout__top, #noty_layout__topLeft, #noty_layout__topCenter, #noty_layout__topRight, #noty_layout__bottom, #noty_layout__bottomLeft, #noty_layout__bottomCenter, #noty_layout__bottomRight, #noty_layout__center, #noty_layout__centerLeft, #noty_layout__centerRight {
   position: fixed;
   margin: 0;
@@ -1727,7 +1737,7 @@ video {
   color: #fff;
 }
 
-.o-login {
+.o-form {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -1737,11 +1747,81 @@ video {
   height: 100vh;
 }
 
-.o-login__form {
+.o-form__form {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 1.25rem;
   width: 280px;
   height: 280px;
   background: #fff;
+}
+
+.o-form__form ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 0;
+}
+
+.o-form__form ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 0;
+}
+
+.o-form__form :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 0;
+}
+
+.o-form__form ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 0;
+}
+
+.o-form__form ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 0;
+}
+
+.o-form__form :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  opacity: 0;
+}
+
+.o-form__form ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  opacity: 0;
+}
+
+.o-form__row--input > div {
+  position: relative;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.o-form__row--input input {
+  --theme-blue-primary-color-lightness:65%;
+  color: hsl(var(--theme-blue-primary-color-hs), var(--theme-blue-primary-color-lightness));
+  width: 100%;
+  padding-top: 0.5rem;
+  padding: 0.75rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+
+.o-form__row--input > div > label {
+  --theme-blue-primary-color-lightness:85%;
+  color: hsl(var(--theme-blue-primary-color-hs), var(--theme-blue-primary-color-lightness));
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.75rem;
+  padding-top: 0.75rem;
+  line-height: 1.5;
 }
 
 .container {

@@ -1,0 +1,44 @@
+.o-form {
+    @apply flex justify-center items-center h-screen;
+    
+}
+
+.o-form__form {
+    @apply shadow-md  p-5;
+    width: 280px;
+    height: 280px;
+    background: #fff;
+
+    ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        opacity: 0;
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        opacity: 0;
+    }
+
+    ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        opacity: 0;
+    }
+}
+
+//  ----------------------------------------------------------------------------
+//  Input
+//  ----------------------------------------------------------------------------
+.o-form__row--input > div {
+    @apply relative border rounded mb-4 shadow appearance-none;
+    @extend %floating-label;
+}
+.o-form__row--input input {
+    --theme-blue-primary-color-lightness:65%;
+    color:hsl(var(--theme-blue-primary-color-hs),var(--theme-blue-primary-color-lightness));
+    @apply w-full pt-2 p-3  leading-normal rounded;
+}
+.o-form__row--input > div > label {
+    --theme-blue-primary-color-lightness:85%;
+    color:hsl(var(--theme-blue-primary-color-hs),var(--theme-blue-primary-color-lightness));
+    @apply absolute block top-0 left-0 w-full p-3 pt-3 leading-normal;
+}

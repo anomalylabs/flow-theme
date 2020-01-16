@@ -1,14 +1,21 @@
 {{-- <code style='padding:.5rem 1rem; background:hsl(0, 100%, 87%); color: hsla(0, 100%, 66%, 1);'>~/Development/Web/streams/vendor/anomaly/flow-theme/resources/views/form/partials/wrapper.blade.php</code> --}}
 
-<div class="o-form__row">
+<div class="o-form__row o-form__row--input">
     
-    <label for="{{ $fieldType->getInputName() }}">
+    <div>
+        {!! $fieldType->getInput(['form' => isset($form) ? $form : null]) !!}
+        <label for="{{$fieldType->getPlaceholder()}}">
+            {{ $fieldType->getLabel() }}
+        </label>
+    </div>
+</div>
+    {{-- <label for="{{ $fieldType->getInputName() }}">
         
-            {!! $fieldType->getInput(['form' => isset($form) ? $form : null]) !!}
+            
             <span>{{ $fieldType->getLabel() }}</span>
     
-    </label>
-</div>
+    </label> --}}
+
 
 {{-- <div {!! html_attributes($fieldType->wrapperAttributes()) !!}>
 

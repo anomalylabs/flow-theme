@@ -9,21 +9,26 @@
     @endphp
 
 
-    <div class="o-login">
-        {!! $form->open(['class' => 'o-login__form']) !!}
-
+    <div class="o-form">
+        {!! $form->open(['class' => 'o-form__form']) !!}
+        {{-- <div class="relative border rounded mb-4 shadow appearance-none label-floating">
+            <input class="w-full py-2 px-3 text-green-darker leading-normal rounded" id="username" type="text" placeholder="Username">
+            <label class="absolute block text-green-darker top-0 left-0 w-full px-3 py-2 leading-normal" for="username">
+              Username
+            </label>
+          </div> --}}
        
             @if (config('anomaly.module.users::login', 'email') == 'username')
             a
-                {!! $form->fields->username->setPlaceholder($form->fields->username->label).addAttribute('autofocus', 1)->render() !!}
+                {!! $form->fields->username->setPlaceholder('username').addAttribute('autofocus', 1)->render() !!}
             @else
             no
-                {!! $form->fields->email->setPlaceholder($form->fields->email->label)->addAttribute('autofocus', 1)->render() !!}
+                {!! $form->fields->email->setPlaceholder('email')->addAttribute('autofocus', 1)->render() !!}
             @endif
        
 
        
-            {!! $form->fields->password->setPlaceholder($form->fields->password->label)->render() !!}
+            {!! $form->fields->password->setPlaceholder('password')->render() !!}
        
             <button class="bg-teal-500 hover:bg-teal-600 focus:outline-none focus:shadow-outline" type="submit">
                 {{ trans('anomaly.module.users::button.login') }}
