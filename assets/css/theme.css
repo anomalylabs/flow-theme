@@ -1778,7 +1778,8 @@ video {
 .o-form__footer {
   background-color: hsl(var(--theme-blue-primary-color-hs), 98%);
   border-top: 1px solid hsl(var(--theme-blue-primary-color-hs), 97%);
-  padding: 1rem;
+  padding: 0.75rem;
+  padding-bottom: 0.75rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   margin-top: 0;
