@@ -1558,6 +1558,17 @@ body {
   fill: #f8fafc;
 }
 
+.c-top {
+  background-color:#fff;
+  display:-webkit-box;
+  display:flex;
+}
+
+.c-list--x {
+  display:-webkit-box;
+  display:flex;
+}
+
 .container {
   width:100%;
 }

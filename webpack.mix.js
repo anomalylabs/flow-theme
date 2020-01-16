@@ -16,17 +16,14 @@ mix
     .disableSuccessNotifications()
     .js('./resources/js/app.js', './assets/js')
     .sass('./resources/sass/theme.scss', './assets/css')
-    .webpackConfig({
-        plugins: [
-            
-        ],
-        resolve: {
-            extensions: ['.js', '.vue', '.json'],
-            alias: {
-                '@': __dirname + '/resources/js'
-            },
-        },
-    })
+    // .webpackConfig({
+    //     resolve: {
+    //         extensions: ['.js', '.vue', '.json'],
+    //         alias: {
+    //             '@': __dirname + '/resources/js'
+    //         },
+    //     },
+    // })
     .options({
         processCssUrls: false,
         postCss: [

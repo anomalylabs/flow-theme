@@ -8,7 +8,12 @@ Vue.config.productionTip = false
 
 window.Vue = Vue;
 
-require('./bootstrap/components.js');
+// require('./bootstrap/components.js');
+import Messages from "./components/Messages";
+Vue.component('messages', Messages);
+
+import Top from "./components/layout/Top";
+Vue.component('layout-top', Top);
 
 Vue.use(VueNoty)
 
