@@ -1776,7 +1776,8 @@ video {
 }
 
 .o-form__footer {
-  background-color: hsl(var(--theme-blue-primary-color-hs), var(--theme-blue-primary-color-lightness));
+  background-color: hsl(var(--theme-blue-primary-color-hs), 98%);
+  border-top: 1px solid hsl(var(--theme-blue-primary-color-hs), 97%);
   padding: 1rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1814,6 +1815,7 @@ video {
   width: 320px;
   background: #fff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 0.25rem;
 }
 
 .container {

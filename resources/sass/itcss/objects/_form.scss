@@ -35,7 +35,8 @@
 //  ----------------------------------------------------------------------------
 .o-form__footer
 {
-    background-color: hsl(var(--theme-blue-primary-color-hs),var(--theme-blue-primary-color-lightness));
+    background-color: hsl(var(--theme-blue-primary-color-hs),98%);
+    border-top: 1px solid hsl(var(--theme-blue-primary-color-hs),97%);
     @apply p-4 px-3 mt-0;
 }
 
@@ -67,6 +68,6 @@
 {
     width: 320px;
     background: #fff;
-    @apply shadow-md;
+    @apply shadow-md rounded;
 }
 
