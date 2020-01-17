@@ -17,9 +17,11 @@ module.exports = {
     // Border color - Also used for secondary buttins
     "border":'var(--color-border)',
     // Darker border - used ie input elements
-    "border-darker":'var(--color-border-darker)',
+    "border-dark":'var(--color-border-dark)',
     // Text Color 
     "text":'var(--color-text)',
+    // Text color light 
+    "text-light":'var(--color-text-light)',
     // Accent color used for links, action buttons..
     "accent":'var(--color-accent)',
     // Accent hover color

@@ -26,7 +26,7 @@
     // White
     --color-white :hsl(0,0%,100%);
     // Color for background 
-    --color-background:hsl(210, 31%, 95%);
+    --color-background:#F5F5F6;
     // Color for surfaces
     --color-surface:hsl(0,0%,100%);
     // Darker color than the surface for elements placed on it, textarea ie.
@@ -36,13 +36,19 @@
     // Border color - Also used for secondary buttins
     --color-border:hsl(210, 31%, 95%);
     // Darker border - used ie input elements
-    --color-border-darker:hsl(210, 16%, 80%);
+    --color-border-dark:hsl(210, 16%, 80%);
     // Text Color 
-    --color-text:hsl(212, 10%, 30%);
+    --color-text:#535556;
+    // Light text color 
+    --color-text-light:#A1A4A5;
     // Accent color used for links, action buttons..
-    --color-accent:hsl(200, 80%, 50%);
-    // Accent hover color
-    --color-accent-hover:hsl(200, 80%, 70%);
+    //--color-accent:hsl(204, 47%, 82%);
+    --color-accent:#70aad2;
+    //--color-accent:#88B8D9;
+    // Accent hover color6 EA9D1
+   // --color-accent-hover:hsl(200, 80%, 70%);
+    //--color-accent-hover:hsl(204, 47%, 82%);
+    --color-accent-hover:#88B8D9;
 
     --font-size-small:.8125rem;
     --font-size-base:1rem;
