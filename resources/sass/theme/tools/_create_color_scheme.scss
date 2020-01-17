@@ -1,0 +1,5 @@
+@mixin create-color-scheme {
+    @for $i from 1 through 3 {
+        --my-var-#{$i}: #aaa;
+    }
+}

@@ -8,16 +8,22 @@
 //  ----------------------------------------------------------------------------t
 .o-form label
 {
-    @apply block text-black text-sm font-bold mb-2 mb-1;
+    @apply block text-black  mb-2 mb-1 text-sm;
+    @extend %bold;  
+    
 }
 .o-form input
 {
-    @apply  appearance-none border rounded w-full py-2 px-3 text-black leading-tight outline-none;
-    @apply bg-white shadow; 
-    transition: all 200ms ease-in-out;
-    &:hover,&:focus
+    @apply  appearance-none border rounded w-full py-2 px-3 text-black leading-tight outline-none border-border-darker shadow;
+
+
+    &:hover 
     {
-        @apply  border-blue-700;
+       @apply shadow-inner;
+    }
+    &:focus
+    {
+      @apply  shadow-inner;
     }
     
 }
@@ -42,9 +48,7 @@
 //  ----------------------------------------------------------------------------
 .o-form__footer
 {
-    background-color: hsl(var(--theme-blue-primary-color-hs),98%);
-    border-top: 1px solid hsl(var(--theme-blue-primary-color-hs),97%);
-    @apply  p-3 pb-3 px-3 mt-0;
+    @apply  p-3 pb-3 px-3 mt-0 bg-surface-dark-light border-surface-dark border;
 }
 
 //  ----------------------------------------------------------------------------
@@ -52,17 +56,14 @@
 //  ----------------------------------------------------------------------------
 .o-form__actions button
 {
-    transition: all 200ms ease-in-out;
-    @apply text-white font-bold py-2 px-4 pb-2 rounded-sm leading-none mx-2 bg-blue-900;
-    &:hover 
-    {
-        @apply bg-blue-800;
-    }
+    
+    @extend %buttons-primary;
+    
 
 }
 .o-form__actions a 
 {
-    @apply inline-block align-baseline text-sm mx-2;
+    @apply inline-block align-baseline text-sm mx-2 text-accent;
 }
 //  ----------------------------------------------------------------------------
 //  Fields wrapper
@@ -77,7 +78,7 @@
 .o-form__form
 {
     width: 320px;
-    background: #fff;
-    @apply shadow-md rounded;
+    
+    @apply shadow-md rounded bg-surface border;
 }
 

@@ -1,30 +1,68 @@
 module.exports = {
   theme: {
     colors: {
-      background:'var(--color-modest)',
-      primary: 'var(--color-primary)',
-      secondary: 'var(--color-secondary)',
-      white:'#fff',
-      black:'#000',
-      blue:{
-        100:'var(--color-blue-100)',
-        200:'var(--color-blue-200)',
-        300:'var(--color-blue-300)',
-        400:'var(--color-blue-400)',
-        500:'var(--color-blue-500)',
-        600:'var(--color-blue-600)',
-        700:'var(--color-blue-700)',
-        800:'var(--color-blue-800)',
-        900:'var(--color-blue-900)'
-      }
+
+    // Black
+    "black": 'var(--color-black)',
+    // White
+    "white": 'var(--color-white)',
+    // Color for background 
+    "background":'var(--color-background)',
+    // Color for surfaces
+    "surface":'var(--color-surface)',
+    // Darker color than the surface for elements placed on it, textarea ie.
+    "surface-dark-light":'var(--color-surface-dark-light)',
+    // Border around element with background surface dark
+    "surface-dark":'var(--color-surface-dark)',
+    // Border color - Also used for secondary buttins
+    "border":'var(--color-border)',
+    // Darker border - used ie input elements
+    "border-darker":'var(--color-border-darker)',
+    // Text Color 
+    "text":'var(--color-text)',
+    // Accent color used for links, action buttons..
+    "accent":'var(--color-accent)',
+    // Accent hover color
+    "accent-hover":'var(--color-accent-hover)',
+
+      
+
+
+
+
+      // Color for the background
+      //--color-background:#000;
+
+      // "primary":"var(--color-primary)",
+      // "primary:hover":"var(--color-primary-hover)",
+      // "primary:active":"var(--color-primary-active)",
+
+      // form:{
+      //   'border':'var(--color-primary)',
+      //   "border:hover":'var(-color-primary-hover)',
+      //   "border:focus":'var(--color-primary-active)',
+      // },
+      
+      
+      
+
+      
+    
+
     },
     borderColor: theme => ({
       ...theme('colors'),
-      default: theme('colors.blue.100', 'currentColor'),
+      default: theme('colors.border', 'currentColor'),
     }),
     fontFamily: {
-      display: ['JetBrains Mono', 'sans-serif'],
-      body: ['JetBrains Mono', 'sans-serif'],
+      display: ['Inter', 'sans-serif'],
+      body: ['Inter', 'sans-serif'],
+      mono: ['JetBrains Mono']
+    },
+    fontSize: {
+      'sm': 'var(--font-size-small)',
+      'base': 'var(--font-size-base)',
+      'large': 'var(--font-size-large)'
     },
     extend: {}
   },

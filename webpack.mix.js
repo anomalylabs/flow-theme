@@ -16,14 +16,6 @@ mix
     .disableSuccessNotifications()
     .js('./resources/js/app.js', './assets/js')
     .sass('./resources/sass/theme.scss', './assets/css')
-    // .webpackConfig({
-    //     resolve: {
-    //         extensions: ['.js', '.vue', '.json'],
-    //         alias: {
-    //             '@': __dirname + '/resources/js'
-    //         },
-    //     },
-    // })
     .options({
         processCssUrls: false,
         postCss: [
@@ -32,6 +24,7 @@ mix
     })
     .copy('./assets/js/app.js', '../../../public/js/app.js')
     .copy('./assets/css/theme.css', '../../../public/css/theme.css')
+    .copy('./resources/fonts/', '../../../public/css/fonts')
     .sourceMaps();
 
 

@@ -1,0 +1,13 @@
+%buttons-primary{
+    @apply text-white py-2 px-4 pb-2 rounded-sm leading-none mx-2 bg-accent;
+    @extend %bold;
+    &:hover 
+    {
+       @apply bg-accent-hover;
+    }
+    &:focus,&:active 
+    {
+      //  @apply bg-accent-active;
+    }
+    transition: all 200ms ease-in-out;
+}
