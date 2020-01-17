@@ -1,7 +1,7 @@
 :root {
   --color-black:hsl(0,0%,0%);
   --color-white:hsl(0,0%,100%);
-  --color-background:hsl(210, 21%, 89%);
+  --color-background:hsl(210, 31%, 95%);
   --color-surface:hsl(0,0%,100%);
   --color-surface-dark-light:hsla(216, 100%, 99%);
   --color-surface-dark:hsl(216, 100%, 97%);
@@ -1546,7 +1546,6 @@ body {
   box-shadow:0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   border-radius:0.25rem;
   background-color:var(--color-surface);
-  border-width:1px;
 }
 
 .c-brand {
@@ -1558,7 +1557,7 @@ body {
   height: 40vw;
   margin-top: -20vw;
   margin-left: -20vw;
-  fill: rgba(227, 232, 237, 0.7);
+  fill: rgba(246, 247, 249, 0.7);
 }
 
 .c-top {
