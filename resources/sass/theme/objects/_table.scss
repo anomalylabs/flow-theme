@@ -1,0 +1,46 @@
+//  ----------------------------------------------------------------------------
+//  Wrapper around different elements that belong to the table view.
+//  ----------------------------------------------------------------------------
+.o-table
+{
+    @apply shadow-md border-border border mx-5 bg-surface;
+}
+
+
+//  ----------------------------------------------------------------------------
+//  The table
+//  ----------------------------------------------------------------------------
+.o-table table 
+{
+    width:100%;
+    @apply p-2 text-text;
+    
+}
+
+.o-table td:first-child, 
+.o-table th:first-child 
+{@apply pl-2}
+.o-table td:last-child, 
+.o-table th:last-child 
+{@apply pr-2}
+
+//  ----------------------------------------------------------------------------
+//  Table head
+//  ----------------------------------------------------------------------------
+.o-table__head
+{
+    @apply bg-surface-dark-light border-surface-dark border text-sm ;
+    text-transform:uppercase;
+    font-weight:normal;
+}
+.o-table__head th
+{
+    letter-spacing: 1px;
+    text-align:left;
+    @apply py-2;
+}
+
+.o-table__column--actions a
+{
+   @extend %buttons-table-actions;
+}

@@ -1,6 +1,6 @@
 {{ assets('scripts.js', 'public::vendor/anomaly/core/js/table/table.js') }}
 
-<div class="table__wrapper" id="{{ $table->prefix() }}table-instance">
+<div class="o-table" id="{{ $table->prefix() }}table-instance">
 
     @include('theme::table/partials/filters')
     @include('theme::table/partials/views')

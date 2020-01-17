@@ -1,16 +1,16 @@
-<tbody>
+<tbody class="o-table__body">
     @foreach ($table->getRows() as $row)
         <tr {!! html_attributes($row->attributes()) !!}>
 
             @if ($table->getOption('sortable'))
-            <td class="table__handle">
+            <td class="o-table__column">
                 {{ icon('fas fa-arrows') }}
                 <input type="hidden" name="{{ $table->prefix('order[]') }}" value="{{ $row->getKey() }}"/>
             </td>
             @endif
 
             @if ($table->hasActions())
-            <td class="table__checkbox">
+            <td class="o-table__column">
                 <input type="checkbox" name="{{ $table->prefix('id[]') }}" value="{{ $row->getKey() }}"/>
             </td>
             @endif
@@ -21,7 +21,7 @@
                 </td>
             @endforeach
 
-        <td class="table__buttons">
+        <td class="o-table__column o-table__column--actions">
             {!! buttons($row->getButtons()) !!}
         </td>
 

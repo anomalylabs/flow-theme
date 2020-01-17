@@ -617,13 +617,13 @@ video {
   height: auto;
 }
 
-.o-form label, .o-form__actions button {
+.o-form label, .o-form__actions button, .o-table__column--actions a {
   font-family: "Inter";
   font-weight: 600;
   font-style: normal;
 }
 
-.o-form__actions button {
+.o-form__actions button, .o-table__column--actions a {
   color:var(--color-white);
   padding-top:0.5rem;
   padding-bottom:0.5rem;
@@ -639,12 +639,33 @@ video {
   transition: all 200ms ease-in-out;
 }
 
-.o-form__actions button:hover {
+.o-form__actions button:hover, .o-table__column--actions a:hover {
   background-color:var(--color-accent-hover);
+}
+
+.o-table__column--actions a {
+  padding-top:0.25rem;
+  padding-bottom:0.25rem;
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+  font-size:var(--font-size-small);
 }
 
 body {
   background-color:var(--color-background);
+}
+
+th {
+  font-weight: 600;
+}
+
+tr:first-child td {
+  padding-top:0.5rem;
+}
+
+td {
+  padding-top:0.25rem;
+  padding-bottom:0.25rem;
 }
 
 .noty_layout_mixin, #noty_layout__top, #noty_layout__topLeft, #noty_layout__topCenter, #noty_layout__topRight, #noty_layout__bottom, #noty_layout__bottomLeft, #noty_layout__bottomCenter, #noty_layout__bottomRight, #noty_layout__center, #noty_layout__centerLeft, #noty_layout__centerRight {
@@ -1547,6 +1568,47 @@ body {
   box-shadow:0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   border-radius:0.25rem;
   background-color:var(--color-surface);
+}
+
+.o-table {
+  box-shadow:0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-color:var(--color-border);
+  border-width:1px;
+  margin-left:1.25rem;
+  margin-right:1.25rem;
+  background-color:var(--color-surface);
+}
+
+.o-table table {
+  width: 100%;
+  padding:0.5rem;
+  color:var(--color-text);
+}
+
+.o-table td:first-child,
+.o-table th:first-child {
+  padding-left:0.5rem;
+}
+
+.o-table td:last-child,
+.o-table th:last-child {
+  padding-right:0.5rem;
+}
+
+.o-table__head {
+  background-color:var(--color-surface-dark-light);
+  border-color:var(--color-surface-dark);
+  border-width:1px;
+  font-size:var(--font-size-small);
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.o-table__head th {
+  letter-spacing: 1px;
+  text-align: left;
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
 }
 
 .c-brand {
@@ -6193,11 +6255,7 @@ body {
 * {
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
-  font-family: "Inter";
-}
-
-* strong {
-  font-family: "Inter";
+  color:var(--color-text);
 }
 
 @media (min-width: 640px) {

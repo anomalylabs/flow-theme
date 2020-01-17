@@ -1,4 +1,4 @@
-<thead>
+<thead class="o-table__head"> 
 <tr>
 
     @if ($table->getOption('sortable'))

@@ -7,14 +7,9 @@
 @tailwind utilities;
 
 
- *
- {
-     @apply antialiased;
+*
+{
+    @apply antialiased;
     // @apply subpixel-antialiased;
-     font-family:"Inter";
-        strong 
-        {
-            font-family:"Inter";
-        }
-    }
-
+    @apply text-text
+}

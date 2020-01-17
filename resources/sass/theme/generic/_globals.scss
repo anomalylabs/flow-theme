@@ -3,3 +3,17 @@ body
 {
     @apply bg-background;
 }
+
+th 
+{
+    font-weight:600;
+    
+}
+tr:first-child td 
+{
+    @apply pt-2;
+}
+td 
+{
+   @apply py-1;
+}
