@@ -1,5 +1,6 @@
 import Vue from 'vue';
-import VueNoty from 'vuejs-noty'
+
+
 
 Vue.config.silent = false;
 Vue.config.devtools = true;
@@ -15,7 +16,7 @@ Vue.component('messages', Messages);
 import Top from "./components/layout/Top";
 Vue.component('layout-top', Top);
 
-Vue.use(VueNoty)
+
 
 // Our bus for future use.
 export const bus = new Vue();
