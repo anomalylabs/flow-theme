@@ -35,12 +35,12 @@
 }
 .o-table__head th
 {
-    letter-spacing: 1px;
+    letter-spacing: .5px;
     text-align:left;
     @apply py-2;
 }
 
 .o-table__column--actions a
 {
-   @extend %buttons-table-actions;
+   @extend %c-button--table;
 }

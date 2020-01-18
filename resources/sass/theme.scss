@@ -1,15 +1,34 @@
-
-@import './root';
+/* purgecss start ignore */
 @tailwind base;
-@import './theme/index';
-
+// 
+// https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+//
+// Settings used with preprocessors and contain font, colors definitions, etc. 
+// In this layer is common define the variables that can customize the template.
+@import './theme/settings/settings';
+// Tools — globally used mixins and functions. This layer is only used if we 
+// use a preprocessor as SASS.
+@import './theme/tools/tools';
+// Generic — reset and/or normalize styles, box-sizing definition, etc. It is 
+// important to note that this is the first layer of the triangle that 
+// generates CSS.
+@import './theme/generic/generic';
+// Components — specific UI components. The components of our page, for 
+// example button, card, concrete-list, etc..
+@import './theme/components/components.scss';
+// Objects — class-based selectors which define undecorated design patterns, 
+// for example media object known from OOCSS such as list, radio-button. 
+// The Daniel Fornell’s codepen https://codepen.io/collection/DmzVOM/ shows 
+// you a list of objects designed using this architecture.
+@import './theme/objects/objects';
+// Elements — styling for bare HTML elements (like H1, A, header, footer, …). 
+// These come with default styling from the browser so we must to redefine 
+// them here.
+@import './theme/elements/elements';
+//Utilities — utilities and helper classes with ability to override anything which goes before in the triangle.
+@import './theme/utilities/utilities';
 @tailwind components;
+/* purgecss end ignore */
 @tailwind utilities;
 
 
-*
-{
-    @apply antialiased;
-    // @apply subpixel-antialiased;
-    @apply text-text
-}

@@ -1,0 +1,16 @@
+.c-form-row 
+{
+    @extend %c-form-row;
+}
+.c-form-row + .c-form-row
+{
+    @apply my-2;
+}
+
+//  ----------------------------------------------------------------------------
+//  Special styling for rows with an input inside.
+//  ----------------------------------------------------------------------------
+.c-form-row--input 
+{
+    
+}

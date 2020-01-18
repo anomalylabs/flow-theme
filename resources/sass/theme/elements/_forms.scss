@@ -1,0 +1,31 @@
+label
+{
+    @extend %bold;
+    @apply block text-text-light mb-2 mb-1 text-sm;
+}
+
+input
+{
+    @apply appearance-none border rounded w-full py-2 px-3 text-black leading-tight outline-none border-border-dark shadow;
+
+    &:hover
+    {
+        @apply shadow-inner;
+    }
+    &:focus
+    {
+        @apply shadow-inner;
+    }
+}
+fieldset
+{
+    @apply bg-surface p-4;
+
+}
+//  ----------------------------------------------------------------------------
+//  Fieldset directly followed by a div, is a footer
+//  ----------------------------------------------------------------------------
+fieldset + div
+{
+    @extend %o-form-footer;
+}

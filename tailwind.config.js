@@ -27,30 +27,6 @@ module.exports = {
     // Accent hover color
     "accent-hover":'var(--color-accent-hover)',
 
-      
-
-
-
-
-      // Color for the background
-      //--color-background:#000;
-
-      // "primary":"var(--color-primary)",
-      // "primary:hover":"var(--color-primary-hover)",
-      // "primary:active":"var(--color-primary-active)",
-
-      // form:{
-      //   'border':'var(--color-primary)',
-      //   "border:hover":'var(-color-primary-hover)',
-      //   "border:focus":'var(--color-primary-active)',
-      // },
-      
-      
-      
-
-      
-    
-
     },
     borderColor: theme => ({
       ...theme('colors'),
@@ -62,6 +38,7 @@ module.exports = {
       mono: ['JetBrains Mono']
     },
     fontSize: {
+      'xs': 'var(--font-size-extra-small)',
       'sm': 'var(--font-size-small)',
       'base': 'var(--font-size-base)',
       'large': 'var(--font-size-large)'
