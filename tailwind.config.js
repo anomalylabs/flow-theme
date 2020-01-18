@@ -18,6 +18,7 @@ module.exports = {
     "border":'var(--color-border)',
     // Darker border - used ie input elements
     "border-dark":'var(--color-border-dark)',
+    "border-light":'var(--color-border-light)',
     // Text Color 
     "text":'var(--color-text)',
     // Text color light 

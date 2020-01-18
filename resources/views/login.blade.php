@@ -11,11 +11,11 @@ $form = form('login')->redirect('admin')->get();
 
 <div class="flex h-screen">
 
-    {!! $form->open(['class' => 'o-form m-auto']) !!}
+    {!! $form->open(['class' => 'o-form-login m-auto']) !!}
 
-    <fieldset class="o-form__fieldset">
+    <fieldset class="o-form-login__fieldset">
 
-        <h1 class="o-form__title o-form__title--center">Login</h1>
+        <h1 class="o-form-login__title o-form-login__title--center">Login</h1>
 
         @if (config('anomaly.module.users::login', 'email') == 'username')
 
@@ -27,7 +27,7 @@ $form = form('login')->redirect('admin')->get();
 
         {!! $form->fields->password->setPlaceholder('password')->render() !!}
     </fieldset>
-    <div class="o-form__footer">
+    <div class="c-form__footer">
         <button type="submit">
             {{ trans('anomaly.module.users::button.login') }}
         </button>

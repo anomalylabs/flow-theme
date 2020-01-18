@@ -1,0 +1,25 @@
+.o-form-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 640px) {
+    .o-form-login {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+.o-form-login__fieldset {
+    height: 100%;
+}
+.o-form-login .c-form-row.c-form__row--input input {
+    @apply py-3 px-3;
+}
+.o-form-login__title {
+    @apply text-sm text-text-light;
+}
+
+.o-form-login__title--center {
+    @apply text-center;
+}

@@ -22,6 +22,14 @@ mix
             tailwindcss('./tailwind.config.js'),
         ],
     })
+    .browserSync({
+        proxy: 'streams.test',
+        files: [
+            '../../../public/js/**/*.js',
+            '../../../public/js/**/*.css',
+            './resources/views/**/*.php',
+        ]
+    })
     .copy('./assets/js/app.js', '../../../public/js/app.js')
     .copy('./assets/css/theme.css', '../../../public/css/theme.css')
     .copy('./resources/fonts/', '../../../public/css/fonts')

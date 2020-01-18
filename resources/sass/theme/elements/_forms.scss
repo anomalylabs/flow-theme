@@ -1,16 +1,20 @@
+form 
+{
+    @apply text-xs;
+}
 label
 {
     @extend %font-bold;
-    @apply block text-text-light mb-2 mb-1 text-sm;
+    @apply block text-text-light mb-0 text-sm;
 }
 
 input
 {
-    @apply appearance-none border rounded w-full py-2 px-3 text-black leading-tight outline-none border-border-dark shadow;
-
+    @apply text-sm appearance-none px-2 py-1 rounded w-full text-black outline-none border border-border-light;
+    transition: all 200ms ease-in-out;
     &:hover
     {
-        @apply shadow-inner;
+        @apply shadow-none;
     }
     &:focus
     {
@@ -27,5 +31,5 @@ fieldset
 //  ----------------------------------------------------------------------------
 fieldset + div
 {
-    @extend %o-form-footer;
+    @extend %c-form-footer;
 }
