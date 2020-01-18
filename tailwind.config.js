@@ -38,10 +38,11 @@ module.exports = {
       mono: ['JetBrains Mono']
     },
     fontSize: {
-      'xs': 'var(--font-size-extra-small)',
-      'sm': 'var(--font-size-small)',
+      'xs': 'var(--font-size-xs)',
+      'sm': 'var(--font-size-sm)',
       'base': 'var(--font-size-base)',
-      'large': 'var(--font-size-large)'
+      'lg': 'var(--font-size-lg)',
+      'xl': 'var(--font-size-xl)'
     },
     extend: {}
   },

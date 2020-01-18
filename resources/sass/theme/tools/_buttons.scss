@@ -1,6 +1,6 @@
 %c-button {
     @apply text-white py-2 px-4 pb-2 rounded-sm leading-none mx-2 bg-accent;
-    @extend %bold;
+    @extend %font-bold;
     &:hover {
         @apply bg-accent-hover;
     }

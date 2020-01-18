@@ -3,58 +3,12 @@
 {
     //@apply flex justify-center items-center h-screen;
 }
-
-.o-form__fieldset
+.o-form__title 
 {
-
+    @apply text-lg text-text-light;
 }
 
-
-
-
-// //  ----------------------------------------------------------------------------
-// //  Actions - Flexed row with elements in it.
-// //  ----------------------------------------------------------------------------
-// .o-form__actions
-// {
-//     @apply flex items-center justify-between;
-// }
-// //  ----------------------------------------------------------------------------
-// //  Form footer - can be combined with actions.
-// //  ----------------------------------------------------------------------------
-// .o-form__footer
-// {
-//     @apply  p-3 pb-3 px-3 mt-0 bg-surface-dark-light border-surface-dark border;
-// }
-
-// //  ----------------------------------------------------------------------------
-// //  Form Footer Common Action Elements Styling
-// //  ----------------------------------------------------------------------------
-// .o-form__actions button
-// {
-    
-//     @extend %c-button;
-    
-
-// }
-// .o-form__actions a 
-// {
-//     @apply inline-block align-baseline text-sm mx-2 text-accent;
-// }
-// //  ----------------------------------------------------------------------------
-// //  Fields wrapper
-// //  ----------------------------------------------------------------------------
-// .o-form__fields-wrapper
-// {
-//     @apply p-5;
-// }
-// //  ----------------------------------------------------------------------------
-// //  Login form - //TODO: remove
-// //  ----------------------------------------------------------------------------
-// .o-form__form
-// {
-//     width: 320px;
-    
-//     @apply   shadow-md rounded bg-surface;
-// }
-
+.o-form__title--center
+{
+    @apply text-center;
+}

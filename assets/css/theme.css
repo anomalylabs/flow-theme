@@ -614,10 +614,11 @@ video {
   --color-text-light:#A1A4A5;
   --color-accent:#70aad2;
   --color-accent-hover:#88B8D9;
-  --font-size-extra-small:.8125rem;
-  --font-size-small:.875rem;
+  --font-size-xs:.8125rem;
+  --font-size-sm:.875rem;
   --font-size-base:1rem;
-  --font-size-large:1.2rem;
+  --font-size-lg:1.2rem;
+  --font-size-xl:1.5rem;
 }
 
 :root {
@@ -836,7 +837,7 @@ fieldset + div {
   border-width: 1px;
 }
 
-label, button, .o-table__column--actions a {
+h1, h2, h3, h4, h5, h6, label, button, .o-table__column--actions a {
   font-family: "Inter";
   font-weight: 600;
   font-style: normal;
@@ -867,7 +868,7 @@ button:hover, .o-table__column--actions a:hover {
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-sm);
 }
 
 body {
@@ -905,6 +906,15 @@ td {
   display: flex;
 }
 
+.o-form__title {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-light);
+}
+
+.o-form__title--center {
+  text-align: center;
+}
+
 .o-table {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   border-color: var(--color-border);
@@ -934,7 +944,7 @@ td {
   background-color: var(--color-surface-dark-light);
   border-color: var(--color-surface-dark);
   border-width: 1px;
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-sm);
   text-transform: uppercase;
   font-weight: normal;
 }
@@ -951,7 +961,7 @@ label {
   color: var(--color-text-light);
   margin-bottom: 0.5rem;
   margin-bottom: 0.25rem;
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-sm);
 }
 
 input {
@@ -983,6 +993,23 @@ input:focus {
 fieldset {
   background-color: var(--color-surface);
   padding: 1rem;
+}
+
+a {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: var(--font-size-sm);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: var(--color-accent);
+}
+
+h1, h2 {
+  font-size: var(--font-size-xl);
+}
+
+h3, h4, h5, h6 {
+  font-size: var(--font-size-lg);
 }
 
 .container {
@@ -5181,19 +5208,23 @@ fieldset {
 }
 
 .text-xs {
-  font-size: var(--font-size-extra-small);
+  font-size: var(--font-size-xs);
 }
 
 .text-sm {
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-sm);
 }
 
 .text-base {
   font-size: var(--font-size-base);
 }
 
-.text-large {
-  font-size: var(--font-size-large);
+.text-lg {
+  font-size: var(--font-size-lg);
+}
+
+.text-xl {
+  font-size: var(--font-size-xl);
 }
 
 .italic {
@@ -9776,19 +9807,23 @@ fieldset {
   }
 
   .sm\:text-xs {
-    font-size: var(--font-size-extra-small);
+    font-size: var(--font-size-xs);
   }
 
   .sm\:text-sm {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-sm);
   }
 
   .sm\:text-base {
     font-size: var(--font-size-base);
   }
 
-  .sm\:text-large {
-    font-size: var(--font-size-large);
+  .sm\:text-lg {
+    font-size: var(--font-size-lg);
+  }
+
+  .sm\:text-xl {
+    font-size: var(--font-size-xl);
   }
 
   .sm\:italic {
@@ -14372,19 +14407,23 @@ fieldset {
   }
 
   .md\:text-xs {
-    font-size: var(--font-size-extra-small);
+    font-size: var(--font-size-xs);
   }
 
   .md\:text-sm {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-sm);
   }
 
   .md\:text-base {
     font-size: var(--font-size-base);
   }
 
-  .md\:text-large {
-    font-size: var(--font-size-large);
+  .md\:text-lg {
+    font-size: var(--font-size-lg);
+  }
+
+  .md\:text-xl {
+    font-size: var(--font-size-xl);
   }
 
   .md\:italic {
@@ -18968,19 +19007,23 @@ fieldset {
   }
 
   .lg\:text-xs {
-    font-size: var(--font-size-extra-small);
+    font-size: var(--font-size-xs);
   }
 
   .lg\:text-sm {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-sm);
   }
 
   .lg\:text-base {
     font-size: var(--font-size-base);
   }
 
-  .lg\:text-large {
-    font-size: var(--font-size-large);
+  .lg\:text-lg {
+    font-size: var(--font-size-lg);
+  }
+
+  .lg\:text-xl {
+    font-size: var(--font-size-xl);
   }
 
   .lg\:italic {
@@ -23564,19 +23607,23 @@ fieldset {
   }
 
   .xl\:text-xs {
-    font-size: var(--font-size-extra-small);
+    font-size: var(--font-size-xs);
   }
 
   .xl\:text-sm {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-sm);
   }
 
   .xl\:text-base {
     font-size: var(--font-size-base);
   }
 
-  .xl\:text-large {
-    font-size: var(--font-size-large);
+  .xl\:text-lg {
+    font-size: var(--font-size-lg);
+  }
+
+  .xl\:text-xl {
+    font-size: var(--font-size-xl);
   }
 
   .xl\:italic {

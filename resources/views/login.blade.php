@@ -9,12 +9,13 @@ $form = form('login')->redirect('admin')->get();
 @endphp
 
 
-<div>
+<div class="flex h-screen">
 
-    {!! $form->open(['class' => 'o-form']) !!}
+    {!! $form->open(['class' => 'o-form m-auto']) !!}
 
     <fieldset class="o-form__fieldset">
 
+        <h1 class="o-form__title o-form__title--center">Login</h1>
 
         @if (config('anomaly.module.users::login', 'email') == 'username')
 
