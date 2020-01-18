@@ -1045,19 +1045,26 @@ td {
 }
 
 .o-form-login {
-  width: 100vw;
-  height: 100vh;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
+  width: 100vw;
+  height: 100vh;
 }
 
 @media (min-width: 640px) {
   .o-form-login {
     width: 20rem;
     height: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .o-form-login {
+    width: 320px;
+    height: 280px;
   }
 }
 
@@ -1070,6 +1077,15 @@ td {
   padding-bottom: 0.75rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+@media (min-width: 1024px) {
+  .o-form-login .c-form-row.c-form__row--input input {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 
 .o-form-login__title {

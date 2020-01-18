@@ -1,20 +1,27 @@
 .o-form-login {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
-}
-@media (min-width: 640px) {
-    .o-form-login {
+
+    width: 100vw;
+    height: 100vh;
+    @media (min-width: 640px) {
         width: 20rem;
         height: 20rem;
     }
+    @media (min-width: 1024px) {
+        width: 320px;
+        height: 280px;
+    }
 }
+
 .o-form-login__fieldset {
     height: 100%;
 }
 .o-form-login .c-form-row.c-form__row--input input {
     @apply py-3 px-3;
+    @media (min-width: 1024px) {
+        @apply py-2 px-2;
+    }
 }
 .o-form-login__title {
     @apply text-sm text-text-light;
