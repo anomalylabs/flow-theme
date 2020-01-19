@@ -727,7 +727,10 @@ fieldset + div, .c-form-footer {
   margin-top: 0;
   background-color: var(--color-surface-dark-light);
   border-color: var(--color-surface-dark);
-  border-width: 1px;
+  border-top-width: 1px;
+  border-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 h1, h2, h3, h4, h5, h6, label, button, .o-table__column--actions a {
@@ -1045,31 +1048,47 @@ td {
 }
 
 .o-form-login {
+  --branding-size: 50px;
+  --form-margin-top: -100px;
+  --inner-padding: 1.8rem;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
+  height: 100%;
   width: 100vw;
-  height: 100vh;
 }
 
 @media (min-width: 640px) {
   .o-form-login {
-    width: 20rem;
-    height: 20rem;
+    margin-top: var(--form-margin-top);
+    width: 320px;
+    height: auto;
   }
 }
 
+.o-form-login__field-wrapper {
+  background-color: var(--color-surface);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
 @media (min-width: 1024px) {
-  .o-form-login {
-    width: 320px;
-    height: 280px;
+  .o-form-login__field-wrapper {
+    border-radius: 0.25rem;
   }
 }
 
 .o-form-login__fieldset {
-  height: 100%;
+  padding: var(--inner-padding);
 }
 
 .o-form-login .c-form-row.c-form__row--input input {
@@ -1089,12 +1108,52 @@ td {
 }
 
 .o-form-login__title {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   color: var(--color-text-light);
 }
 
 .o-form-login__title--center {
   text-align: center;
+}
+
+.o-form-login .c-form-header {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  margin-top: 2rem;
+}
+
+.o-form-login__brand {
+  fill: #fff;
+  width: var(--branding-size);
+  height: var(--branding-size);
+}
+
+.c-form-header .o-form-login__title {
+  font-size: var(--font-size-lg);
+  margin-top: 1rem;
+}
+
+.o-form-login .c-form__footer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: var(--inner-padding);
+  padding-top: calc(var(--inner-padding) - (var(--inner-padding)/2.5));
+  padding-bottom: calc(var(--inner-padding) - (var(--inner-padding)/2.5));
+}
+
+.o-form-login .c-form__footer a {
+  margin: 0;
 }
 
 .o-table {
@@ -1177,7 +1236,6 @@ input:focus {
 }
 
 fieldset {
-  background-color: var(--color-surface);
   padding: 1rem;
 }
 

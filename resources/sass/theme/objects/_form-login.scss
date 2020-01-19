@@ -1,32 +1,100 @@
-.o-form-login {
+//  ----------------------------------------------------------------------------
+//  Custom Form Login Styling
+//  ----------------------------------------------------------------------------
+.o-form-login
+{
+    --branding-size : 50px;
+    --form-margin-top : -100px;
+    --inner-padding: 1.8rem;
     display: flex;
     flex-direction: column;
-
+    height:100%;
     width: 100vw;
-    height: 100vh;
-    @media (min-width: 640px) {
-        width: 20rem;
-        height: 20rem;
-    }
-    @media (min-width: 1024px) {
+    
+    @media (min-width: 640px)
+    {
+        margin-top: var(--form-margin-top);
         width: 320px;
-        height: 280px;
+        height:auto;
     }
+    
+    
+}
+//  ----------------------------------------------------------------------------
+//  Wrapper around fields
+//  ----------------------------------------------------------------------------
+.o-form-login__field-wrapper
+{
+    @apply bg-surface shadow-md;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (min-width: 1024px) {
+        @apply rounded;
+    }
+}
+//  ----------------------------------------------------------------------------
+//  Custom Fieldset styling within form login
+//  ----------------------------------------------------------------------------
+.o-form-login__fieldset
+{
+    
+    padding:var(--inner-padding);
 }
 
-.o-form-login__fieldset {
-    height: 100%;
-}
-.o-form-login .c-form-row.c-form__row--input input {
+//  ----------------------------------------------------------------------------
+//  Custom input field styling within form login
+//  ----------------------------------------------------------------------------
+.o-form-login .c-form-row.c-form__row--input input
+{
     @apply py-3 px-3;
-    @media (min-width: 1024px) {
+    @media (min-width: 1024px)
+    {
         @apply py-2 px-2;
     }
 }
-.o-form-login__title {
-    @apply text-sm text-text-light;
+//  ----------------------------------------------------------------------------
+//  Custom title styling within form login
+//  ----------------------------------------------------------------------------
+.o-form-login__title
+{
+    @apply text-base text-text-light;
+}
+.o-form-login__title--center
+{
+    @apply text-center;
 }
 
-.o-form-login__title--center {
-    @apply text-center;
+//  ----------------------------------------------------------------------------
+//  Custom styling for head and its elements within form login
+//  ----------------------------------------------------------------------------
+.o-form-login .c-form-header 
+{
+    @apply my-5 flex items-center flex-col mt-8;
+}
+.o-form-login__brand
+{
+    fill:#fff;
+    width:var(--branding-size);
+    height:var(--branding-size);
+}
+.c-form-header .o-form-login__title
+{
+    @apply text-lg mt-4;
+}
+
+//  ----------------------------------------------------------------------------
+//  Custom Footer styling of login form
+//  ----------------------------------------------------------------------------
+.o-form-login .c-form__footer
+{
+    @apply  flex justify-between items-center;
+    padding:var(--inner-padding);
+    padding-top: calc(var(--inner-padding) - (var(--inner-padding)/2.5));
+    padding-bottom: calc(var(--inner-padding) - (var(--inner-padding)/2.5));
+}
+.o-form-login .c-form__footer a
+{
+    @apply m-0;
 }
