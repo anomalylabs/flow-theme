@@ -1,4 +1,4 @@
-@extends($template->get('layout', 'theme::layouts/default'))
+@extends('theme::layouts/default')
 
 @section('content')
     {!! $content !!}

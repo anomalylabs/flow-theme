@@ -8,15 +8,15 @@
 <meta name="generator" content="{{ config('streams::distribution.name') }}"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-<meta name="description" content="{{ trans($template->get('meta_description') ?: config('app.name')) }}"/>
+<meta name="description" content="{{ trans($metaDescription ?? config('app.name')) }}"/>
 
-{{ $template->includes->render('meta') }}
+{!! app(\Anomaly\Streams\Platform\View\ViewIncludes::class)->render('meta') !!}
 
 <title>
     {{ config('app.name') }}
-    @if ($template->meta_title)
+    @if (isset($metaTitle))
         &#8250;
-        {{ $template->meta_title }}
+        {{ $metaTitle }}
     @endif
 </title>
 
@@ -27,4 +27,4 @@
 {!! assets()->style('public::css/theme.css') !!}
 
 
-{{ $template->includes->render('head') }}
+{!! app(\Anomaly\Streams\Platform\View\ViewIncludes::class)->render('head') !!}
