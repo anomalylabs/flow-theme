@@ -1,4 +1,4 @@
-@extends($template->get('layout', 'theme::layouts/blank'))
+@extends($template->get('layout', 'admin::layouts/blank'))
 
 @section('content')
     {!! $content !!}

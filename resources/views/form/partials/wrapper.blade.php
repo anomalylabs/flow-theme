@@ -27,7 +27,7 @@
         @endif
 
         @if ($fieldType->locale)
-            @include('theme::form/partials/translations')
+            @include('admin::form/partials/translations')
         @endif
     </label>
 

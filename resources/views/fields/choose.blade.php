@@ -1,6 +1,6 @@
 <div class="modal__filter">
 
-    @include('theme::modals/filter')
+    @include('admin::modals/filter')
 
     <ul>
         @foreach ($fieldTypes->instances() as $fieldType)

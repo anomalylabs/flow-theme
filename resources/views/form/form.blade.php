@@ -5,10 +5,10 @@
     <div class="form__wrapper">
 aaaaa
         {!! $form->open() !!}
-        @include('theme::form/partials/controls')
-        @include('theme::form/partials/heading')
-        @include('theme::form/partials/layout')
-        @include('theme::form/partials/controls')
+        @include('admin::form/partials/controls')
+        @include('admin::form/partials/heading')
+        @include('admin::form/partials/layout')
+        @include('admin::form/partials/controls')
         {!! $form->close() !!}
 x
     </div>
