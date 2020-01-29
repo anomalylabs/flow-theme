@@ -9,13 +9,13 @@
                 @elseif (isset($section['html']))
                     {!! $section['html'] !!}
                 @elseif (isset($section['tabs']))
-                    @include('theme::form/partials/tabs')
+                    @include('admin::form/partials/tabs')
                 @else
-                    @include('theme::form/partials/section')
+                    @include('admin::form/partials/section')
                 @endif
             @endforeach
         @else
-            @include('theme::form/partials/default')
+            @include('admin::form/partials/default')
         @endif
         
     @endif
