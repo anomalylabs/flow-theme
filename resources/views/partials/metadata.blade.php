@@ -24,7 +24,7 @@
 
 {{ constants() }}
 
-{!! assets()->style('public::css/theme.css') !!}
+{!! assets()->style('public::vendor/anomaly/theme/flow/css/theme.css') !!}
 
 
 {!! app(\Anomaly\Streams\Platform\View\ViewIncludes::class)->render('head') !!}
