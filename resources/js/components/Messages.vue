@@ -4,7 +4,7 @@ import Toasted from "vue-toasted";
 import Vue from "vue";
 Vue.use(Toasted, {
     position: "top-right",
-    duration: 2000,
+    duration: 200000,
     theme: "c-toast"
 });
 export default {
