@@ -11,8 +11,10 @@
 @import './theme/tools/tools';
 // Generic — reset and/or normalize styles, box-sizing definition, etc. It is 
 // important to note that this is the first layer of the triangle that 
-// generates CSS.
+// generates CSS. 
 @import './theme/generic/generic';
+// Vendor
+@import './theme/vendor/vendor';
 // Components — specific UI components. The components of our page, for 
 // example button, card, concrete-list, etc..
 @import './theme/components/components.scss';

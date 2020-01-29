@@ -622,6 +622,14 @@ video {
   --font-size-xl:1.5rem;
 }
 
+:root {
+  --color-orange-500:#ffdc00;
+  --color-orange-600:#E8C800;
+  --color-orange-700:#BAA100;
+  --color-orange-800:#8C7800;
+  --color-orange-900:#5D5000;
+}
+
 @font-face {
   font-family: "JetBrains Mono";
 
@@ -790,21 +798,6 @@ td {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: var(--font-size-base);
-}
-
-.c-top {
-  background-color: var(--color-white);
-  display: -webkit-box;
-  display: flex;
-}
-
-.c-list--x {
-  display: -webkit-box;
-  display: flex;
-}
-
-.c-form-row + .c-form-row {
-  margin-top: 0.75rem;
 }
 
 .toasted-container {
@@ -1026,9 +1019,35 @@ td {
   }
 }
 
+.c-top {
+  background-color: var(--color-white);
+  display: -webkit-box;
+  display: flex;
+}
+
+.c-list--x {
+  display: -webkit-box;
+  display: flex;
+}
+
+.c-form-row + .c-form-row {
+  margin-top: 0.75rem;
+}
+
 .toasted-container.top-right {
-  top: 5% !important;
-  right: 5% !important;
+  top: 1rem !important;
+  right: 1rem !important;
+}
+
+.toasted-container .toasted.c-toast {
+  top: 35px;
+  min-width: 280px;
+  min-height: 60px;
+  margin-top: 0;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid var(--color-orange-600);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 0.125rem;
 }
 
 .c-toast__error {
@@ -1036,7 +1055,8 @@ td {
 }
 
 .c-toast__warning {
-  background: orange;
+  color: var(--color-orange-900);
+  background: var(--color-orange-500);
 }
 
 .c-toast__info {
