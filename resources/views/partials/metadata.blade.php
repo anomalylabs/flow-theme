@@ -25,9 +25,13 @@
 {{ constants() }}
 
 
-{--!! assets()->style('public::vendor/anomaly/theme/flow/css/theme.css') !!--}
+<!-- Use this -->
+<!-- Put them here -->
+{!! assets()->style('public::vendor/anomaly/theme/flow/css/theme.css') !!}
 
-{!! assets()->style('public::css/theme.css') !!}
+<!-- Not here -->
+<!-- You idiot -->
+{{-- {!! assets()->style('public::css/theme.css') !!} --}} 
 
 
 {!! app(\Anomaly\Streams\Platform\View\ViewIncludes::class)->render('head') !!}
