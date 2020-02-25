@@ -10,7 +10,7 @@
 
 <meta name="description" content="{{ trans($metaDescription ?? config('app.name')) }}"/>
 
-{!! app(\Anomaly\Streams\Platform\View\ViewIncludes::class)->render('meta') !!}
+{!! app(\Anomaly\Streams\Platform\Support\Includes::class)->render('meta') !!}
 
 <title>
     {{ config('app.name') }}
@@ -34,4 +34,4 @@
 {{-- {!! assets()->style('public::css/theme.css') !!} --}} 
 
 
-{!! app(\Anomaly\Streams\Platform\View\ViewIncludes::class)->render('head') !!}
+{!! app(\Anomaly\Streams\Platform\Support\Includes::class)->render('head') !!}

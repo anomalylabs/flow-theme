@@ -6,7 +6,7 @@
     {!! $script !!}
 @endforeach
 
-{!! app(\Anomaly\Streams\Platform\View\ViewIncludes::class)->render('scripts') !!}
+{!! app(\Anomaly\Streams\Platform\Support\Includes::class)->render('scripts') !!}
 
 @foreach (assets()->styles("styles.css", ["min"]) as $style)
     {!! $style !!}
