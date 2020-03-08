@@ -13,9 +13,9 @@ require('laravel-mix-purgecss');
  */
 
 mix
-    .disableSuccessNotifications()
     .js('./resources/js/app.js', './assets/js')
-    .sass('./resources/sass/theme.scss', './assets/css')
+    .sass('./resources/scss/theme.scss', './assets/css')
+    .sass('./resources/scss/login.scss', './assets/css')
     .options({
         processCssUrls: false,
         postCss: [
@@ -23,7 +23,7 @@ mix
         ],
     })
     .browserSync({
-        proxy: 'streams.test',
+        proxy: 'streams.local',
         files: [
             '../../../public/js/**/*.js',
             '../../../public/js/**/*.css',

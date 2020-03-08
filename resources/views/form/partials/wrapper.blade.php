@@ -3,7 +3,7 @@
 <div class="c-form-row c-form__row--input">
     
     <label for="{{ $fieldType->getInputName() }}">
-        {{ $fieldType->getLabel() }}
+        {!! $fieldType->getLabel() !!}
     </label>
     {!! $fieldType->getInput(['form' => isset($form) ? $form : null]) !!}
         
