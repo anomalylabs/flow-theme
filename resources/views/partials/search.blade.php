@@ -4,15 +4,14 @@
         <input type="search" placeholder="{{ trans('anomaly.theme.flow::control_panel.search_input') }}">
     </form>
 
-
     <ul>
-        @foreach ($template->get('cp')->getNavigation() as $key => $navigation)
+        @foreach (cp()->getNavigation() as $key => $navigation)
             <li>
                 <a>
                     {{-- {!! $navigation->icon() !!} --}}
                     <span>{{ $navigation->getTitle() }}</span>
                 </a>
-                @foreach ($template->get('cp')->getSections()->root()->visible() as $section)
+                @foreach (cp()->getSections()->root()->visible() as $section)
                     <li>
                         <a>
                             {{-- {!! $section->icon() !!} --}}

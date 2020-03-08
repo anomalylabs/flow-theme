@@ -1,8 +1,7 @@
-
 <aside id="sidebar">
 
     <ul>
-        @foreach (cp()->navigation as $key => $item)
+        @foreach (cp()->getNavigation() as $key => $item)
             <li data-slug="{{ $item->getSlug() }}">
                 
                 <a {!! html_attributes($item->attributes()) !!}>
