@@ -2,6 +2,6 @@
 
     @include('admin::form/partials/header')
 
-    @include('admin::form/partials/fields', ['fields' => $form->fields->base()->pluck('field_name')->all()])
+    @include('admin::form/partials/fields', ['fields' => $form->fields->base()->fieldNames()->all()])
     
 </div>
