@@ -3,47 +3,29 @@
 <div class="c-form-row c-form__row--input">
     
     <label for="{{ $fieldType->getInputName() }}">
+        
         {!! $fieldType->getLabel() !!}
-    </label>
-    {!! $fieldType->getInput(['form' => isset($form) ? $form : null]) !!}
-        
-    
-</div>
-    {{-- <label for="{{ $fieldType->getInputName() }}">
-        
-            
-            <span>{{ $fieldType->getLabel() }}</span>
-    
-    </label> --}}
 
-
-{{-- <div {!! html_attributes($fieldType->wrapperAttributes()) !!}>
-
-    <label for="{{ $fieldType->getInputName() }}">
-        {{ $fieldType->getLabel() }}
-
-        @if ($fieldType->required)
+        @if ($fieldType->isRequired())
             <span class="field__required">*</span>
         @endif
 
-        @if ($fieldType->locale)
+        {{-- @if ($fieldType->locale)
             @include('admin::form/partials/translations')
-        @endif
+        @endif --}}
     </label>
 
-    @if ($fieldType->instructions)
-        <div class="field__instructions">{{ $fieldType->instructions }}</div>
+    @if ($fieldType->getInstructions())
+        <div class="field__instructions">{{ $fieldType->getInstructions() }}</div>
     @endif
         
-    @if ($fieldType->warning)
+    @if ($fieldType->getWarning())
         <div class="field__warning">
             {!! icon('warning') !!}
-            {{ $fieldType->warning }}
-        </p>
+            {{ $fieldType->getWarning() }}
+        </div>
     @endif
 
-    <div class="field__input">
-        {!! $fieldType->getInput(['form' => isset($form) ? $form : null]) !!}
-    </div>
+    {!! $fieldType->getInput(['form' => isset($form) ? $form : null]) !!}
 
-</div> --}}
+</div>

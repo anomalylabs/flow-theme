@@ -16,6 +16,10 @@ mix
     .js('./resources/js/app.js', './assets/js')
     .sass('./resources/scss/theme.scss', './assets/css')
     .sass('./resources/scss/login.scss', './assets/css')
+    .copyDirectory(
+        './node_modules/@fortawesome/fontawesome-free/webfonts',
+        './assets/fonts/fontawesome'
+    )
     .options({
         processCssUrls: false,
         postCss: [
@@ -25,14 +29,11 @@ mix
     .browserSync({
         proxy: 'streams.local',
         files: [
-            '../../../public/js/**/*.js',
-            '../../../public/js/**/*.css',
+            //'./public/js/**/*.js',
+            //'./public/js/**/*.css',
             './resources/views/**/*.php',
         ]
     })
-    .copy('./assets/js/app.js', '../../../public/js/app.js')
-    .copy('./assets/css/theme.css', '../../../public/css/theme.css')
-    .copy('./resources/fonts/', '../../../public/css/fonts')
     .sourceMaps();
 
 
