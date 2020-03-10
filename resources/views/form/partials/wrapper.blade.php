@@ -1,5 +1,3 @@
-{{-- <code style='padding:.5rem 1rem; background:hsl(0, 100%, 87%); color: hsla(0, 100%, 66%, 1);'>~/Development/Web/streams/vendor/anomaly/flow-theme/resources/views/form/partials/wrapper.blade.php</code> --}}
-
 <div class="c-form-row c-form__row--input">
     
     <label for="{{ $fieldType->getInputName() }}">
