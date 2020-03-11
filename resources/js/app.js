@@ -16,8 +16,6 @@ Vue.component('messages', Messages);
 import Top from "./components/layout/Top";
 Vue.component('layout-top', Top);
 
-
-
 // Our bus for future use.
 export const bus = new Vue();
 
@@ -29,4 +27,3 @@ const app = new Vue({
       'background-color:red;color:white;font-size:11px;padding:5px 10px;')
   }
 });
-
