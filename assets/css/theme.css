@@ -73474,6 +73474,7 @@ select.input {
 
 .table__filters {
   margin-bottom: 1.5rem;
+  margin: 1.25rem;
 }
 
 .table__filters form {
@@ -73488,6 +73489,7 @@ select.input {
   padding: 0;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+  margin: 1.25rem;
 }
 
 .table__views nav {
@@ -73495,8 +73497,8 @@ select.input {
 }
 
 .table__views nav a {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin-left: 0.75rem;
   margin-right: 0.75rem;
 }
@@ -73507,6 +73509,7 @@ select.input {
   margin-bottom: 1.25rem;
   box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
   padding: 0;
+  margin: 1.25rem;
 }
 
 .table__container table {
@@ -73836,7 +73839,7 @@ select.input {
   margin: 1.25rem;
 }
 
-#actions > a {
+#actions .buttons > a {
   padding: 1.25rem;
   background-color: #fff;
   margin-bottom: 1.25rem;
@@ -73848,7 +73851,7 @@ select.input {
   transition: box-shadow 200ms;
 }
 
-#actions > a:hover {
+#actions .buttons > a:hover {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
