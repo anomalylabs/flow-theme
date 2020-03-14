@@ -1,4 +1,6 @@
-{{ assets('scripts.js', 'public::vendor/anomaly/core/js/form.js') }}
+<cp-form :form="{{ $form->toJson() }}"></cp-form>
+
+{{-- {{ assets('scripts.js', 'public::vendor/anomaly/core/js/form.js') }} --}}
 
 @section('content')
     <div class="form__wrapper">
