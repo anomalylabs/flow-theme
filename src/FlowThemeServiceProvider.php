@@ -2,6 +2,7 @@
 
 namespace Anomaly\FlowTheme;
 
+use Anomaly\Streams\Platform\Asset\AssetManager;
 use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
 
 /**
@@ -11,4 +12,5 @@ use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
  * @author Ryan Thompson <ryan@pyrocms.com>
  */
 class FlowThemeServiceProvider extends AddonServiceProvider
-{ }
+{
+}
