@@ -25,8 +25,6 @@
 
     </div>
 
-    @include('anomaly.theme.flow::partials.footer')
-
 </div>
 
 @include('anomaly.theme.flow::partials.assets')
