@@ -13,6 +13,4 @@
 
 {!! app(\Anomaly\Streams\Platform\Support\Includes::class)->render('scripts') !!}
 
-@foreach (assets('styles.css')->styles() as $style)
-    {!! $style !!}
-@endforeach
+{!! assets('styles.css')->styles() !!}
