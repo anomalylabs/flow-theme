@@ -3,9 +3,9 @@
 @section('content')
 
     @php
-        assets('styles.css', 'public::vendor/anomaly/theme/flow/css/login.css');
-        assets('scripts.js', 'public::vendor/anomaly/theme/flow/js/form/form.js');
-
+        assets('styles.css')->add('public::vendor/anomaly/theme/flow/css/login.css');
+        assets('scripts.js')->add('public::vendor/anomaly/theme/flow/js/form/form.js');
+        
         $form = form('login')->redirect('admin')->get();
     @endphp
 
