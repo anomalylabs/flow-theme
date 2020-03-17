@@ -1,7 +1,5 @@
 <cp-table :table="{{ $table->toJson() }}"></cp-table>
 
-{{ assets('scripts.js', 'public::vendor/anomaly/core/js/table/table.js') }}
-
 <div class="o-table" id="{{ $table->prefix() }}table-instance">
 
     @include('admin::table/partials/filters')
