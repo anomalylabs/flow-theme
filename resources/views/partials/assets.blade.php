@@ -2,9 +2,7 @@
 {--!! assets()->script('public::vendor/anomaly/core/js/cp.js') !!--}}
 {!! assets()->script('public::vendor/anomaly/core/js/app.js') !!}
 
-@foreach (assets('scripts.js')->scripts() as $script)
-    {!! $script !!}
-@endforeach
+{!! assets('scripts.js')->tags() !!}
 
 <script>
     streams
@@ -13,4 +11,4 @@
 
 {!! app(\Anomaly\Streams\Platform\Support\Includes::class)->render('scripts') !!}
 
-{!! assets('styles.css')->styles() !!}
+{!! assets('styles.css')->tags() !!}
