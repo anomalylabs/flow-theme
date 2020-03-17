@@ -6,6 +6,11 @@
     {!! $script !!}
 @endforeach
 
+<script>
+    streams
+        .boot({});
+</script>
+
 {!! app(\Anomaly\Streams\Platform\Support\Includes::class)->render('scripts') !!}
 
 @foreach (assets()->styles("styles.css", ["min"]) as $style)
