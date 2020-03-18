@@ -1,8 +1,11 @@
-import {ServiceProvider} from '@anomaly/streams-platform';
+import Navigation from '../components/Navigation'
+import Sections from '../components/Sections'
+
+import {ServiceProvider} from '@anomaly/streams-platform'
 
 export class FlowThemeServiceProvider extends ServiceProvider {
     boot(){
-        console.log('Flow');
-        //Vue.component('boolean-field-type', ToggleButton);
+        Vue.component('navigation', Navigation);
+        Vue.component('sections', Sections);
     }
 }
