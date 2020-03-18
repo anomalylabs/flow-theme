@@ -1,9 +1,7 @@
-<cp-table :table="{{ $table->toJson() }}"></cp-table>
-
-<div class="o-table" id="{{ $table->prefix() }}table-instance">
+<cp-table :table="{{ $table->toJson() }}">
 
     @include('admin::table/partials/filters')
-    @include('admin::table/partials/views')
+    {{-- @include('admin::table/partials/views') --}}
     @include('admin::table/partials/heading')
 
     <div class="table__container">
@@ -19,5 +17,5 @@
             {{ trans('streams::message.no_results') }}
         @endif
     </div>
-
-</div>
+    
+</cp-table>
