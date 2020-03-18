@@ -1,6 +1,21 @@
 let mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss');
 require('laravel-mix-purgecss');
+
+/*
+ |--------------------------------------------------------------------------
+ | Webpack Configuration
+ |--------------------------------------------------------------------------
+ |
+ | Configure webpack...
+ |
+ */
+mix.webpackConfig({
+    externals: {
+        "@anomaly/streams-platform": "streams"
+    }
+});
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -13,14 +28,15 @@ require('laravel-mix-purgecss');
  */
 
 mix
-    .js('./resources/js/app.js', './assets/js')
-    .sass('./resources/scss/theme.scss', './assets/css')
-    .sass('./resources/scss/login.scss', './assets/css')
+    //.js('./resources/js/app.js', './assets/js')
+    .js('./resources/assets/js/index.js', './resources/dist/js')
+    .sass('./resources/scss/theme.scss', './resources/dist/css')
+    .sass('./resources/scss/login.scss', './resources/dist/css')
     .copyDirectory(
         './node_modules/@fortawesome/fontawesome-free/webfonts',
         './assets/fonts/fontawesome'
     )
-    .copyDirectory('assets', '../../../public/vendor/anomaly/theme/flow')
+    .copyDirectory('resources/dist', '../../../public/vendor/anomaly/theme/flow')
     .options({
         processCssUrls: false,
         postCss: [
