@@ -4,11 +4,12 @@
 
 {!! assets('scripts.js')->tags() !!}
 
-<script>
-    streams
-        .boot({});
-</script>
-
 {!! app(\Anomaly\Streams\Platform\Support\Includes::class)->render('scripts') !!}
+
+<script>
+    streams.app.boot({
+        providers: streams.providers,
+    }).then(() => streams.app.start('#app'));
+</script>
 
 {!! assets('styles.css')->tags() !!}

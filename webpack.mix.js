@@ -20,19 +20,12 @@ mix
         './node_modules/@fortawesome/fontawesome-free/webfonts',
         './assets/fonts/fontawesome'
     )
+    .copyDirectory('assets', '../../../public/vendor/anomaly/theme/flow')
     .options({
         processCssUrls: false,
         postCss: [
             tailwindcss('./tailwind.config.js'),
         ],
-    })
-    .browserSync({
-        proxy: 'streams.local',
-        files: [
-            //'./public/js/**/*.js',
-            //'./public/js/**/*.css',
-            './resources/views/**/*.php',
-        ]
     })
     .sourceMaps();
 
