@@ -1,11 +1,13 @@
 import Navigation from '../components/Navigation'
+import Shortcuts from '../components/Shortcuts'
 import Sections from '../components/Sections'
 
 import {ServiceProvider} from '@anomaly/streams-platform'
 
 export class FlowThemeServiceProvider extends ServiceProvider {
     boot(){
-        Vue.component('navigation', Navigation);
-        Vue.component('sections', Sections);
+        Vue.component('admin-navigation', Navigation);
+        Vue.component('admin-shortcuts', Shortcuts);
+        Vue.component('admin-sections', Sections);
     }
 }

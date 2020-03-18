@@ -3,7 +3,7 @@
         <li v-for="link in links" :key="link.slug">
             <a v-bind="link.attributes">{{ link.title }}</a>
 
-            <sections :sections="link.sections"></sections>
+            <admin-sections :sections="link.sections"></admin-sections>
         </li>
     </ul>
 </template>

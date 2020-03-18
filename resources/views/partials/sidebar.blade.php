@@ -1,5 +1,13 @@
 <aside id="sidebar" class="flex flex-col">
-    <navigation :links="{{ cp()->getNavigation()->toJson() }}"></navigation>
+    
+    <admin-navigation :links="{{ cp()->getNavigation()->toJson() }}"></admin-navigation>
 
-    @include('anomaly.theme.flow::partials.footer')
+    <footer id="footer">
+        <div class="text-xs text-gray-400">
+    
+            {{ config('streams::distribution.name') }} | {{ config('streams::distribution.version') }} | {{ elapsed_time() }}s
+    
+        </div>
+    </footer>
+    
 </aside>

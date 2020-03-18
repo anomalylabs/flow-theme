@@ -73678,47 +73678,6 @@ select.input {
   margin-left: 0.75rem;
 }
 
-.header__search {
-  padding: 1.5rem;
-}
-
-.header__search ul {
-  display: none;
-}
-
-.header__search ul .selected {
-  font-weight: bold;
-}
-
-.header__search.-open {
-  background: red;
-}
-
-.header__search.-open ul {
-  display: inherit;
-}
-
-.header__search input[type=search] {
-  border-radius: 0.25rem;
-  width: 100%;
-  border-width: 2px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-color: #cbd5e0;
-  color: #4a5568;
-  box-shadow: none;
-  border-style: none;
-  background-color: #f7fafc;
-  width: 25rem;
-}
-
-.header__search input[type=search]:focus:focus {
-  border-color: #4299e1;
-  outline: 0;
-}
-
 .header__toggle {
   display: block;
 }

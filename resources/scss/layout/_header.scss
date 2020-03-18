@@ -23,37 +23,6 @@
     }
 }
 
-.header__search {
-    @apply .p-6;
-
-    ul {
-        display: none;
-
-        .selected {
-            font-weight: bold;
-        }
-    }
-
-    &.-open {
-        background: red;
-
-        ul {
-            display: inherit;
-        }
-    }
-
-    input[type="search"] {
-        @apply .input .shadow-none .border-none .bg-gray-100;
-        width: 25rem;
-
-        &:focus {
-            &:focus {
-                @apply .border-blue-500 .outline-none;
-            }
-        }
-    }
-}
-
 .header__toggle {
     @apply .block;
 

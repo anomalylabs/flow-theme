@@ -5,8 +5,6 @@
         <span>{{ config('app.name') }}</span>
     </div>
 
-    @include('anomaly.theme.flow::partials.search')
-
     <div class="header__toggle">
         <button>
             {!! img('anomaly.theme.flow::img/menu-open.svg')->data() !!}
@@ -16,14 +14,6 @@
         </button>
     </div>
 
-    <nav>
-        <div>
-            @foreach (cp()->getShortcuts() as $shortcut)
-                <a {!! html_attributes($shortcut->attributes()) !!}>
-                    {{ $shortcut->getTitle() }}
-                </a>
-            @endforeach
-        </div>
-    </nav>
+    <admin-shortcuts :shortcuts="{{ cp()->shortcuts->toJson() }}"></admin-shortcuts>
 
 </header>
