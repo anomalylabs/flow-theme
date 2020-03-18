@@ -34,7 +34,7 @@ mix
     .sass('./resources/scss/login.scss', './resources/dist/css')
     .copyDirectory(
         './node_modules/@fortawesome/fontawesome-free/webfonts',
-        './assets/fonts/fontawesome'
+        './resources/dist/fonts/fontawesome'
     )
     .copyDirectory('resources/dist', '../../../public/vendor/anomaly/theme/flow')
     .options({
