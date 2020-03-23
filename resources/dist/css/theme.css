@@ -73382,6 +73382,11 @@ readers do not read off random characters that represent icons */
   box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
 }
 
+.form__section:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .form__controls {
   padding: 1.25rem;
   background-color: #fff;
