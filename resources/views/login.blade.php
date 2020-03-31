@@ -41,8 +41,8 @@
             </div>
 
             <div class="login__version">
-                {{ config('streams::distribution.name') }}
-                <span>{{ config('streams::distribution.version') }}</span>
+                {{ config('streams.distribution.name') }}
+                <span>{{ config('streams.distribution.version') }}</span>
             </div>
 
         </div>
