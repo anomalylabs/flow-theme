@@ -11,7 +11,7 @@
 
 <meta name="description" content="{{ trans($metaDescription ?? config('app.name')) }}"/>
 
-{!! app(\Anomaly\Streams\Platform\Support\Includes::class)->render('meta') !!}
+{!! View::includes('meta') !!}
 
 <title>
     {{ config('app.name') }}
@@ -27,4 +27,4 @@
 
 {!! assets()->style('public::vendor/anomaly/theme/flow/css/theme.css') !!}
 
-{!! app(\Anomaly\Streams\Platform\Support\Includes::class)->render('head') !!}
+{!! View::includes('head') !!}

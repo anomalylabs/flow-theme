@@ -5,8 +5,6 @@
 
 {!! assets('scripts.js')->tags() !!}
 
-{!! app(\Anomaly\Streams\Platform\Support\Includes::class)->render('scripts') !!}
-
 <script>
     streams.app.boot({
         providers: streams.app.providers,
@@ -14,3 +12,7 @@
 </script>
 
 {!! assets('styles.css')->tags() !!}
+
+{!! assets('footer')->tags() !!}
+
+{!! View::includes('footer') !!}
