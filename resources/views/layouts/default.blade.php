@@ -7,7 +7,7 @@
 
 <body>
 
-<div id="app">
+<v-app id="app">
 
     @include('anomaly.theme.flow::partials.header')
 
@@ -19,13 +19,17 @@
 
             @include('anomaly.theme.flow::partials.actions')
 
+            <v-avatar color="red">
+                <span class="white--text headline">CJ</span>
+            </v-avatar>
+
             @yield('content')
 
         </div>
 
     </div>
 
-</div>
+</v-app>
 
 @include('anomaly.theme.flow::partials.assets')
 @include('anomaly.theme.flow::partials.messages')
