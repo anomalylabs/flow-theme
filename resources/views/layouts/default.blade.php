@@ -19,10 +19,6 @@
 
             @include('anomaly.theme.flow::partials.actions')
 
-            <v-avatar color="red">
-                <span class="white--text headline">CJ</span>
-            </v-avatar>
-
             @yield('content')
 
         </div>
