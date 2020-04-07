@@ -10,20 +10,17 @@
 <v-app id="app">
 
     @include('anomaly.theme.flow::partials.header')
+    @include('anomaly.theme.flow::partials.sidebar')
 
-    <div id="main">
+    <v-content id="content">
 
-        @include('anomaly.theme.flow::partials.sidebar')
+        @include('anomaly.theme.flow::partials.actions')
 
-        <div id="content">
+        @yield('content')
 
-            @include('anomaly.theme.flow::partials.actions')
+    </v-content>
 
-            @yield('content')
-
-        </div>
-
-    </div>
+    @include('anomaly.theme.flow::partials.footer')
 
 </v-app>
 

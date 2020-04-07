@@ -1,19 +1,19 @@
-<header id="header">
+<v-app-bar app="true" id="header" clipped-left>
+    {{-- <v-toolbar-side-logo>
+        {!! img('anomaly.theme.flow::img/logo.svg')->path() !!}
+    </v-toolbar-side-logo> --}}
+    <v-toolbar-title>
+        {{ config('app.name') }}
+    </v-toolbar-title>
 
-    <div class="header__brand">
-        {!! img('anomaly.theme.flow::img/logo.svg')->data() !!}
-        <span>{{ config('app.name') }}</span>
-    </div>
+    {{-- <v-spacer/> --}}
 
-    <div class="header__toggle">
-        <button>
-            {!! img('anomaly.theme.flow::img/menu-open.svg')->data() !!}
-        </button>
-        <button>
-            {!! img('anomaly.theme.flow::img/menu-close.svg')->data() !!}
-        </button>
-    </div>
+    {{-- <admin-shortcuts :shortcuts="{{ cp()->shortcuts->toJson() }}"></admin-shortcuts> --}}
 
-    <admin-shortcuts :shortcuts="{{ cp()->shortcuts->toJson() }}"></admin-shortcuts>
+    {{-- <v-spacer/> --}}
 
-</header>
+    {{-- <v-btn icon>
+        <v-icon>mdi-apps</v-icon>
+    </v-btn> --}}
+
+</v-app-bar>
