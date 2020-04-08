@@ -6779,13 +6779,6 @@ readers do not read off random characters that represent icons */
   content: "\F63F";
 }
 
-.section {
-  padding: 1.25rem;
-  background-color: #fff;
-  margin-bottom: 1.25rem;
-  box-shadow: 1px 1px 0 rgba(66, 66, 66, 0.1);
-}
-
 .tingle-modal-box__content {
   padding: 0;
 }
