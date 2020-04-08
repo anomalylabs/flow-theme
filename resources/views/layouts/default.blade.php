@@ -7,7 +7,7 @@
 
 <body>
 
-<v-app id="app">
+<v-app id="app" dark>
 
     @include('anomaly.theme.flow::partials.header')
     @include('anomaly.theme.flow::partials.sidebar')
