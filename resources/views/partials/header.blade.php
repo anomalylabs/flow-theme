@@ -1,4 +1,4 @@
-<v-app-bar app="true" id="header" clipped-left>
+<v-app-bar app="true" color="deep-purple accent-3" id="header" dark clipped-left>
     {{-- <v-toolbar-side-logo>
         {!! img('anomaly.theme.flow::img/logo.svg')->path() !!}
     </v-toolbar-side-logo> --}}
