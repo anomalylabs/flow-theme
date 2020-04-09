@@ -63,9 +63,9 @@
                 </div>
 
                 <div class="form__actions">
-                    <v-button type="submit" color="primary">
+                    <v-btn type="submit" color="primary">
                         {{ trans('anomaly.module.users::button.login') }}
-                    </v-button>
+                    </v-btn>
                 </div>
 
             {!! $form->close() !!}
