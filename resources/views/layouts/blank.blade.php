@@ -7,14 +7,16 @@
 
 <body>
 
-<div id="app">
-    @yield('content')
-    @include('anomaly.theme.flow::partials.messages')
-</div>
+<v-app id="app" dark>
 
+    <v-content id="content">
+        @yield('content')
+    </v-content>
+
+</v-app>
 
 @include('anomaly.theme.flow::partials.assets')
-
+@include('anomaly.theme.flow::partials.messages')
 
 </body>
 </html>

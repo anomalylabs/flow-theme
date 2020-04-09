@@ -2,55 +2,86 @@
 
 @section('content')
 
-    @php
-        assets('styles.css')->add('public::vendor/anomaly/theme/flow/css/login.css');
-        assets('scripts.js')->add('public::vendor/anomaly/theme/flow/js/form/form.js');
-        
-        $form = form('login')->redirect('admin')->get();
-    @endphp
+@php
+    assets('styles.css')->add('public::vendor/anomaly/theme/flow/css/login.css');
+    assets('scripts.js')->add('public::vendor/anomaly/theme/flow/js/form/form.js');
+    
+    $form = form('login')->redirect('admin')->get();
+@endphp
 
-    <div class="login__wrapper">
-        <div class="login__left">
+<v-content>
+<v-container
+    class="fill-height"
+    fluid
+>
+    <v-row
+    align="center"
+    justify="center"
+    >
+    <v-col
+        cols="12"
+        sm="8"
+        md="4"
+    >
+        <v-card class="elevation-12">
+        <v-toolbar
+            color="primary"
+            dark
+            flat
+        >
+            <v-toolbar-title>Login</v-toolbar-title>
+            {{-- <v-spacer /> --}}
+            {{-- <v-tooltip right>
+            <template v-slot:activator="{ on }">
+                <v-btn
+                icon
+                large
+                href="https://codepen.io/johnjleider/pen/pMvGQO"
+                target="_blank"
+                v-on="on"
+                >
+                <v-icon>mdi-codepen</v-icon>
+                </v-btn>
+            </template>
+            <span>Codepen</span>
+            </v-tooltip> --}}
+        </v-toolbar>
+        <v-card-text>
+            
+            {!! $form->open(['class' => 'fadeIn fast animated']) !!}
 
-            <div class="form__wrapper">
-                {!! $form->open(['class' => 'fadeIn fast animated']) !!}
+                <div class="form__fieldset">
+                    @if (config('anomaly.module.users::login', 'email') == 'username')
+                        {!! $form->fields->username->setPlaceholder($form->fields->username->label).addAttribute('autofocus', 1)->render() !!}
+                    @else
+                        {!! $form->fields->email->setPlaceholder($form->fields->email->label)->addAttribute('autofocus', 1)->render() !!}
+                    @endif
+                </div>
 
-                    <div class="form__fieldset">
-                        @if (config('anomaly.module.users::login', 'email') == 'username')
-                            {!! $form->fields->username->setPlaceholder($form->fields->username->label).addAttribute('autofocus', 1)->render() !!}
-                        @else
-                            {!! $form->fields->email->setPlaceholder($form->fields->email->label)->addAttribute('autofocus', 1)->render() !!}
-                        @endif
-                    </div>
+                <div class="form__fieldset">
+                    {!! $form->fields->password->setPlaceholder($form->fields->password->label)->render() !!}
+                </div>
 
-                    <div class="form__fieldset">
-                        {!! $form->fields->password->setPlaceholder($form->fields->password->label)->render() !!}
-                    </div>
+                <div class="form__actions">
+                    <v-button type="submit" color="primary">
+                        {{ trans('anomaly.module.users::button.login') }}
+                    </v-button>
+                </div>
 
-                    <div class="form__actions">
-                        <button class="button" type="submit">
-                            {{ trans('anomaly.module.users::button.login') }}
-                        </button>
-                    </div>
+            {!! $form->close() !!}
 
-                {!! $form->close() !!}
+        </v-card-text>
+        </v-card>
+    </v-col>
+    </v-row>
+</v-container>
+</v-content>
 
-                <a class="login__link" href="#">
-                    {{ trans('anomaly.module.users::message.forgot_password') }}
-                </a>
-            </div>
+{{-- {{ trans('anomaly.module.users::message.forgot_password') }} --}}
 
-            <div class="login__version">
-                {{ config('streams.distribution.name') }}
-                <span>{{ config('streams.distribution.version') }}</span>
-            </div>
+{{-- {{ config('streams.distribution.name') }}
+            <span>{{ config('streams.distribution.version') }}</span> --}}
+            
+{{-- {!! img('anomaly.theme.flow::img/logo.svg')->data() !!} --}}
 
-        </div>
-        <div class="login__right">
-            <div class="login__brand">
-                {!! img('anomaly.theme.flow::img/logo.svg')->data() !!}
-            </div>
-        </div>
-    </div>
-
-@endsection
+@endsection('content')
