@@ -9,10 +9,10 @@
     $form = form('login')->redirect('admin')->get();
 @endphp
 
-<v-content>
 <v-container
     class="fill-height"
     fluid
+    style="background: url(https://source.unsplash.com/pEgsWN0kwbQ/1000) no-repeat; background-size: cover;"
 >
     <v-row
     align="center"
@@ -25,7 +25,7 @@
     >
         <v-card class="elevation-12">
         <v-toolbar
-            color="primary"
+            color="deep-purple accent-2"
             dark
             flat
         >
@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="form__actions">
-                    <v-btn type="submit" color="primary">
+                    <v-btn type="submit" color="deep-purple accent-2" dark block>
                         {{ trans('anomaly.module.users::button.login') }}
                     </v-btn>
                 </div>
@@ -75,7 +75,6 @@
     </v-col>
     </v-row>
 </v-container>
-</v-content>
 
 {{-- {{ trans('anomaly.module.users::message.forgot_password') }} --}}
 
