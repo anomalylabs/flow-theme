@@ -25,7 +25,7 @@
     >
         <v-card class="elevation-12">
         <v-toolbar
-            color="deep-purple accent-2"
+            color="deep-purple accent-3"
             dark
             flat
         >
@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="form__actions">
-                    <v-btn type="submit" color="deep-purple accent-2" dark block>
+                    <v-btn type="submit" color="deep-purple accent-3" dark block>
                         {{ trans('anomaly.module.users::button.login') }}
                     </v-btn>
                 </div>
