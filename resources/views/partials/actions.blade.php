@@ -1,5 +1,5 @@
 @if (cp()->getButtons()->isNotEmpty())    
-    <div id="actions">
-        {!! buttons(cp()->getButtons()) !!}
-    </div>
+<v-container>
+    {!! buttons(cp()->getButtons()) !!}
+</v-container>
 @endif

@@ -1,17 +1,19 @@
 @if ($table->getOption('title') || $table->getOption('description'))
-<div class="table__header">
+<v-container>
+    <v-card>
 
-    @if ($table->getOption('title'))
-        <h4>
+        @if ($table->getOption('title'))
+        <div class="title">
             {{ $table->getOption('title') }}
-
-            @if ($table->getOption('description'))
-            <small>
-                {{ $table->getOption('description') }}
-            </small>
-            @endif
-        </h4>
-    @endif
-
-</div>
+        </div>
+        @endif
+    
+        @if ($table->getOption('description'))
+        <div class="subtitle-1">
+            {{ $table->getOption('description') }}
+        </div>
+        @endif
+    
+    </v-card>
+</v-container>
 @endif
