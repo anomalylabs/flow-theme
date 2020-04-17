@@ -7,11 +7,11 @@
     
     @if ($table->hasActions())
     <th class="table__checkbox">
-        <input type="checkbox">
+        <v-checkbox/>
     </th>
     @endif
 
-    @foreach ($table->getHeaders() as $header)
+    @foreach ($table->headers as $header)
         <th {!! html_attributes($header->attributes()) !!}>
             @if ($header->isSortable())
             

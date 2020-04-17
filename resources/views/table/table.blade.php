@@ -2,14 +2,25 @@
 @include('admin::table/partials/heading')
 @include('admin::table/partials/views')
 
+{{-- {{dd($table->toVuetify())}} --}}
 <v-container>
     @if ($table->hasRows())
         {!! form_open(['url' => url()->full()]) !!}
-            <table {!! html_attributes($table->attributes()) !!}>
+            <v-data-table>
+                <template v-slot:header>
+                    {{-- {{ json_encode($table->toVuetify()) }} --}}
+                    @include('admin::table/partials/header')
+                </template>
+                <template v-slot:body>
+                    {{-- {{ json_encode($table->toVuetify()) }} --}}
+                    @include('admin::table/partials/body')
+                </template>
+            </v-data-table>
+            {{-- <table {!! html_attributes($table->attributes()) !!}>
                 @include('admin::table/partials/header')
                 @include('admin::table/partials/body')
                 @include('admin::table/partials/footer')
-            </table>
+            </table> --}}
         {!! form_close() !!}
     @else
         {{ trans('streams::message.no_results') }}

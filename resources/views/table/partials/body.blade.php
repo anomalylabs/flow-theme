@@ -11,7 +11,7 @@
 
             @if ($table->hasActions())
             <td class="o-table__column">
-                <input type="checkbox" name="{{ $table->prefix('id[]') }}" value="{{ $row->getKey() }}"/>
+                <v-checkbox name="{{ $table->prefix('id[]') }}" value="{{ $row->getKey() }}"/>
             </td>
             @endif
 

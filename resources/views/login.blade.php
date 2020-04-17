@@ -12,7 +12,7 @@
 <v-container
     class="fill-height"
     fluid
-    style="background: url(https://source.unsplash.com/pEgsWN0kwbQ/1000) no-repeat; background-size: cover;"
+    style="background: url({{ img('unsplash::random/1000')->url() }}) no-repeat; background-size: cover;"
 >
     <v-row
     align="center"
