@@ -24,28 +24,13 @@
         md="4"
     >
         <v-card class="elevation-12">
-        <v-toolbar
-            color="deep-purple accent-3"
-            dark
+        {{-- <v-toolbar
+            color="white"
             flat
+            dense
         >
             <v-toolbar-title>Login</v-toolbar-title>
-            {{-- <v-spacer /> --}}
-            {{-- <v-tooltip right>
-            <template v-slot:activator="{ on }">
-                <v-btn
-                icon
-                large
-                href="https://codepen.io/johnjleider/pen/pMvGQO"
-                target="_blank"
-                v-on="on"
-                >
-                <v-icon>mdi-codepen</v-icon>
-                </v-btn>
-            </template>
-            <span>Codepen</span>
-            </v-tooltip> --}}
-        </v-toolbar>
+        </v-toolbar> --}}
         <v-card-text>
             
             {!! $form->open(['class' => 'fadeIn fast animated']) !!}
@@ -63,7 +48,7 @@
                 </div>
 
                 <div class="form__actions">
-                    <v-btn type="submit" color="deep-purple accent-3" dark block>
+                    <v-btn type="submit" color="gray accent-3" dark block outline large>
                         {{ trans('anomaly.module.users::button.login') }}
                     </v-btn>
                 </div>
