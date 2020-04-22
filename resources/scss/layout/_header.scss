@@ -1,5 +1,5 @@
 #header {
-    @apply .flex .self-start .items-center .flex-wrap .bg-white .full-width;
+    @apply .flex .self-start .items-center .flex-wrap .bg-white .w-full;
 
     > nav {
         @apply .p-6 .flex-grow .text-right;
