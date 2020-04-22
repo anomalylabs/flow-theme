@@ -1,5 +1,5 @@
 #app {
-    @apply .flex .flex-col;
+    @apply .flex .flex-wrap;
 
     @screen lg {
         @apply .h-screen;

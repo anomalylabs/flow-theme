@@ -1,24 +1,20 @@
 <template>
-    <v-card tile>
-        <v-navigation-drawer app clipped>
-        
-            <v-list v-for="link in links" :key="link.slug">
-                <v-subheader>{{ link.title }}</v-subheader>
-                <v-list-item
-                    v-for="section in link.sections"
-                    :href="section.attributes.href"
-                    :key="section.slug"
-                    link>
-                    <v-list-item-content>
-                        <v-list-item-title>
-                            {{ section.title }}
-                        </v-list-item-title>
-                    </v-list-item-content>
-                </v-list-item>
-            </v-list>
+    <div id="sidebar">
+        <ul v-for="link in links" :key="link.slug">
+            <li v-for="section in link.sections" :key="section.slug">
+                <a :href="section.attributes.href" :class="{'active':section.active}">
+                    <!-- {!! $section->icon() !!} -->
+                    {{ section.title }}
 
-        </v-navigation-drawer>
-    </v-card>
+                    <!-- @if ($section->getLabel())    
+                        <span class="tag {{ $section->getContext() }}">
+                            {{ $section->getLabel() }}
+                        </span>
+                    @endif -->
+                </a>
+            </li>
+        </ul>
+    </div>
 </template>
 
 <script>

@@ -1,4 +1,3 @@
-<v-footer app inset>
+<div id="footer">
       <span class="px-4">&copy; {{ now()->format('Y') }}</span>
-    </v-footer>
-  </v-app>
+</div>

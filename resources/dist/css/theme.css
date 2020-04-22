@@ -67812,7 +67812,7 @@ select.input {
 
 #app {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 1024px) {
@@ -67827,6 +67827,7 @@ select.input {
 }
 
 #header {
+  width: 100%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -68019,6 +68020,12 @@ select.input {
 
 .header__menu a:hover {
   color: #000;
+}
+
+#footer {
+  width: 100%;
+  display: flex;
+  align-self: flex-end;
 }
 
 #actions {
