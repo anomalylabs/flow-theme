@@ -17,14 +17,14 @@
 
                     <div class="form__fieldset">
                         @if (config('anomaly.module.users::login', 'email') == 'username')
-                            {!! $form->fields->username->setPlaceholder($form->fields->username->label).addAttribute('autofocus', 1)->render() !!}
+                            {!! $form->fields->username->setAttribute('placeholder', $form->fields->username->label).addAttribute('autofocus', 1)->render() !!}
                         @else
-                            {!! $form->fields->email->setPlaceholder($form->fields->email->label)->addAttribute('autofocus', 1)->render() !!}
+                            {!! $form->fields->email->setAttribute('placeholder', $form->fields->email->label)->addAttribute('autofocus', 1)->render() !!}
                         @endif
                     </div>
 
                     <div class="form__fieldset">
-                        {!! $form->fields->password->setPlaceholder($form->fields->password->label)->render() !!}
+                        {!! $form->fields->password->setAttribute('placeholder', $form->fields->password->label)->render() !!}
                     </div>
 
                     <div class="form__actions">
