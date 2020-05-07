@@ -17,15 +17,15 @@
         <h2 class="mt-6 text-3xl leading-9 font-extrabold text-gray-900">
             Sign in to your account
         </h2>
-        <p class="mt-2 text-sm leading-5 text-gray-600 max-w">
+        {{-- <p class="mt-2 text-sm leading-5 text-gray-600 max-w">
             Or
             <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">
             start your 14-day free trial
             </a>
-        </p>
+        </p> --}}
         </div>
 
-        <div class="mt-8">
+        {{-- <div class="mt-8">
         <div>
             <div>
             <p class="text-sm leading-5 font-medium text-gray-700">
@@ -75,7 +75,7 @@
                 </span>
             </div>
             </div>
-        </div>
+        </div> --}}
 
         <div class="mt-6">
             {!! $form->open(['class' => 'fadeIn fast animated']) !!}
@@ -139,9 +139,10 @@
         </div>
     </div>
     </div>
-    <div class="hidden lg:block relative w-0 flex-1">
-        
-    <img class="absolute inset-0 h-full w-full object-cover" src="https://images.unsplash.com/random?auto=format&fit=crop&w=1908&q=80" alt="" />
+    
+    <div class="lg:block relative w-0 flex-1">
+        {!! img('unsplash::random?auto=format&fit=crop&w=1908&q=80')
+            ->class('absolute inset-0 h-full w-full object-cover') !!}
     </div>
 </div>
 @endsection
