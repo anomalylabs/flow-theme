@@ -13,7 +13,10 @@ require('laravel-mix-purgecss');
 mix.webpackConfig({
     externals: {
         "@anomaly/streams-platform": "streams"
-    }
+    },
+    plugins: [
+        require('@tailwindcss/ui'),
+    ],
 });
 
 /*
