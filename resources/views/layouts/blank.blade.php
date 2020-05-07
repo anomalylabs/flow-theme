@@ -9,9 +9,9 @@
 
 <v-app id="app" dark>
 
-    <v-content id="content">
+    <main id="content">
         @yield('content')
-    </v-content>
+    </main>
 
 </v-app>
 

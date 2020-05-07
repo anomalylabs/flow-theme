@@ -12,13 +12,13 @@
     @include('anomaly.theme.flow::partials.header')
     @include('anomaly.theme.flow::partials.sidebar')
 
-    <v-content id="content">
+    <main id="content">
 
         @include('anomaly.theme.flow::partials.actions')
 
         @yield('content')
 
-    </v-content>
+    </main>
 
     @include('anomaly.theme.flow::partials.footer')
 
