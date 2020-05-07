@@ -67,7 +67,6 @@ mix
 //         globs: [
 //             path.join(__dirname, 'addons/stengarde/pixney/stengarde-theme/resources/**/*.twig'),
 //             path.join(__dirname, 'addons/stengarde/pixney/stengarde-theme/resources/**/*.vue'),
-
 //         ],
 
 //         extensions: ['html', 'js', 'php', 'vue', 'twig'],
